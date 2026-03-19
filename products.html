@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adijyoti Industries | BHARAT KI INDUSTRIAL SHAKTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navbar mobile menu -->
+    <div id="sidebarOverlay" onclick="toggleMobileMenu()"
+        class="fixed inset-0 bg-black/50 z-[150] hidden opacity-0 transition-opacity duration-300"></div>
+
+    <div id="mobileSidebar"
+        class="fixed inset-y-0 left-0 w-[280px] bg-white z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6">
+        <div class="flex items-center justify-between mb-10">
+            <div class="text-2xl font-bold bebas text-[#0d9488]">ADIJYOTI</div>
+            <button onclick="toggleMobileMenu()" class="p-2 text-slate-500"><i data-lucide="x"></i></button>
+        </div>
+        <div class="flex flex-col gap-6 font-bold text-slate-700">
+            <a href="#" class="text-[#0d9488]" data-en="Home" data-hi="होम">Home</a>
+            <a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a>
+            <a href="products.html" data-en="Products" data-hi="मशीनें">Products</a>
+            <a href="products.html" data-en="Products" data-hi="मशीनें">Products</a>
+            <a href="contact.html" data-en="Contact" data-hi="संपर्क करें">ContactUs</a>
+            <hr>
+            <div class="flex flex-col gap-4">
+                <p class="text-[10px] uppercase text-slate-400 tracking-widest">Our Services</p>
+                <a href="pmfme.html" class="flex items-center gap-3"><i data-lucide="utensils" class="w-5 h-5"></i>
+                    PMFME</a>
+                <a href="#solar" class="flex items-center gap-3"><i data-lucide="sun" class="w-5 h-5"></i> Solar</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-[100] glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.reload()">
+                <div
+                    class="bg-[#0d9488] text-white w-12 h-12 flex items-center justify-center rounded-2xl font-bold text-2xl shadow-lg shadow-teal-500/20">
+                    AJ</div>
+                <div>
+                    <div class="text-2xl font-bold tracking-[0.2em] leading-none bebas text-white uppercase">ADIJYOTI
+                    </div>
+                    <div class="text-[10px] uppercase font-bold text-[#0d9488] tracking-widest"
+                        data-en="Industries OPC Pvt Ltd" data-hi="इंडस्ट्रीज ओपीसी प्रा. लि.">Industries OPC Pvt Ltd
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center text-white gap-10 font-bold">
+                <a href="#" class="nav-link text-[#0d9488]" data-en="Home" data-hi="होम">Home</a>
+                <a href="about.html" class="nav-link hover:text-[#0d9488]" data-en="About"
+                    data-hi="हमारे बारे में">About</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-[#0d9488] transition-colors">
+                        <span data-en="Services" data-hi="सेवाएं">Services</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute top-full -left-6 w-72 pt-4 dropdown-content">
+                        <div class="bg-white shadow-2xl rounded-[2rem] border border-slate-100 p-3 overflow-hidden">
+                            <a href="pmfme.html"
+                                class="flex items-center gap-4 p-4 hover:bg-teal-50 rounded-2xl transition-all">
+                                <i data-lucide="utensils" class="w-6 h-6 text-[#0d9488]"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-slate-800" data-en="PMFME (Food)"
+                                        data-hi="पीएमएफएमई (खाद्य)">PMFME
+                                        (Food)</div>
+                                    <div class="text-[10px] text-slate-500" data-en="35% Subsidy Support"
+                                        data-hi="35% सब्सिडी सहायता">35%
+                                        Subsidy Support</div>
+                                </div>
+                            </a>
+                            <a href="#solar"
+                                class="flex items-center gap-4 p-4 hover:bg-teal-50 rounded-2xl transition-all">
+                                <i data-lucide="sun" class="w-6 h-6 text-yellow-600"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-slate-800" data-en="PM Surya Ghar"
+                                        data-hi="पीएम सूर्य घर">PM Surya
+                                        Ghar</div>
+                                    <div class="text-[10px] text-slate-500" data-en="Free Solar Electricity"
+                                        data-hi="मुफ्त सोलर बिजली">
+                                        Free Solar Electricity</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="products.html" class="nav-link hover:text-[#0d9488]" data-en="Products"
+                    data-hi="मशीनें">Products</a>
+                <a href="contact.html" class="nav-link hover:text-[#0d9488]" data-en="Contact Us"
+                    data-hi="संपर्क करें">Contact
+                    Us</a>
+
+                <button onclick="toggleLang()" id="langBtn"
+                    class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">
+                    ENGLISH / हिंदी
+                </button>
+
+                <div class="lg:hidden flex items-center gap-3">
+                    <button onclick="toggleLang()"
+                        class="text-[10px] font-bold bg-white/10 text-white px-3 py-1 rounded-full border border-white/20">EN/हिं</button>
+                    <button onclick="toggleMobileMenu()"
+                        class="p-2 bg-teal-500/10 text-[#0d9488] rounded-xl border border-teal-500/20"><i
+                            data-lucide="menu"></i></button>
+                </div>
+            </div>
+    </nav>
+    <!-- Navbar mobile menu End-->
+
+    <div class="relative mt-20 bg-[#080c14] border-b border-white/5 overflow-hidden">
+  
+  <div class="absolute top-0 right-0 w-64 h-64 bg-[#0d9488]/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-48 h-48 bg-orange-500/5 blur-[80px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+    
+    <nav class="flex items-center gap-3 text-sm font-bold tracking-wide">
+      <a href="index.html" class="text-slate-500 hover:text-[#0d9488] transition-colors flex items-center gap-2">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        <span data-en="Home" data-hi="होम">Home</span>
+      </a>
+      
+      <i data-lucide="chevron-right" class="w-4 h-4 text-slate-700"></i>
+      
+      <span class="text-[#0d9488] bg-[#0d9488]/10 px-3 py-1 rounded-full border border-[#0d9488]/20" 
+            data-en="About Us" data-hi="हमारे बारे में">
+        About Us
+      </span>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-8">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+          <i data-lucide="phone" class="w-4 h-4 text-[#0d9488]"></i>
+        </div>
+        <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">+91 98765 43210</span>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+          <i data-lucide="mail" class="w-4 h-4 text-orange-500"></i>
+        </div>
+        <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">info@adijyoti.com</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<section class="relative py-28 px-6 bg-[#080c14] overflow-hidden group/about">
+    
+    <div class="absolute inset-0 opacity-[0.03] -z-10" 
+         style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMCAwaDRwdjQwSDBWMHptMSAxdjM4aDM4VjFIMXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=');">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative h-[500px]" data-aos="fade-right">
+                <div class="absolute top-0 left-0 w-4/5 h-4/5 rounded-[3rem] overflow-hidden border-8 border-[#111827] shadow-2xl z-20">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1000" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-[2.5rem] overflow-hidden border-8 border-[#111827] shadow-2xl z-30 group">
+                    <img src="https://images.unsplash.com/photo-1565608411333-99b8606f363c?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-[#0d9488]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-black bebas text-2xl tracking-widest">LUCKNOW UNIT</span>
+                    </div>
+                </div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0d9488]/10 blur-[100px] -z-10 rounded-full"></div>
+            </div>
+
+            <div data-aos="fade-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d9488]/10 border border-[#0d9488]/20 mb-6">
+                    <i data-lucide="map-pin" class="w-3 h-3 text-[#0d9488]"></i>
+                    <span class="text-[#0d9488] font-black tracking-widest uppercase text-[10px]">Based in Lucknow, UP</span>
+                </div>
+
+                <h2 class="text-5xl md:text-7xl font-black bebas text-white mb-6 leading-[0.85]">
+                    THE BACKBONE OF <br> <span class="text-[#f59e0b]">UP'S INDUSTRIAL</span> REVOLUTION
+                </h2>
+
+                <div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+                    <p data-en="Adijyoti Industries OPC Pvt Ltd, headquartered in Lucknow, is a premier name in the MSME sector. We specialize in providing end-to-end industrial machinery solutions and strategic government subsidy consultancy."
+                       data-hi="लखनऊ में मुख्यालय वाली आदिज्योति इंडस्ट्रीज ओपीसी प्राइवेट लिमिटेड, एमएसएमई क्षेत्र में एक प्रमुख नाम है। हम एंड-टू-एंड औद्योगिक मशीनरी समाधान और रणनीतिक सरकारी सब्सिडी परामर्श प्रदान करने में विशेषज्ञ हैं।">
+                        Adijyoti Industries OPC Pvt Ltd, headquartered in Lucknow, is a premier name in the MSME sector. We specialize in providing end-to-end industrial machinery solutions and strategic government subsidy consultancy.
+                    </p>
+                    
+                    <p class="text-base italic border-l-4 border-[#0d9488] pl-6 py-2"
+                       data-en="Our mission is to empower 10,000+ entrepreneurs in Uttar Pradesh by 2030 through PMFME & PMEGP schemes."
+                       data-hi="हमारा मिशन 2030 तक पीएमएफएमई और पीएमईजीपी योजनाओं के माध्यम से उत्तर प्रदेश में 10,000+ उद्यमियों को सशक्त बनाना है।">
+                        "Our mission is to empower 10,000+ entrepreneurs in Uttar Pradesh by 2030 through PMFME & PMEGP schemes."
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 mt-10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-white/10 group-hover:border-[#0d9488]/50 transition-colors">
+                            <i data-lucide="award" class="w-5 h-5 text-[#f59e0b]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm uppercase tracking-wide">Quality First</h4>
+                            <p class="text-slate-500 text-xs mt-1">ISO Certified Machinery</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-white/10 group-hover:border-[#0d9488]/50 transition-colors">
+                            <i data-lucide="landmark" class="w-5 h-5 text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm uppercase tracking-wide">Subsidy Expert</h4>
+                            <p class="text-slate-500 text-xs mt-1">PMEGP & PMFME Approved</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex items-center gap-8">
+                    <button class="bg-[#0d9488] text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-teal-500 transition-all shadow-xl shadow-teal-500/20 active:scale-95">
+                        <span data-en="Contact Lucknow Office" data-hi="लखनऊ ऑफिस से संपर्क करें">Contact Lucknow Office</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="relative py-28 px-6 bg-white overflow-hidden">
+  
+  <div class="absolute inset-0 opacity-[0.03] -z-10" 
+       style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwZDk0ODgiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzR2LTRoLTR2NGg0em00IDBoNHYtNGgtNHY0em0wIDRoLTR2NGg0di00em0tOCA0aC00djRoNHYtNHptMCA4aDR2LTRoLTR2NHptLTggMmg0di00aC00djR6bTAtOGgtNHY0aDR2LTR6bS04LTRoLTR2NGg0di00em0wIDhoNHYtNGgtNHY0em0tOC00aC00djRoNHYtNHptMCA4aDR2LTRoLTR2NHptLTI0LTJoNHYtNGgtNHY0em00IDRoNHYtNGgtNHY0em0wIDRoLTR2NGg0di00em0tOCA0aC00djRoNHYtNHptMCA4aDR2LTRoLTR2NHptLTggMmgydjRoNGgtMnYtNGgtNHY0em0wLThoLTR2NGg0di00em0tOC00aC00djRoNHYtNHptMCA4aDR2LTRoLTR2NHptLTgtNCBoLTR2NGg0di00em0wIDhoNHYtNGgtNHY0eiIvPjwvZz48L2c+PC9zdmc+');">
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+      
+      <div class="relative flex items-center justify-center p-4" data-aos="fade-right">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-teal-50 rounded-[3rem] -z-10"></div>
+        <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-orange-50 rounded-[4rem] -z-10"></div>
+
+        <div class="relative w-full aspect-square max-w-[500px] group">
+          <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1000" 
+               class="w-full h-full object-cover rounded-[4rem] shadow-2xl shadow-teal-900/10 border-[12px] border-white transition-transform duration-500 group-hover:scale-[1.02]">
+          
+          <div class="absolute -top-4 -right-10 bg-white p-6 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 flex items-center gap-4 transition-transform group-hover:-translate-y-2">
+            <div class="w-12 h-12 bg-[#0d9488]/10 rounded-xl flex items-center justify-center">
+              <i data-lucide="check-circle" class="text-[#0d9488] w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="text-xl font-black text-slate-900 leading-none">100%</div>
+              <div class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Trust Guaranteed</div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-6 -left-10 bg-[#0d9488] p-6 rounded-3xl shadow-xl shadow-teal-500/20 border border-teal-600/20 flex items-center gap-4 transition-transform group-hover:translate-y-2">
+            <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+              <i data-lucide="map-pin" class="text-white w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="text-sm font-black text-white leading-none uppercase tracking-wide">Lucknow Office</div>
+              <div class="text-[9px] font-bold text-white/70 uppercase tracking-widest mt-1">Gomti Nagar, UP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <span class="text-[#0d9488] font-black tracking-[0.4em] uppercase text-xs mb-4 block">Our Journey</span>
+        
+        <h2 class="text-5xl md:text-6xl font-black bebas text-slate-900 leading-[0.9] mb-8">
+          TRANSFORMING <br> <span class="text-[#0d9488]">TRADITIONAL</span> INTO <br> <span class="text-[#f59e0b]">INDUSTRIAL</span>
+        </h2>
+
+        <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+          <h3 class="text-2xl font-bold text-slate-800" data-en="Adijyoti Industries OPC Pvt Ltd" data-hi="आदिज्योति इंडस्ट्रीज ओपीसी प्राइवेट लिमिटेड">
+            Adijyoti Industries OPC Pvt Ltd
+          </h3>
+          <p data-en="Based in the heart of Lucknow, we are more than just a machinery supplier. We are a technical consultancy dedicated to MSME growth, helping small businesses secure government funding and advanced equipment."
+             data-hi="लखनऊ के केंद्र में स्थित, हम सिर्फ एक मशीनरी आपूर्तिकर्ता से कहीं अधिक हैं। हम एमएसएमई विकास के लिए समर्पित एक तकनीकी परामर्शदाता हैं, जो छोटे व्यवसायों को सरकारी फंडिंग और उन्नत उपकरण प्राप्त करने में मदद करते हैं।">
+            Based in the heart of Lucknow, we are more than just a machinery supplier. We are a technical consultancy dedicated to MSME growth, helping small businesses secure government funding and advanced equipment.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 mt-12 py-8 border-y border-slate-100">
+          <div class="flex flex-col gap-2">
+            <i data-lucide="shield-check" class="text-[#0d9488] w-8 h-8"></i>
+            <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mt-2">ISO Certified</h4>
+            <p class="text-slate-500 text-xs">Standardized Excellence</p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <i data-lucide="landmark" class="text-orange-500 w-8 h-8"></i>
+            <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mt-2">PMEGP Expert</h4>
+            <p class="text-slate-500 text-xs">Full Subsidy Support</p>
+          </div>
+        </div>
+
+        <div class="mt-12 flex items-center gap-6">
+          <button class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-bold text-lg hover:bg-[#0d9488] transition-all shadow-xl shadow-slate-900/10 active:scale-95 group">
+            <span class="flex items-center gap-3">
+              <span data-en="Visit Our Lucknow Unit" data-hi="हमारे लखनऊ यूनिट आएं">Visit Our Lucknow Unit</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition-transform"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

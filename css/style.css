@@ -1,0 +1,142 @@
+:root {
+  --teal: #0d9488;
+  --yellow: #f59e0b;
+  --dark: #0f172a;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #0f172a;
+}
+
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- Hero Background & Overlay --- */
+.hero-gradient {
+  background-color: #0f172a;
+  position: relative;
+  color: #ffffff;
+  overflow-x: clip;
+  transition: background 0.8s ease-in-out;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+/* Dynamic Classes for JS */
+.bg-slide-1 .bg-overlay-1 { opacity: 0.1; }
+.bg-slide-2 .bg-overlay-2 { opacity: 0.1; }
+.bg-slide-3 .bg-overlay-3 { opacity: 0.1; }
+
+/* Industrial Grid Effect */
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Floating Light Pulse */
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 500px;
+  height: 500px;
+  background: rgba(13, 148, 136, 0.15);
+  filter: blur(140px);
+  border-radius: 50%;
+  z-index: 0;
+  animation: pulse-slow 10s infinite alternate;
+}
+
+@keyframes pulse-slow {
+  from { opacity: 0.2; transform: scale(1); }
+  to { opacity: 0.5; transform: scale(1.1); }
+}
+
+/* --- Navbar & Sidebar --- */
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--teal);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after { width: 100%; }
+
+.dropdown-content {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.group:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Swiper & Card Fix --- */
+.heroSwiper {
+  overflow: visible !important;
+  z-index: 10;
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+  transition: opacity 1s ease-in-out;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.hero-card-fix {
+  z-index: 50;
+}
+
+@media (min-width: 1024px) {
+  .hero-card-fix { right: -40px !important; }
+}
+
+@media (max-width: 768px) {
+  .hero-card-fix {
+    right: 5px !important;
+    top: -15px !important;
+    padding: 12px !important;
+  }
+}

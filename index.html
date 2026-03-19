@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adijyoti Industries | BHARAT KI INDUSTRIAL SHAKTI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+  <!-- Navbar mobile menu -->
+  <div id="sidebarOverlay" onclick="toggleMobileMenu()"
+    class="fixed inset-0 bg-black/50 z-[150] hidden opacity-0 transition-opacity duration-300"></div>
+
+  <div id="mobileSidebar"
+    class="fixed inset-y-0 left-0 w-[280px] bg-white z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6">
+    <div class="flex items-center justify-between mb-10">
+      <div class="text-2xl font-bold bebas text-[#0d9488]">ADIJYOTI</div>
+      <button onclick="toggleMobileMenu()" class="p-2 text-slate-500"><i data-lucide="x"></i></button>
+    </div>
+    <div class="flex flex-col gap-6 font-bold text-slate-700">
+      <a href="#" class="text-[#0d9488]" data-en="Home" data-hi="होम">Home</a>
+      <a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a>
+      <a href="products.html" data-en="Products" data-hi="मशीनें">Products</a>
+      <a href="products.html" data-en="Products" data-hi="मशीनें">Products</a>
+      <a href="contact.html" data-en="Contact" data-hi="संपर्क करें">ContactUs</a>
+      <hr>
+      <div class="flex flex-col gap-4">
+        <p class="text-[10px] uppercase text-slate-400 tracking-widest">Our Services</p>
+        <a href="pmfme.html" class="flex items-center gap-3"><i data-lucide="utensils" class="w-5 h-5"></i> PMFME</a>
+        <a href="#solar" class="flex items-center gap-3"><i data-lucide="sun" class="w-5 h-5"></i> Solar</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="fixed top-0 w-full z-[100] glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.reload()">
+        <div
+          class="bg-[#0d9488] text-white w-12 h-12 flex items-center justify-center rounded-2xl font-bold text-2xl shadow-lg shadow-teal-500/20">
+          AJ</div>
+        <div>
+          <div class="text-2xl font-bold tracking-[0.2em] leading-none bebas text-white uppercase">ADIJYOTI</div>
+          <div class="text-[10px] uppercase font-bold text-[#0d9488] tracking-widest" data-en="Industries OPC Pvt Ltd"
+            data-hi="इंडस्ट्रीज ओपीसी प्रा. लि.">Industries OPC Pvt Ltd</div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center text-white gap-10 font-bold">
+        <a href="#" class="nav-link text-[#0d9488]" data-en="Home" data-hi="होम">Home</a>
+        <a href="about.html" class="nav-link hover:text-[#0d9488]" data-en="About" data-hi="हमारे बारे में">About</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-[#0d9488] transition-colors">
+            <span data-en="Services" data-hi="सेवाएं">Services</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full -left-6 w-72 pt-4 dropdown-content">
+            <div class="bg-white shadow-2xl rounded-[2rem] border border-slate-100 p-3 overflow-hidden">
+              <a href="pmfme.html" class="flex items-center gap-4 p-4 hover:bg-teal-50 rounded-2xl transition-all">
+                <i data-lucide="utensils" class="w-6 h-6 text-[#0d9488]"></i>
+                <div>
+                  <div class="text-sm font-bold text-slate-800" data-en="PMFME (Food)" data-hi="पीएमएफएमई (खाद्य)">PMFME
+                    (Food)</div>
+                  <div class="text-[10px] text-slate-500" data-en="35% Subsidy Support" data-hi="35% सब्सिडी सहायता">35%
+                    Subsidy Support</div>
+                </div>
+              </a>
+              <a href="#solar" class="flex items-center gap-4 p-4 hover:bg-teal-50 rounded-2xl transition-all">
+                <i data-lucide="sun" class="w-6 h-6 text-yellow-600"></i>
+                <div>
+                  <div class="text-sm font-bold text-slate-800" data-en="PM Surya Ghar" data-hi="पीएम सूर्य घर">PM Surya
+                    Ghar</div>
+                  <div class="text-[10px] text-slate-500" data-en="Free Solar Electricity" data-hi="मुफ्त सोलर बिजली">
+                    Free Solar Electricity</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="products.html" class="nav-link hover:text-[#0d9488]" data-en="Products" data-hi="मशीनें">Products</a>
+        <a href="contact.html" class="nav-link hover:text-[#0d9488]" data-en="Contact Us" data-hi="संपर्क करें">Contact
+          Us</a>
+
+        <button onclick="toggleLang()" id="langBtn"
+          class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">
+          ENGLISH / हिंदी
+        </button>
+
+        <div class="lg:hidden flex items-center gap-3">
+          <button onclick="toggleLang()"
+            class="text-[10px] font-bold bg-white/10 text-white px-3 py-1 rounded-full border border-white/20">EN/हिं</button>
+          <button onclick="toggleMobileMenu()"
+            class="p-2 bg-teal-500/10 text-[#0d9488] rounded-xl border border-teal-500/20"><i
+              data-lucide="menu"></i></button>
+        </div>
+      </div>
+  </nav>
+  <!-- Navbar mobile menu End-->
+
+  <!-- Hero Section with Swiper Slider -->
+  <section id="heroSection" class="hero-gradient pt-32 md:pt-40 pb-16 md:pb-20 px-4 md:px-6 overflow-x-clip bg-slide-1">
+
+    <div class="bg-overlay bg-overlay-1"
+      style="background-image: url('https://images.unsplash.com/photo-1565608438257-fac3c27beb36?q=80&w=1000')"></div>
+    <div class="bg-overlay bg-overlay-2"
+      style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000')"></div>
+    <div class="bg-overlay bg-overlay-3"
+      style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000')"></div>
+
+    <div class="swiper heroSwiper max-w-7xl mx-auto">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div data-aos="fade-right">
+              <span
+                class="inline-block bg-teal-500/10 text-[#0d9488] px-5 py-2 rounded-full text-[10px] md:text-xs font-bold mb-6 border border-teal-500/20 uppercase tracking-widest"
+                data-en="🏭 Leading Industrial Partner" data-hi="🏭 प्रमुख औद्योगिक भागीदार">🏭 Leading Industrial
+                Partner</span>
+              <h1 class="text-5xl md:text-8xl font-black bebas leading-[0.9] mb-6">
+                <span data-en="BHARAT KI" data-hi="भारत की">BHARAT KI</span> <br>
+                <span class="text-[#0d9488]" data-en="INDUSTRIAL" data-hi="इंडस्ट्रियल">INDUSTRIAL</span> <br>
+                <span class="text-[#f59e0b]" data-en="SHAKTI" data-hi="शक्ति">SHAKTI</span>
+              </h1>
+              <p class="text-base md:text-lg text-slate-400 mb-10 max-w-lg leading-relaxed font-medium"
+                data-en="Providing Premium Food Machines, Solar Solutions, and Govt Scheme Support to empower small businesses across India."
+                data-hi="पूरे भारत में छोटे व्यवसायों को सशक्त बनाने के लिए प्रीमियम खाद्य मशीनें, सौर समाधान और सरकारी योजना सहायता प्रदान करना।">
+                Providing Premium Food Machines, Solar Solutions, and Govt Scheme Support to empower small businesses
+                across India.</p>
+              <div class="flex flex-wrap gap-5">
+                <button
+                  class="bg-[#0d9488] text-white px-8 md:px-10 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg"
+                  data-en="Explore Machines" data-hi="मशीनें देखें">Explore Machines</button>
+              </div>
+            </div>
+            <div class="relative group">
+              <img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36?q=80&w=1000"
+                class="relative z-10 rounded-[2.5rem] md:rounded-[3.5rem] shadow-2xl border-4 md:border-8 border-white/10 object-cover h-[280px] md:h-[500px] w-full">
+              <div
+                class="absolute top-5 -right-2 md:top-10 md:-right-10 glass p-4 md:p-6 rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl z-20 border border-white/10 hero-card-fix">
+                <div class="text-2xl md:text-4xl font-black text-[#0d9488] bebas">₹10 LAKH</div>
+                <div class="text-[8px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest"
+                  data-en="MAX GOVT SUBSIDY" data-hi="अधिकतम सरकारी सब्सिडी">MAX GOVT SUBSIDY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div>
+              <span
+                class="inline-block bg-yellow-500/10 text-yellow-500 px-5 py-2 rounded-full text-[10px] md:text-xs font-bold mb-6 border border-yellow-500/20 uppercase tracking-widest"
+                data-en="☀️ PM SURYA GHAR YOJANA" data-hi="☀️ पीएम सूर्य घर योजना">☀️ PM SURYA GHAR YOJANA</span>
+              <h1 class="text-5xl md:text-8xl font-black bebas leading-[0.9] mb-6">
+                <span data-en="MUFT" data-hi="मुफ्त">MUFT</span> <br>
+                <span class="text-yellow-500" data-en="SOLAR" data-hi="सोलर">SOLAR</span> <br>
+                <span class="text-[#0d9488]" data-en="BIJLI" data-hi="बिजली">BIJLI</span>
+              </h1>
+              <p class="text-base md:text-lg text-slate-400 mb-10 max-w-lg leading-relaxed font-medium"
+                data-en="Get up to ₹78,000 subsidy on solar installation. Zero electricity bills for your home and factory."
+                data-hi="सोलर इंस्टॉलेशन पर ₹78,000 तक की सब्सिडी पाएं। अपने घर और फैक्ट्री के लिए जीरो बिजली बिल।">Get
+                up to ₹78,000 subsidy on solar installation. Zero electricity bills for your home and factory.</p>
+              <div class="flex flex-wrap gap-5">
+                <button
+                  class="bg-yellow-500 text-white px-8 md:px-10 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg"
+                  data-en="Apply for Solar" data-hi="सोलर के लिए अप्लाई करें">Apply for Solar</button>
+              </div>
+            </div>
+            <div class="relative group">
+              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000"
+                class="relative z-10 rounded-[2.5rem] md:rounded-[3.5rem] shadow-2xl border-4 md:border-8 border-white/10 object-cover h-[280px] md:h-[500px] w-full">
+              <div
+                class="absolute top-5 -right-2 md:top-10 md:-right-10 glass p-4 md:p-6 rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl z-20 border border-white/10 hero-card-fix">
+                <div class="text-2xl md:text-4xl font-black text-yellow-600 bebas">₹78,000</div>
+                <div class="text-[8px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest"
+                  data-en="GOVT SUBSIDY" data-hi="सरकारी सब्सिडी">GOVT SUBSIDY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div>
+              <span
+                class="inline-block bg-orange-500/10 text-orange-500 px-5 py-2 rounded-full text-[10px] md:text-xs font-bold mb-6 border border-orange-500/20 uppercase tracking-widest"
+                data-en="⚙️ DIRECT FACTORY SALE" data-hi="⚙️ डायरेक्ट फैक्ट्री सेल">⚙️ DIRECT FACTORY SALE</span>
+              <h1 class="text-5xl md:text-8xl font-black bebas leading-[0.9] mb-6">
+                <span data-en="BUY" data-hi="बिना">BUY</span> <br>
+                <span class="text-orange-500" data-en="WITHOUT" data-hi="लोन">WITHOUT</span> <br>
+                <span class="text-[#0d9488]" data-en="LOANS" data-hi="मशीन">LOANS</span>
+              </h1>
+              <p class="text-base md:text-lg text-slate-400 mb-10 max-w-lg leading-relaxed font-medium"
+                data-en="Start your business instantly. High-quality industrial machines available for direct purchase at best prices."
+                data-hi="अपना व्यवसाय तुरंत शुरू करें। बेहतरीन कीमतों पर सीधे खरीद के लिए उपलब्ध उच्च गुणवत्ता वाली औद्योगिक मशीनें।">
+                Start your business instantly. High-quality industrial machines available for direct purchase at best
+                prices.</p>
+              <div class="flex flex-wrap gap-5">
+                <button
+                  class="bg-orange-600 text-white px-8 md:px-10 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg"
+                  data-en="Buy Directly" data-hi="सीधे खरीदें">Buy Directly</button>
+              </div>
+            </div>
+            <div class="relative group">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000"
+                class="relative z-10 rounded-[2.5rem] md:rounded-[3.5rem] shadow-2xl border-4 md:border-8 border-white/10 object-cover h-[280px] md:h-[500px] w-full">
+              <div
+                class="absolute top-5 -right-2 md:top-10 md:-right-10 glass p-4 md:p-6 rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl z-20 border border-white/10 hero-card-fix">
+                <div class="text-2xl md:text-4xl font-black text-orange-600 bebas">READY STOCK</div>
+                <div class="text-[8px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest"
+                  data-en="FAST DELIVERY" data-hi="फास्ट डिलीवरी">FAST DELIVERY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section with Swiper Slider End -->
+
+
+  <section class="relative py-28 px-6 bg-[#f8fafc] overflow-hidden group/section">
+
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="./assets/image/bg-about.jpg" alt="About Background"
+        class="w-full h-full object-cover opacity-[0.04] scale-110 group-hover/section:scale-100 transition-transform duration-1000 ease-out">
+
+      <div class="absolute inset-0 bg-gradient-to-b from-[#f8fafc] via-transparent to-[#f8fafc]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid lg:grid-cols-12 gap-16 items-center">
+
+        <div class="lg:col-span-6" data-aos="fade-right">
+          <div class="inline-block px-4 py-1.5 rounded-full bg-teal-50 border border-teal-100 mb-6">
+            <span class="text-[#0d9488] font-bold tracking-widest uppercase text-[10px]">Our Legacy</span>
+          </div>
+
+          <h2 class="text-4xl md:text-6xl font-black bebas text-slate-900 mt-2 mb-8 leading-[0.9]">
+            ENGINEERING <span class="text-[#0d9488]">MSME</span> <br> SUCCESS SINCE 2018
+          </h2>
+
+          <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-10 max-w-xl"
+            data-en="Adijyoti Industries is India’s premier partner for food processing machinery & technical MSME solutions. We combine advanced engineering with seamless government subsidy and loan support."
+            data-hi="आदिज्योति इंडस्ट्रीज खाद्य प्रसंस्करण मशीनरी और तकनीकी एमएसएमई समाधानों के लिए भारत की प्रमुख भागीदार है। हम उन्नत इंजीनियरिंग को निर्बाध सरकारी सब्सिडी और ऋण सहायता के साथ जोड़ते हैं।">
+            Adijyoti Industries is India’s premier partner for food processing machinery & technical MSME solutions. We
+            combine advanced engineering with seamless government subsidy and loan support.
+          </p>
+
+          <div class="flex gap-10 mb-10">
+            <div>
+              <div class="text-3xl font-black text-slate-900 bebas">500+</div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Projects</div>
+            </div>
+            <div class="w-px h-10 bg-slate-200"></div>
+            <div>
+              <div class="text-3xl font-black text-slate-900 bebas">15+</div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">States</div>
+            </div>
+          </div>
+
+          <button
+            class="group flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-slate-900/10 hover:bg-[#0d9488] transition-all duration-300">
+            <span data-en="Learn More" data-hi="और जानें">Learn More</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <div class="lg:col-span-6 relative h-[450px] md:h-[550px]" data-aos="fade-left">
+
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[65%] h-[75%] z-20 group">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" alt="Main Machine Setup"
+              class="rounded-[2.5rem] object-cover w-full h-full shadow-2xl shadow-teal-900/10 border-[12px] border-white group-hover:scale-105 transition-all duration-500">
+          </div>
+
+          <div class="absolute top-[5%] left-0 w-[45%] h-[40%] z-10 group -rotate-6">
+            <img src="https://images.unsplash.com/photo-1581093458791-9f3c3250bb8b?q=80&w=1000" alt="Quality Inspection"
+              class="rounded-[2rem] object-cover w-full h-full shadow-xl shadow-teal-900/5 border-[8px] border-white group-hover:rotate-0 transition-all duration-500">
+          </div>
+
+          <div class="absolute bottom-[5%] right-0 w-[45%] h-[40%] z-30 group rotate-6">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000" alt="Industrial Team"
+              class="rounded-[2rem] object-cover w-full h-full shadow-2xl shadow-teal-900/10 border-[8px] border-white group-hover:rotate-0 transition-all duration-500">
+          </div>
+
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-[#0d9488]/5 blur-[80px] rounded-full -z-10">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="relative py-24 px-6 max-w-7xl mx-auto">
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0d9488]/10 blur-[150px] rounded-full -z-10">
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+
+      <div class="group relative" data-aos="fade-up" data-aos-delay="100">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-[#0d9488] to-teal-400 rounded-[2.5rem] blur opacity-20 group-hover:opacity-60 transition duration-500">
+        </div>
+
+        <div
+          class="relative h-full bg-[#161f33] border border-white/10 p-8 rounded-[2.5rem] flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2">
+          <div
+            class="w-16 h-16 rounded-2xl bg-[#0d9488] shadow-[0_0_20px_rgba(13,148,136,0.4)] flex items-center justify-center mb-6">
+            <i data-lucide="check-circle-2" class="w-8 h-8 text-white"></i>
+          </div>
+          <div class="text-[10px] font-black text-teal-400 uppercase tracking-[0.3em] mb-3">Status</div>
+          <div class="text-xl font-bold text-white tracking-tight" data-en="PMFME Approved" data-hi="PMFME अप्रूव्ड">
+            PMFME Approved</div>
+        </div>
+      </div>
+
+      <div class="group relative" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-[2.5rem] blur opacity-20 group-hover:opacity-60 transition duration-500">
+        </div>
+
+        <div
+          class="relative h-full bg-[#161f33] border border-white/10 p-8 rounded-[2.5rem] flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2">
+          <div
+            class="w-16 h-16 rounded-2xl bg-orange-500 shadow-[0_0_20px_rgba(249,115,22,0.4)] flex items-center justify-center mb-6">
+            <i data-lucide="cog" class="w-8 h-8 text-white"></i>
+          </div>
+          <div class="text-[10px] font-black text-orange-400 uppercase tracking-[0.3em] mb-3">Inventory</div>
+          <div class="text-xl font-bold text-white tracking-tight" data-en="66+ Machines" data-hi="66+ मशीनें">66+
+            Machines</div>
+        </div>
+      </div>
+
+      <div class="group relative" data-aos="fade-up" data-aos-delay="300">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-[2.5rem] blur opacity-20 group-hover:opacity-60 transition duration-500">
+        </div>
+
+        <div
+          class="relative h-full bg-[#161f33] border border-white/10 p-8 rounded-[2.5rem] flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2">
+          <div
+            class="w-16 h-16 rounded-2xl bg-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.4)] flex items-center justify-center mb-6">
+            <i data-lucide="sun-medium" class="w-8 h-8 text-white"></i>
+          </div>
+          <div class="text-[10px] font-black text-yellow-400 uppercase tracking-[0.3em] mb-3">Energy</div>
+          <div class="text-xl font-bold text-white tracking-tight" data-en="Solar Setup" data-hi="सोलर सेटअप">Solar
+            Setup</div>
+        </div>
+      </div>
+
+      <div class="group relative" data-aos="fade-up" data-aos-delay="400">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2.5rem] blur opacity-20 group-hover:opacity-60 transition duration-500">
+        </div>
+
+        <div
+          class="relative h-full bg-[#161f33] border border-white/10 p-8 rounded-[2.5rem] flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2">
+          <div
+            class="w-16 h-16 rounded-2xl bg-blue-600 shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center mb-6">
+            <i data-lucide="flag" class="w-8 h-8 text-white"></i>
+          </div>
+          <div class="text-[10px] font-black text-blue-400 uppercase tracking-[0.3em] mb-3">Origin</div>
+          <div class="text-xl font-bold text-white tracking-tight" data-en="Make In India" data-hi="मेक इन इंडिया">Make
+            In India</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="relative py-28 px-6 bg-[#080c14] overflow-hidden">
+
+    <div class="absolute inset-0 opacity-[0.03] -z-10"
+      style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0Ni4xODgiIHZpZXdCb3g9IjAgMCA0MCA0Ni4xODgiPjxwYXRoIGQ9Ik0wIDIzaDEwbDUgOC42NiAxNS0yNS45OEw0MCAyM2gxMCIgc3Ryb2tlPSIjZmZmIiBmaWxsPSJub25lIi8+PC9zdmc+'); background-size: 80px;">
+    </div>
+
+    <div
+      class="absolute top-0 left-0 w-[600px] h-[600px] bg-[#0d9488]/10 blur-[130px] rounded-full -translate-x-1/2 -translate-y-1/2 -z-10">
+    </div>
+
+    <div
+      class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-500/5 blur-[100px] rounded-full translate-x-1/4 translate-y-1/4 -z-10">
+    </div>
+
+
+    <div class="max-w-7xl mx-auto relative z-10">
+
+      <div class="mb-20 text-center" data-aos="fade-up">
+        <span class="text-[#0d9488] font-black tracking-[0.4em] uppercase text-xs">Our Specialization</span>
+        <h2 class="text-5xl md:text-7xl font-black bebas text-white mt-5 leading-none tracking-tight">
+          EMPOWERING <span class="text-[#f59e0b]">MSMEs</span> ACROSS BHARAT
+        </h2>
+        <p class="text-slate-500 mt-6 max-w-xl mx-auto text-lg"
+          data-en="Complete technical & financial solutions for food processing & solar energy units."
+          data-hi="खाद्य प्रसंस्करण और सौर ऊर्जा इकाइयों के लिए पूर्ण तकनीकी और वित्तीय समाधान।">
+          Complete technical & financial solutions for food processing & solar energy units.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+        <div
+          class="md:col-span-2 group relative overflow-hidden rounded-[3rem] bg-[#111827] border border-white/5 h-[420px] shadow-2xl shadow-black/50"
+          data-aos="fade-right">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#080c14] via-[#080c14]/50 to-transparent z-10"></div>
+
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000"
+            class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-1000 ease-out">
+
+          <div class="absolute bottom-0 left-0 p-12 z-20">
+            <div
+              class="bg-[#0d9488] w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-xl shadow-teal-500/20">
+              <i data-lucide="utensils" class="text-white w-7 h-7"></i>
+            </div>
+            <h3 class="text-4xl font-black bebas text-white mb-3" data-en="Food Processing Units"
+              data-hi="खाद्य प्रसंस्करण इकाइयां">Food Processing Units</h3>
+            <p class="text-slate-300 max-w-lg text-base leading-relaxed"
+              data-en="From Mini Rice Mills to Oil Extraction—we provide high-performance machinery with full technical setup."
+              data-hi="मिनी राइस मिल से लेकर तेल निकालने तक—हम पूर्ण तकनीकी सेटअप के साथ उच्च प्रदर्शन वाली मशीनें प्रदान करते हैं।">
+              From Mini Rice Mills to Oil Extraction—we provide high-performance machinery with full technical setup.
+            </p>
+            <button
+              class="mt-8 flex items-center gap-2.5 text-[#0d9488] font-bold text-sm uppercase tracking-wider hover:gap-5 transition-all">
+              <span data-en="View Catalog" data-hi="कैटलॉग देखें">View Catalog</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-[3rem] bg-[#111827] border border-white/5 p-12 flex flex-col justify-between shadow-2xl shadow-black/50"
+          data-aos="fade-left">
+          <div class="absolute -right-16 -top-16 w-48 h-48 bg-orange-500/10 blur-[60px] rounded-full"></div>
+
+          <div>
+            <div
+              class="bg-orange-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-orange-500/20">
+              <i data-lucide="landmark" class="text-white w-7 h-7"></i>
+            </div>
+            <h3 class="text-4xl font-black bebas text-white mb-6" data-en="Govt. Subsidies" data-hi="सरकारी सब्सिडी">
+              Govt. Subsidies</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3.5 text-slate-300 text-base">
+                <i data-lucide="check" class="w-5 h-5 text-orange-500"></i> PMFME (35% Subsidy)
+              </li>
+              <li class="flex items-center gap-3.5 text-slate-300 text-base">
+                <i data-lucide="check" class="w-5 h-5 text-orange-500"></i> PMEGP Loan Support
+              </li>
+              <li class="flex items-center gap-3.5 text-slate-300 text-base">
+                <i data-lucide="check" class="w-5 h-5 text-orange-500"></i> Mudra Loan Guidance
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-10">
+            <div class="text-5xl font-black text-white/[0.03] bebas tracking-widest leading-none">FINANCE</div>
+          </div>
+        </div>
+
+        <div
+          class="group bg-[#111827] border border-white/5 p-10 rounded-[3rem] hover:bg-[#161f33] transition-all duration-300 shadow-xl shadow-black/30"
+          data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-8 border border-blue-500/20">
+            <i data-lucide="wrench" class="text-blue-500 w-6 h-6"></i>
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-3" data-en="Expert Installation" data-hi="विशेषज्ञ इंस्टॉलेशन">
+            Expert Installation</h4>
+          <p class="text-slate-400 text-base leading-relaxed"
+            data-en="On-site training and maintenance by certified engineers."
+            data-hi="प्रमाणित इंजीनियरों द्वारा ऑन-साइट प्रशिक्षण और रखरखाव।">On-site training and maintenance by
+            certified engineers.</p>
+        </div>
+
+        <div
+          class="group bg-[#111827] border border-white/5 p-10 rounded-[3rem] hover:bg-[#161f33] transition-all duration-300 shadow-xl shadow-black/30"
+          data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center mb-8 border border-yellow-500/20">
+            <i data-lucide="zap" class="text-yellow-500 w-6 h-6"></i>
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-3" data-en="Solar Integration" data-hi="सोलर इंटीग्रेशन">Solar
+            Integration</h4>
+          <p class="text-slate-400 text-base leading-relaxed"
+            data-en="Reduce factory bills to zero with PM Surya Ghar Yojana."
+            data-hi="पीएम सूर्य घर योजना के साथ फैक्ट्री बिलों को शून्य करें।">Reduce factory bills to zero with PM
+            Surya Ghar Yojana.</p>
+        </div>
+
+        <div
+          class="group bg-[#111827] border border-white/5 p-10 rounded-[3rem] hover:bg-[#161f33] transition-all duration-300 shadow-xl shadow-black/30"
+          data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-8 border border-teal-500/20">
+            <i data-lucide="map-pin" class="text-[#0d9488] w-6 h-6"></i>
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-3" data-en="Pan India Delivery" data-hi="पैन इंडिया डिलीवरी">Pan
+            India Delivery</h4>
+          <p class="text-slate-400 text-base leading-relaxed"
+            data-en="Secure and fast machine delivery to any corner of India."
+            data-hi="भारत के किसी भी कोने में सुरक्षित और तेज़ मशीन डिलीवरी।">Secure and fast machine delivery to any
+            corner of India.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

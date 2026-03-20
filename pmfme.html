@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adijyoti Industries | BHARAT KI INDUSTRIAL SHAKTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+
+    <!-- Nvbar and Mobile Menu -->
+    <div id="sidebarOverlay" onclick="toggleMobileMenu()"
+        class="fixed inset-0 bg-black/60 z-[150] hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+    </div>
+
+    <div id="mobileSidebar"
+        class="fixed inset-y-0 left-0 w-[280px] bg-slate-900/95 backdrop-blur-xl z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6 border-r border-white/10">
+        <div class="flex items-center justify-between mb-10">
+            <div class="text-2xl font-bold bebas text-[#1d70d1]">ADIJYOTI</div>
+            <button onclick="toggleMobileMenu()" class="p-2 text-slate-400 hover:text-white"><i
+                    data-lucide="x"></i></button>
+        </div>
+        <div class="flex flex-col gap-6 font-bold text-slate-300 mobile-nav-links">
+            <a href="index.html" class="nav-item hover:text-white transition-colors" data-en="Home"
+                data-hi="होम">Home</a>
+            <a href="about.html" class="nav-item hover:text-white transition-colors" data-en="About"
+                data-hi="हमारे बारे में">About</a>
+            <a href="products.html" class="nav-item hover:text-white transition-colors" data-en="Products"
+                data-hi="मशीनें">Products</a>
+            <a href="contact.html" class="nav-item hover:text-white transition-colors" data-en="Contact"
+                data-hi="संपर्क करें">Contact Us</a>
+            <hr class="border-white/10">
+            <div class="flex flex-col gap-4">
+                <p class="text-[10px] uppercase text-slate-500 tracking-widest">Our Services</p>
+                <a href="pmfme.html" class="nav-item flex items-center gap-3 hover:text-white"><i data-lucide="utensils"
+                        class="w-5 h-5 text-[#1d70d1]"></i> PMFME</a>
+                <a href="#solar" class="nav-item flex items-center gap-3 hover:text-white"><i data-lucide="sun"
+                        class="w-5 h-5 text-yellow-500"></i> Solar</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-[100] backdrop-blur-md border-b border-white/10 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="bg-[#1d70d1] text-white w-12 h-12 flex items-center justify-center rounded-2xl font-bold text-2xl shadow-lg shadow-blue-500/20">
+                    AJ</div>
+                <div>
+                    <div class="text-2xl font-bold tracking-[0.2em] leading-none bebas text-slate-900 uppercase">
+                        ADIJYOTI</div>
+                    <div class="text-[10px] uppercase font-bold text-[#1d70d1] tracking-widest">Industries OPC Pvt Ltd
+                    </div>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center text-slate-700 gap-10 font-bold desktop-nav-links">
+                <a href="index.html" class="nav-link hover:text-[#1d70d1] transition-all" data-en="Home"
+                    data-hi="होम">Home</a>
+                <a href="about.html" class="nav-link hover:text-[#1d70d1] transition-all" data-en="About"
+                    data-hi="हमारे बारे में">About</a>
+
+                <div class="relative group">
+                    <button id="servicesParent"
+                        class="flex items-center gap-1 hover:text-[#1d70d1] transition-colors py-8">
+                        <span data-en="Services" data-hi="सेवाएं">Services</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div
+                        class="absolute top-full -left-6 w-72 pt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div
+                            class="bg-[#161f31]/95 backdrop-blur-xl shadow-2xl rounded-b-[2rem] border border-white/10 p-3 overflow-hidden mt-0">
+                            <a href="pmfme.html"
+                                class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all">
+                                <i data-lucide="utensils" class="w-6 h-6 text-[#1d70d1]"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-white" data-en="PMFME (Food)"
+                                        data-hi="पीएमएफएमई (खाद्य)">PMFME (Food)</div>
+                                    <div class="text-[10px] text-slate-400">35% Subsidy Support</div>
+                                </div>
+                            </a>
+                            <a href=" pm-surya-ghar.html"
+                                class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all">
+                                <i data-lucide="sun" class="w-6 h-6 text-yellow-500"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-white" data-en="PM Surya Ghar"
+                                        data-hi="पीएम सूर्य घर">PM Surya Ghar</div>
+                                    <div class="text-[10px] text-slate-400">Free Solar Electricity</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="products.html" class="nav-link hover:text-[#1d70d1]" data-en="Products"
+                    data-hi="मशीनें">Products</a>
+                <a href="contact.html" class="nav-link hover:text-[#1d70d1]" data-en="Contact Us"
+                    data-hi="संपर्क करें">Contact Us</a>
+
+                <button onclick="toggleLang()"
+                    class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">
+                    ENGLISH / हिंदी
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Nvbar and Mobile Menu End -->
+
+    <!-- Bredcrum Section -->
+    <div id="heroSection" class="relative pt-24 md:pt-28 pb-4 md:pb-6 px-4 md:px-6 border-b border-white/5">
+
+        <div class="absolute top-0 right-0 w-64 h-64 bg-[#1d70d1]/5 blur-[80px] rounded-full -translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 py-2">
+
+                <nav class="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.2em]">
+                    <a href="index.html"
+                        class="text-slate-400 hover:text-[#1d70d1] transition-colors flex items-center gap-2 group">
+                        <i data-lucide="home" class="w-3.5 h-3.5 group-hover:scale-110 transition-transform"></i>
+                        <span data-en="Home" data-hi="होम">Home</span>
+                    </a>
+
+                    <div class="w-[1px] h-4 bg-slate-200 rotate-[20deg]"></div>
+
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <span data-en="Services" data-hi="सेवाएं">Services</span>
+                    </div>
+
+                    <div class="w-[1px] h-4 bg-slate-200 rotate-[20deg]"></div>
+
+                    <div class="flex items-center gap-2 text-[#1d70d1]">
+                        <i data-lucide="utensils" class="w-3.5 h-3.5"></i>
+                        <span data-en="PMFME Scheme" data-hi="पीएमएफएमई योजना">PMFME Scheme</span>
+                    </div>
+                </nav>
+
+                <div class="flex items-center gap-6 border-t md:border-t-0 border-slate-200 pt-4 md:pt-0">
+
+                    <div
+                        class="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-[#1d70d1]/10 border border-[#1d70d1]/20">
+                        <div class="w-2 h-2 rounded-full bg-[#1d70d1] animate-ping"></div>
+                        <span class="text-[10px] font-black text-[#1d70d1] tracking-widest uppercase"
+                            data-en="Up to 35% Subsidy" data-hi="35% तक सब्सिडी">Up to 35% Subsidy</span>
+                    </div>
+
+                    <a href="tel:+919876543210" class="hidden sm:flex items-center gap-2.5 group">
+                        <i data-lucide="phone"
+                            class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#1d70d1] transition-colors"></i>
+                        <span
+                            class="text-[11px] font-bold text-slate-500 group-hover:text-slate-900 tracking-widest transition-colors">+91
+                            98765 43210</span>
+                    </a>
+
+                    <div class="hidden lg:flex items-center gap-2 pl-4 border-l border-slate-200">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                        <span class="text-[9px] font-black text-slate-500 tracking-widest uppercase">Available PAN
+                            India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bredcrum Section End -->
+
+    <section class="py-24 px-6 relative hero-gradient overflow-hidden" id="pmfme-benefits">
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1d70d1]/5 blur-[120px] rounded-full -z-0 translate-x-1/2 -translate-y-1/2">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1d70d1]/10 border border-[#1d70d1]/20 mb-4">
+                        <span class="w-2 h-2 rounded-full bg-[#1d70d1]"></span>
+                        <span class="text-[10px] font-black text-[#1d70d1] uppercase tracking-[0.2em]"
+                            data-en="Why Choose PMFME?" data-hi="पीएमएफएमई क्यों चुनें?">Why Choose PMFME?</span>
+                    </div>
+                    <h2 class="text-5xl md:text-7xl font-black bebas text-slate-900 leading-[0.85] uppercase">
+                        <span data-en="Unlocking" data-hi="अनलॉकिंग">Unlocking</span> <br>
+                        <span class="text-[#1d70d1]" data-en="Growth Opportunities" data-hi="विकास के अवसर">Growth
+                            Opportunities</span>
+                    </h2>
+                </div>
+                <p class="text-slate-500 font-bold text-sm max-w-xs border-l-2 border-slate-200 pl-4 py-1"
+                    data-en="Empowering micro-food enterprises with financial and technical support."
+                    data-hi="वित्तीय और तकनीकी सहायता के साथ सूक्ष्म-खाद्य उद्यमों को सशक्त बनाना।">
+                    Empowering micro-food enterprises with financial and technical support.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#1d70d1]/30 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-[#1d70d1]/5 rounded-bl-[5rem] -mr-4 -mt-4 group-hover:bg-[#1d70d1]/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-[#1d70d1] flex items-center justify-center text-white mb-8 shadow-lg shadow-blue-200">
+                        <i data-lucide="banknote" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase"
+                        data-en="35% Credit Subsidy" data-hi="35% क्रेडिट सब्सिडी">35% Credit Subsidy</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium"
+                        data-en="Get up to 35% subsidy on project cost with a maximum limit of ₹10 Lakh per unit."
+                        data-hi="प्रति यूनिट अधिकतम ₹10 लाख की सीमा के साथ परियोजना लागत पर 35% तक सब्सिडी प्राप्त करें।">
+                        Get up to 35% subsidy on project cost with a maximum limit of ₹10 Lakh per unit.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#1d70d1]/30 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-slate-900 flex items-center justify-center text-white mb-8 shadow-lg shadow-slate-200">
+                        <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase"
+                        data-en="Technical Training" data-hi="तकनीकी प्रशिक्षण">Technical Training</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium"
+                        data-en="Access to professional training on food safety, packaging, and quality standards."
+                        data-hi="खाद्य सुरक्षा, पैकेजिंग और गुणवत्ता मानकों पर पेशेवर प्रशिक्षण तक पहुंच।">
+                        Access to professional training on food safety, packaging, and quality standards.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#1d70d1]/30 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i data-lucide="coins" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase"
+                        data-en="Seed Capital Support" data-hi="सीड कैपिटल सहायता">Seed Capital Support</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium"
+                        data-en="Working capital support of ₹40,000 for each member of SHG involved in food processing."
+                        data-hi="खाद्य प्रसंस्करण में शामिल SHG के प्रत्येक सदस्य के लिए ₹40,000 की कार्यशील पूंजी सहायता।">
+                        Working capital support of ₹40,000 for each member of SHG involved in food processing.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#1d70d1]/30 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-purple-600 flex items-center justify-center text-white mb-8 shadow-lg shadow-purple-200">
+                        <i data-lucide="megaphone" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase"
+                        data-en="Branding Support" data-hi="ब्रांडिंग सहायता">Branding Support</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium"
+                        data-en="Financial assistance for marketing and branding to scale your products at a national level."
+                        data-hi="अपने उत्पादों को राष्ट्रीय स्तर पर ले जाने के लिए मार्केटिंग और ब्रांडिंग के लिए वित्तीय सहायता।">
+                        Financial assistance for marketing and branding to scale your products at a national level.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#1d70d1]/30 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-emerald-500 flex items-center justify-center text-white mb-8 shadow-lg shadow-emerald-200">
+                        <i data-lucide="factory" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase"
+                        data-en="Common Infrastructure" data-hi="साझा बुनियादी ढांचा">Common Infrastructure</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium"
+                        data-en="Support for setting up common processing facility, labs, and cold storage chains."
+                        data-hi="साझा प्रसंस्करण सुविधा, लैब और कोल्ड स्टोरेज चेन स्थापित करने के लिए सहायता।">
+                        Support for setting up common processing facility, labs, and cold storage chains.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-[2.5rem] bg-white border border-[#1d70d1] bg-[#1d70d1]/5 transition-all duration-500 relative overflow-hidden flex flex-col justify-center items-center text-center">
+                    <h3 class="text-2xl font-black bebas text-[#1d70d1] mb-4 uppercase" data-en="Need Help with DPR?"
+                        data-hi="DPR में मदद चाहिए?">Need Help with DPR?</h3>
+                    <p class="text-slate-600 text-xs font-bold mb-6 uppercase tracking-widest"
+                        data-en="We guide you from file to subsidy"
+                        data-hi="हम फ़ाइल से सब्सिडी तक आपका मार्गदर्शन करते हैं">We guide you from file to subsidy</p>
+                    <a href="contact.html"
+                        class="px-8 py-4 bg-[#1d70d1] text-white rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-slate-900 transition-all shadow-xl shadow-blue-200">
+                        <span data-en="Consult Our Experts" data-hi="विशेषज्ञों से सलाह लें">Consult Our Experts</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-20 px-6 bg-white relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#1d70d1]/5 blur-[100px] rounded-full -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-6xl font-black bebas text-slate-900 uppercase leading-none">
+                    <span class="text-[#1d70d1]" data-en="Eligible" data-hi="पात्र">Eligible</span> <br>
+                    <span data-en="Industries & Sectors" data-hi="उद्योग और क्षेत्र">Industries & Sectors</span>
+                </h2>
+                <div class="w-20 h-1.5 bg-[#1d70d1] mt-4 rounded-full"></div>
+                <p class="text-slate-500 font-bold text-xs mt-6 uppercase tracking-[0.2em]"
+                    data-en="Wide range of food processing units covered under PMFME"
+                    data-hi="पीएमएफएमई के तहत कवर की गई खाद्य प्रसंस्करण इकाइयों की विस्तृत श्रृंखला">
+                    Wide range of food processing units covered under PMFME
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-full md:h-[600px]">
+
+                <div
+                    class="md:col-span-2 md:row-span-2 group relative rounded-[2.5rem] overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800" alt="Grains"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-10">
+                        <div class="w-12 h-12 rounded-xl bg-[#1d70d1] flex items-center justify-center text-white mb-4">
+                            <i data-lucide="wheat" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-3xl font-black bebas text-white mb-2 uppercase" data-en="Grain Processing"
+                            data-hi="अनाज प्रसंस्करण">Grain Processing</h3>
+                        <p class="text-slate-300 text-sm font-medium max-w-sm"
+                            data-en="Rice Mills, Flour Mills, Pulse processing units, and Bakery manufacturing."
+                            data-hi="चावल मिलें, आटा मिलें, दाल प्रसंस्करण इकाइयां और बेकरी निर्माण।">
+                            Rice Mills, Flour Mills, Pulse processing units, and Bakery manufacturing.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="md:col-span-2 group relative rounded-[2.5rem] overflow-hidden bg-[#f59e0b]/10 border border-[#f59e0b]/20">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <div class="p-8 flex-1">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-[#f59e0b] flex items-center justify-center text-white mb-4">
+                                <i data-lucide="droplets" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="text-2xl font-black bebas text-slate-900 mb-2 uppercase" data-en="Oil Extraction"
+                                data-hi="तेल निष्कर्षण">Oil Extraction</h3>
+                            <p class="text-slate-500 text-xs font-bold leading-relaxed"
+                                data-en="Mustard oil, Groundnut oil, and Soya processing units."
+                                data-hi="सरसों का तेल, मूंगफली का तेल और सोया प्रसंस्करण इकाइयाँ।">
+                                Mustard oil, Groundnut oil, and Soya processing units.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2 relative min-h-[150px]">
+                            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=500" alt="Oil"
+                                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative rounded-[2.5rem] overflow-hidden bg-slate-50 border border-slate-100 p-8 hover:bg-white hover:shadow-xl transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-red-500 flex items-center justify-center text-white mb-4">
+                        <i data-lucide="flame" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-xl font-black bebas text-slate-900 mb-2 uppercase" data-en="Spices & Masala"
+                        data-hi="मसाले और मसाला">Spices & Masala</h3>
+                    <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest"
+                        data-en="Grinding & Packaging" data-hi="पिसाई और पैकेजिंग">Grinding & Packaging</p>
+                </div>
+
+                <div
+                    class="group relative rounded-[2.5rem] overflow-hidden bg-[#1d70d1]/5 border border-[#1d70d1]/10 p-8 hover:bg-[#1d70d1]/10 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center text-white mb-4">
+                        <i data-lucide="apple" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-xl font-black bebas text-slate-900 mb-2 uppercase" data-en="Horticulture"
+                        data-hi="बागवानी">Horticulture</h3>
+                    <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest"
+                        data-en="Juice, Jam, Jelly & Pickles" data-hi="जूस, जैम, जेली और अचार">Juice, Jam, Jelly &
+                        Pickles</p>
+                </div>
+
+            </div>
+
+            <div class="mt-10 flex items-center justify-center gap-4 py-4 border-t border-slate-100">
+                <span class="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]"
+                    data-en="And many more micro-enterprises" data-hi="और कई अन्य सूक्ष्म उद्यम">And many more
+                    micro-enterprises</span>
+                <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+                <a href="contact.html"
+                    class="text-[10px] font-black text-[#1d70d1] uppercase tracking-[0.3em] hover:underline"
+                    data-en="Check your eligibility" data-hi="अपनी पात्रता जांचें">Check your eligibility</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-24 px-6 bg-slate-50 relative overflow-hidden bg-[#f5f3ff]">
+        <div class="absolute top-1/2 left-0 w-72 h-72 bg-[#1d70d1]/5 blur-[100px] rounded-full -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+                <div class="space-y-10">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-black bebas text-slate-900 leading-none uppercase mb-4">
+                            <span data-en="Who Can" data-hi="कौन कर सकता है">Who Can</span> <br>
+                            <span class="text-[#1d70d1]" data-en="Apply?" data-hi="आवेदन?">Apply?</span>
+                        </h2>
+                        <p class="text-slate-500 font-bold text-[10px] uppercase tracking-[0.3em]"
+                            data-en="Check your eligibility status" data-hi="अपनी पात्रता स्थिति जांचें">Check your
+                            eligibility status</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-start gap-4 p-5 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-black text-slate-900 text-sm uppercase mb-1"
+                                    data-en="Individuals & Groups" data-hi="व्यक्ति और समूह">Individuals & Groups</p>
+                                <p class="text-slate-500 text-xs font-medium"
+                                    data-en="Micro-food entrepreneurs, SHGs, FPOs, and Cooperatives."
+                                    data-hi="सूक्ष्म-खाद्य उद्यमी, एसएचजी, एफपीओ और सहकारी समितियां।">Micro-food
+                                    entrepreneurs, SHGs, FPOs, and Cooperatives.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-5 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-black text-slate-900 text-sm uppercase mb-1" data-en="Age Requirement"
+                                    data-hi="आयु सीमा">Age Requirement</p>
+                                <p class="text-slate-500 text-xs font-medium"
+                                    data-en="The applicant should be above 18 years of age."
+                                    data-hi="आवेदक की आयु 18 वर्ष से अधिक होनी चाहिए।">The applicant should be above 18
+                                    years of age.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-5 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-black text-slate-900 text-sm uppercase mb-1" data-en="Education"
+                                    data-hi="शिक्षा">Education</p>
+                                <p class="text-slate-500 text-xs font-medium"
+                                    data-en="At least 8th standard pass (for individuals)."
+                                    data-hi="कम से कम 8वीं कक्षा उत्तीर्ण (व्यक्तियों के लिए)।">At least 8th standard
+                                    pass (for individuals).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative p-1 bg-white rounded-[3rem] shadow-2xl border border-slate-100 overflow-hidden">
+                    <div class="bg-slate-900 rounded-[2.8rem] p-10 text-white">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-2xl bg-[#1d70d1] flex items-center justify-center">
+                                <i data-lucide="files" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-3xl font-black bebas tracking-wider uppercase" data-en="Required Documents"
+                                data-hi="आवश्यक दस्तावेज">Required Documents</h3>
+                        </div>
+
+                        <ul class="space-y-6">
+                            <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <span class="text-[#1d70d1] font-black text-lg">01</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                                    data-en="Aadhar & PAN Card" data-hi="आधार और पैन कार्ड">Aadhar & PAN Card</span>
+                            </li>
+                            <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <span class="text-[#1d70d1] font-black text-lg">02</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                                    data-en="Bank Passbook / Cancelled Cheque" data-hi="बैंक पासबुक / रद्द चेक">Bank
+                                    Passbook / Cancelled Cheque</span>
+                            </li>
+                            <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <span class="text-[#1d70d1] font-black text-lg">03</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                                    data-en="Land/Building Proof (Lease or Own)"
+                                    data-hi="जमीन/भवन प्रमाण (पट्टा या स्वयं का)">Land/Building Proof (Lease or
+                                    Own)</span>
+                            </li>
+                            <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <span class="text-[#1d70d1] font-black text-lg">04</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                                    data-en="Quotation for Machinery" data-hi="मशीनरी के लिए कोटेशन">Quotation for
+                                    Machinery</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="text-[#1d70d1] font-black text-lg">05</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                                    data-en="Project Report (DPR)" data-hi="प्रोजेक्ट रिपोर्ट (DPR)">Project Report
+                                    (DPR)</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-10 p-6 rounded-3xl bg-white/5 border border-white/10">
+                            <p class="text-[10px] font-medium text-slate-400 leading-relaxed italic"
+                                data-en="*Note: Additional documents like MSME Udyam, FSSAI, or GST registration may be required depending on the project."
+                                data-hi="*नोट: प्रोजेक्ट के आधार पर MSME उद्यम, FSSAI, या GST पंजीकरण जैसे अतिरिक्त दस्तावेजों की आवश्यकता हो सकती है।">
+                                *Note: Additional documents like MSME Udyam, FSSAI, or GST registration may be required
+                                depending on the project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-24 px-6 bg-white relative overflow-hidden" id="pmfme-process">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 50 Q 25 0 50 50 T 100 50" fill="none" stroke="#1d70d1" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-20">
+            <h2 class="text-5xl md:text-7xl font-black bebas text-slate-900 uppercase leading-none mb-4">
+                <span data-en="How to" data-hi="कैसे">How to</span> <span class="text-[#1d70d1]" data-en="Get Started?" data-hi="शुरू करें?">Get Started?</span>
+            </h2>
+            <p class="text-slate-500 font-bold text-xs uppercase tracking-[0.4em]" data-en="Your journey from application to subsidy" data-hi="आवेदन से सब्सिडी तक का आपका सफर">Your journey from application to subsidy</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+            
+            <div class="group relative pt-12">
+                <div class="absolute top-0 left-0 text-7xl font-black text-slate-100 group-hover:text-[#1d70d1]/10 transition-colors duration-500 bebas">01</div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center mb-6 group-hover:bg-[#1d70d1] group-hover:-translate-y-2 transition-all duration-500 shadow-xl shadow-slate-200 group-hover:shadow-blue-200">
+                        <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase" data-en="Consultation" data-hi="परामर्श">Consultation</h3>
+                    <p class="text-slate-500 text-xs font-bold leading-relaxed uppercase tracking-wider" data-en="Connect with our experts to discuss your food project and check feasibility." data-hi="अपने फूड प्रोजेक्ट पर चर्चा करने और व्यवहार्यता की जांच करने के लिए हमारे विशेषज्ञों से जुड़ें।">
+                        Connect with our experts to discuss your food project and check feasibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative pt-12">
+                <div class="absolute top-0 left-0 text-7xl font-black text-slate-100 group-hover:text-[#1d70d1]/10 transition-colors duration-500 bebas">02</div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center mb-6 group-hover:bg-[#1d70d1] group-hover:-translate-y-2 transition-all duration-500 shadow-xl shadow-slate-200 group-hover:shadow-blue-200">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase" data-en="DPR Preparation" data-hi="DPR तैयारी">DPR Preparation</h3>
+                    <p class="text-slate-500 text-xs font-bold leading-relaxed uppercase tracking-wider" data-en="We help you prepare a professional Detailed Project Report for bank approval." data-hi="हम बैंक अनुमोदन के लिए पेशेवर विस्तृत परियोजना रिपोर्ट तैयार करने में आपकी सहायता करते हैं।">
+                        We help you prepare a professional Detailed Project Report for bank approval.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative pt-12">
+                <div class="absolute top-0 left-0 text-7xl font-black text-slate-100 group-hover:text-[#1d70d1]/10 transition-colors duration-500 bebas">03</div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center mb-6 group-hover:bg-[#1d70d1] group-hover:-translate-y-2 transition-all duration-500 shadow-xl shadow-slate-200 group-hover:shadow-blue-200">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase" data-en="Bank Loan & Portal" data-hi="बैंक ऋण और पोर्टल">Bank Loan & Portal</h3>
+                    <p class="text-slate-500 text-xs font-bold leading-relaxed uppercase tracking-wider" data-en="Submission of application on PMFME portal and coordinating with banks for loan." data-hi="पीएमएफएमई पोर्टल पर आवेदन जमा करना और ऋण के लिए बैंकों के साथ समन्वय करना।">
+                        Submission of application on PMFME portal and coordinating with banks for loan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative pt-12">
+                <div class="absolute top-0 left-0 text-7xl font-black text-slate-100 group-hover:text-[#1d70d1]/10 transition-colors duration-500 bebas">04</div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500 text-white flex items-center justify-center mb-6 group-hover:bg-[#1d70d1] group-hover:-translate-y-2 transition-all duration-500 shadow-xl shadow-emerald-100 group-hover:shadow-blue-200">
+                        <i data-lucide="party-popper" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-black bebas text-slate-900 mb-3 tracking-wide uppercase" data-en="Unit Setup" data-hi="यूनिट सेटअप">Unit Setup</h3>
+                    <p class="text-slate-500 text-xs font-bold leading-relaxed uppercase tracking-wider" data-en="Setting up machinery, starting production, and receiving the 35% subsidy." data-hi="मशीनरी स्थापित करना, उत्पादन शुरू करना और 35% सब्सिडी प्राप्त करना।">
+                        Setting up machinery, starting production, and receiving the 35% subsidy.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 p-8 md:p-12 rounded-[3rem] bg-gradient-to-r from-slate-900 to-slate-800 relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-[#1d70d1]/20 blur-[80px] rounded-full"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <h4 class="text-3xl font-black bebas text-white tracking-widest uppercase mb-2" data-en="Ready to Start Your Unit?" data-hi="क्या आप अपनी यूनिट शुरू करने के लिए तैयार हैं?">Ready to Start Your Unit?</h4>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest" data-en="Don't let paperwork stop your dreams. We are here to help." data-hi="कागजी कार्रवाई को अपने सपनों को रोकने न दें। हम यहाँ मदद के लिए हैं।">Don't let paperwork stop your dreams. We are here to help.</p>
+                </div>
+                <a href="contact.html" class="px-10 py-5 bg-[#1d70d1] text-white rounded-full font-black text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-slate-900 transition-all shadow-xl shadow-blue-500/20 whitespace-nowrap">
+                    <span data-en="Apply Now with Adijyoti" data-hi="आदिज्योति के साथ अभी आवेदन करें">Apply Now with Adijyoti</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section  -->
+    <footer class="relative bg-slate-900 pt-24 pb-12 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-[400px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-green-600/5 blur-[100px] rounded-full"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+
+                <div class="md:col-span-4">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+                            <span class="text-slate-900 font-black text-2xl">A</span>
+                        </div>
+                        <h2 class="text-2xl font-black text-white tracking-tighter uppercase">Adijyoti <br><span
+                                class="text-blue-500 text-xs tracking-[0.3em]">Industries</span></h2>
+                    </div>
+                    <p class="text-slate-400 text-sm font-medium leading-relaxed mb-8 max-w-sm"
+                        data-en="Empowering MSMEs with high-tech industrial machinery and government subsidy consultancy since 2018."
+                        data-hi="2018 से हाई-टेक औद्योगिक मशीनरी और सरकारी सब्सिडी कंसल्टेंसी के साथ MSMEs को सशक्त बनाना।">
+                        Empowering MSMEs with high-tech industrial machinery and government subsidy consultancy since
+                        2018.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-blue-600 hover:border-blue-600 transition-all"><i
+                                data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-pink-600 hover:border-pink-600 transition-all"><i
+                                data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-sky-600 hover:border-sky-600 transition-all"><i
+                                data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-blue-700 hover:border-blue-700 transition-all"><i
+                                data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8" data-en="Solutions"
+                        data-hi="समाधान">Solutions</h4>
+                    <ul class="space-y-4">
+                        <li><a href="/pmfme"
+                                class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
+                                data-en="PMFME Scheme" data-hi="PMFME योजना">PMFME Scheme</a></li>
+                        <li><a href="/pmksy"
+                                class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
+                                data-en="Agri Infrastructure" data-hi="एग्री इंफ्रास्ट्रक्चर">Agri Infrastructure</a>
+                        </li>
+                        <li><a href="/solar"
+                                class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
+                                data-en="Solar Subsidy" data-hi="सोलर सब्सिडी">Solar Subsidy</a></li>
+                        <li><a href="/machines"
+                                class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
+                                data-en="Custom Machines" data-hi="कस्टम मशीनें">Custom Machines</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8" data-en="Support"
+                        data-hi="सहायता">
+                        Support</h4>
+                    <ul class="space-y-4">
+                        <li><a href="/about" class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                                data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+                        <li><a href="/contact"
+                                class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                                data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+                        <li><a href="/gallery"
+                                class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                                data-en="Project Gallery" data-hi="प्रोजेक्ट गैलरी">Project Gallery</a></li>
+                        <li><a href="/faq" class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                                data-en="Help Center" data-hi="सहायता केंद्र">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 bg-white/5 border border-white/10 rounded-[2rem] p-8">
+                    <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-6" data-en="Get in Touch"
+                        data-hi="संपर्क में रहें">Get in Touch</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-400 shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-[10px] font-black uppercase" data-en="Email Us"
+                                    data-hi="ईमेल करें">Email
+                                    Us</p>
+                                <a href="mailto:info@adijyoti.com"
+                                    class="text-white font-bold text-sm">info@adijyoti.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-green-600/20 flex items-center justify-center text-green-400 shrink-0">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-[10px] font-black uppercase" data-en="Call Support"
+                                    data-hi="कॉल सपोर्ट">
+                                    Call Support</p>
+                                <a href="tel:+919876543210" class="text-white font-bold text-sm">+91 98765 43210</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest text-center md:text-left">
+                    © 2026 Adijyoti Industries OPC Pvt. Ltd. | All Rights Reserved.
+                </p>
+                <div class="flex gap-8">
+                    <a href="#"
+                        class="text-slate-500 text-[10px] font-black uppercase hover:text-white transition-colors">Privacy
+                        Policy</a>
+                    <a href="#"
+                        class="text-slate-500 text-[10px] font-black uppercase hover:text-white transition-colors">Terms
+                        of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Swiper Initialization with Background Toggle
     const heroSection = document.getElementById('heroSection');
-    
+
     const swiper = new Swiper('.heroSwiper', {
         loop: true,
         effect: 'fade',
@@ -43,7 +43,7 @@ function toggleMobileMenu() {
     setTimeout(() => overlay.classList.toggle('opacity-100'), 10);
 }
 
-// Language Logic
+// Language translate eng hin Logic
 function toggleLang() {
     currentLang = currentLang === 'en' ? 'hi' : 'en';
     localStorage.setItem('selectedLang', currentLang);
@@ -74,3 +74,31 @@ function applyLanguage(lang) {
     }
     lucide.createIcons();
 }
+
+
+
+function handleActiveLinks() {
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+
+    // 1. Handle Main Nav Links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('text-[#1d70d1]');
+        }
+    });
+
+    // 2. Handle Dropdown Items & Parent Highlight
+    const servicesParent = document.getElementById('servicesParent');
+    const dropdownItems = document.querySelectorAll('.nav-dropdown-item');
+
+    dropdownItems.forEach(item => {
+        if (item.getAttribute('href') === currentPath) {
+            // Highlight the dropdown text inside the card
+            item.querySelector('.text-white').classList.replace('text-white', 'text-[#1d70d1]');
+            // Highlight the PARENT "Services" button
+            servicesParent.classList.add('text-[#1d70d1]');
+        }
+    });
+}
+
+window.addEventListener('DOMContentLoaded', handleActiveLinks);

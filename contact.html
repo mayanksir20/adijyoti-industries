@@ -168,8 +168,7 @@
     <!-- Nvbar and Mobile Menu End -->
 
     <!-- Bredcrum Section -->
-    <div id="heroSection"
-        class="relative pt-24 md:pt-28 pb-6 md:pb-8 hero-gradient px-4 md:px-6 border-b border-slate-100 bg-white">
+    <div id="heroSection" class="relative pt-24 md:pt-28 pb-6 md:pb-8 px-4 md:px-6 border-b border-slate-100 bg-white">
 
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#1d70d1]/5 blur-[80px] rounded-full -translate-y-1/2"></div>
         <div class="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/5 blur-[80px] rounded-full"></div>
@@ -205,11 +204,18 @@
                         <i data-lucide="box" class="w-3.5 h-3.5"></i>
                         <span data-en="Our Range" data-hi="हमारी रेंज">Our Range</span>
                     </div>
+
+                    <div class="w-[1px] h-4 bg-slate-200 rotate-[20deg]"></div>
+
+                    <a href="contact.html"
+                        class="text-slate-400 hover:text-[#1d70d1] transition-all flex items-center gap-2 group">
+                        <i data-lucide="phone-call" class="w-3.5 h-3.5 group-hover:rotate-12 transition-transform"></i>
+                        <span data-en="Contact Us" data-hi="संपर्क करें">Contact Us</span>
+                    </a>
                 </nav>
 
                 <div
                     class="flex flex-wrap items-center gap-4 sm:gap-6 border-t md:border-t-0 border-slate-100 pt-4 md:pt-0">
-
                     <div class="flex items-center gap-3 px-4 py-2 rounded-xl bg-amber-50 border border-amber-100 group">
                         <div class="relative">
                             <div class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-ping"></div>
@@ -224,7 +230,7 @@
                         </div>
                     </div>
 
-                    <a href="tel:+919876543210" class="flex items-center gap-3 group">
+                    <a href="tel:+919125050055" class="flex items-center gap-3 group">
                         <div
                             class="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#1d70d1] transition-all shadow-lg shadow-slate-900/10">
                             <i data-lucide="headset" class="w-4 h-4"></i>
@@ -232,96 +238,192 @@
                         <div class="hidden sm:flex flex-col">
                             <span class="text-[8px] font-black text-slate-400 uppercase tracking-tighter"
                                 data-en="Expert Help" data-hi="विशेषज्ञ मदद">Expert Help</span>
-                            <span class="text-[11px] font-bold text-slate-900 tracking-widest">+91 98765 43210</span>
+                            <span class="text-[11px] font-bold text-slate-900 tracking-widest">+91 91250 50055</span>
                         </div>
                     </a>
-
                 </div>
             </div>
         </div>
     </div>
     <!-- Bredcrum Section End -->
 
-    <div class="bg-white border-b sticky top-0 z-50 px-6 py-4 shadow-sm">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <nav class="text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="index.html" data-en="Home" data-hi="होम">Home</a> / <span class="text-slate-900"
-                    data-en="Products" data-hi="उत्पाद">Products</span>
-            </nav>
-            <div class="flex gap-2">
-                <button onclick="filter('machinery')" id="btn-machinery"
-                    class="filter-btn active px-8 py-2.5 border-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all"
-                    data-en="Machinery" data-hi="मशीनरी">Machinery</button>
-                <button onclick="filter('solar')" id="btn-solar"
-                    class="filter-btn px-8 py-2.5 border-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all"
-                    data-en="Solar Solutions" data-hi="सोलर समाधान">Solar Solutions</button>
+    <section id="contactDetails" class="py-24 px-4 md:px-6 hero-gradient relative overflow-hidden">
+        <div class="absolute top-1/4 left-0 w-72 h-72 bg-blue-50/50 blur-[100px] rounded-full -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+
+                <div class="lg:w-2/5 space-y-10" data-aos="fade-right">
+                    <div>
+                        <h2 class="text-6xl md:text-7xl font-black bebas text-slate-900 leading-none mb-6"
+                            data-en="Let's Connect" data-hi="संपर्क करें">
+                            Let's Connect
+                        </h2>
+                        <p class="text-slate-500 font-medium text-lg leading-relaxed"
+                            data-en="Have questions about PMFME subsidy or Solar projects? Our experts are ready to guide you."
+                            data-hi="पीएमएफएमई सब्सिडी या सोलर प्रोजेक्ट्स के बारे में सवाल हैं? हमारे विशेषज्ञ आपकी मदद के लिए तैयार हैं।">
+                            Have questions about PMFME subsidy or Solar projects? Our experts are ready to guide you.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-5 group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#1d70d1] transition-all shadow-lg">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[9px] font-black uppercase tracking-widest text-[#1d70d1] mb-1"
+                                    data-en="Head Office" data-hi="मुख्य कार्यालय">Head Office</p>
+                                <p class="text-slate-900 font-bold text-sm leading-snug">Plot No-42 Mayapuri
+                                    Kalyanpur,<br>Lucknow, UP - 226022</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center group-hover:bg-[#1d70d1] group-hover:text-white transition-all shadow-md">
+                                <i data-lucide="factory" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1"
+                                    data-en="Operational Unit" data-hi="परिचालन इकाई">Operational Unit</p>
+                                <p class="text-slate-900 font-bold text-sm leading-snug">Adijyoti Industries, Patel
+                                    Nagar,<br>Akbarpur, Ambedkarnagar - 224122</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-blue-50 text-[#1d70d1] flex items-center justify-center group-hover:bg-[#1d70d1] group-hover:text-white transition-all shadow-sm">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="text-[9px] font-black uppercase tracking-widest text-slate-400"
+                                    data-en="Call Support" data-hi="कॉल सपोर्ट">Call Support</p>
+                                <a href="tel:+916387905006"
+                                    class="text-slate-900 font-black text-xl tracking-tighter hover:text-[#1d70d1] transition-colors">+91
+                                    63879 05006</a>
+                                <a href="tel:+919125050055"
+                                    class="text-slate-900 font-black text-xl tracking-tighter hover:text-[#1d70d1] transition-colors">+91
+                                    91250 50055</a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-sm">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1"
+                                    data-en="Email Us" data-hi="ईमेल करें">Email Us</p>
+                                <a href="mailto:director@adijyotiindustries.com"
+                                    class="text-slate-900 font-bold text-sm hover:text-[#1d70d1] transition-colors">director@adijyotiindustries.com</a>
+                                <a href="mailto:info@adijyotiindustries.com"
+                                    class="text-slate-900 font-bold text-sm hover:text-[#1d70d1] transition-colors">info@adijyotiindustries.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-3/5 w-full" data-aos="fade-left">
+                    <div
+                        class="bg-white border border-slate-100 p-8 md:p-12 rounded-[3rem] shadow-2xl shadow-slate-900/5 relative">
+                        <div class="mb-10">
+                            <span
+                                class="px-4 py-1.5 rounded-full bg-blue-50 text-[#1d70d1] text-[10px] font-black uppercase tracking-widest mb-4 inline-block"
+                                data-en="Quick Inquiry" data-hi="त्वरित पूछताछ">Quick Inquiry</span>
+                            <h3 class="text-3xl font-black text-slate-900 uppercase tracking-tight"
+                                data-en="Send us a Message" data-hi="हमें संदेश भेजें">Send us a Message</h3>
+                        </div>
+
+                        <form action="#" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-[11px] font-black uppercase text-slate-400 ml-2"
+                                        data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+                                    <input type="text" placeholder="Your Name"
+                                        class="w-full px-6 py-4 bg-slate-50 border-none rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none font-medium text-slate-900">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-[11px] font-black uppercase text-slate-400 ml-2"
+                                        data-en="Phone Number" data-hi="फोन नंबर">Phone Number</label>
+                                    <input type="tel" placeholder="+91 XXXX XXX XXX"
+                                        class="w-full px-6 py-4 bg-slate-50 border-none rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none font-medium text-slate-900">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[11px] font-black uppercase text-slate-400 ml-2"
+                                    data-en="Interested In" data-hi="रुचि है">Interested In</label>
+                                <select
+                                    class="w-full px-6 py-4 bg-slate-50 border-none rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none font-medium text-slate-900 appearance-none">
+                                    <option data-en="Select Category" data-hi="श्रेणी चुनें">Select Category</option>
+                                    <option data-en="Machinery (PMFME)" data-hi="मशीनरी (PMFME)">Machinery (PMFME)
+                                    </option>
+                                    <option data-en="Solar Projects" data-hi="सोलर प्रोजेक्ट्स">Solar Projects</option>
+                                    <option data-en="Custom Solution" data-hi="कस्टम समाधान">Custom Solution</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[11px] font-black uppercase text-slate-400 ml-2"
+                                    data-en="Your Message" data-hi="आपका संदेश">Your Message</label>
+                                <textarea rows="4" placeholder="Describe your requirement..."
+                                    class="w-full px-6 py-4 bg-slate-50 border-none rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none font-medium text-slate-900 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-5 bg-slate-900 text-white rounded-2xl font-black bebas text-2xl tracking-[0.2em] hover:bg-[#1d70d1] hover:-translate-y-1 transition-all shadow-xl shadow-blue-900/10 uppercase"
+                                data-en="Submit Inquiry" data-hi="पूछताछ भेजें">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="py-16 px-6 max-w-7xl mx-auto">
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"></div>
+    <section class="py-20 px-4 md:px-6 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6" data-aos="fade-up">
+                <div>
+                    <span class="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] mb-3 block"
+                        data-en="Visit Our Premises" data-hi="हमारे परिसर में आएं">Visit Our Premises</span>
+                    <h2 class="text-5xl md:text-7xl font-black bebas text-slate-900 leading-none"
+                        data-en="Find Us on Map" data-hi="मैप पर हमें खोजें">Find Us on Map</h2>
+                </div>
+
+                <div class="flex p-1.5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                    <button onclick="switchMap('lucknow')" id="btn-lucknow"
+                        class="px-6 py-3 rounded-xl text-[11px] font-black uppercase tracking-widest transition-all bg-slate-900 text-white shadow-lg">
+                        <span data-en="Lucknow Office" data-hi="लखनऊ ऑफिस">Lucknow Office</span>
+                    </button>
+                    <button onclick="switchMap('akbarpur')" id="btn-akbarpur"
+                        class="px-6 py-3 rounded-xl text-[11px] font-black uppercase tracking-widest transition-all text-slate-400 hover:text-slate-900">
+                        <span data-en="Akbarpur Factory" data-hi="अकबरपुर फैक्ट्री">Akbarpur Factory</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full h-[500px] bg-slate-200 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white relative group"
+                data-aos="zoom-in">
+                <iframe id="map-lucknow"
+                    class="w-full h-full absolute inset-0 transition-opacity duration-700 opacity-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.818820464293!2d80.9168!3d26.9042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999564619d8591f%3A0x897905186b51c142!2sKalyanpur%2C%20Lucknow%2C%20Uttar%20Pradesh%20226022!5e0!3m2!1sen!2sin!4v1711000000000"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe id="map-akbarpur"
+                    class="w-full h-full absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.627768846067!2d82.529!3d26.435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a37c95b000001%3A0x0!2sAkbarpur%2C%20Ambedkar%20Nagar%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1711000000000"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </section>
 
 
-
-   <section class="py-24 px-6 bg-[#fff7ed] overflow-hidden relative border-t border-orange-100" data-aos="fade-up">
-    <div class="absolute top-0 right-0 w-80 h-80 bg-orange-200/20 blur-[100px] rounded-full -mr-20 -mt-20"></div>
-    
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
-        <div class="lg:w-2/3">
-            <h2 class="text-6xl md:text-8xl font-black bebas text-slate-900 leading-none mb-6" 
-                data-en="Need Custom Machinery?" 
-                data-hi="कस्टम मशीनरी चाहिए?">
-                Need Custom Machinery?
-            </h2>
-            <p class="text-orange-600 font-black uppercase tracking-[0.3em] mb-6 text-sm"
-               data-en="Design • Develop • Deliver" 
-               data-hi="डिज़ाइन • विकास • वितरण">
-                Design • Develop • Deliver
-            </p>
-            <p class="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-10"
-               data-en="If you have a unique business idea or need a machine with specific dimensions and capacity, our R&D team is ready to build it for you. From food processing to industrial automation, we customize everything as per your need."
-               data-hi="यदि आपके पास कोई अनोखा बिजनेस आइडिया है या आपको विशिष्ट आकार और क्षमता वाली मशीन की आवश्यकता है, तो हमारी R&D टीम इसे आपके लिए बनाने के लिए तैयार है। फूड प्रोसेसिंग से लेकर इंडस्ट्रियल ऑटोमेशन तक, हम आपकी जरूरत के अनुसार सब कुछ कस्टमाइज़ करते हैं।">
-               If you have a unique business idea or need a machine with specific dimensions and capacity...
-            </p>
-            
-            <div class="flex flex-wrap gap-4">
-                <a href="https://wa.me/919125050055?text=I%20want%20to%20discuss%20a%20custom%20machine%20project" 
-                   class="px-12 py-5 bg-slate-900 text-white font-black bebas text-2xl tracking-widest rounded-3xl hover:bg-blue-600 transition-all shadow-xl uppercase"
-                   data-en="Discuss Project" 
-                   data-hi="प्रोजेक्ट चर्चा करें">
-                    Discuss Project
-                </a>
-            </div>
-        </div>
-
-        <div class="lg:w-1/3 w-full">
-            <div class="bg-white p-10 rounded-[4rem] border border-orange-100 shadow-xl shadow-orange-900/5">
-                <ul class="space-y-8">
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="settings-2" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="Custom Dimensions" data-hi="कस्टम आकार">Custom Dimensions</span>
-                    </li>
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="zap" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="Capacity Scaling" data-hi="क्षमता स्केलिंग">Capacity Scaling</span>
-                    </li>
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="microscope" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="R&D Support" data-hi="R&D सपोर्ट">R&D Support</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!-- Footer Section  -->
     <footer class="relative bg-slate-900 pt-24 pb-12 px-6 overflow-hidden">
@@ -451,40 +553,37 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/products.js"></script>
     <script>
-        let currentCat = 'machinery';
+        function switchMap(city) {
+            const btnLko = document.getElementById('btn-lucknow');
+            const btnAkb = document.getElementById('btn-akbarpur');
+            const mapLko = document.getElementById('map-lucknow');
+            const mapAkb = document.getElementById('map-akbarpur');
 
-        function filter(cat) {
-            currentCat = cat;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(`btn-${cat}`).classList.add('active');
-            renderContent();
+            if (city === 'lucknow') {
+                // Button styles
+                btnLko.classList.add('bg-slate-900', 'text-white', 'shadow-lg');
+                btnLko.classList.remove('text-slate-400');
+                btnAkb.classList.remove('bg-slate-900', 'text-white', 'shadow-lg');
+                btnAkb.classList.add('text-slate-400');
+                // Map visibility
+                mapLko.style.opacity = '1';
+                mapLko.style.pointerEvents = 'auto';
+                mapAkb.style.opacity = '0';
+                mapAkb.style.pointerEvents = 'none';
+            } else {
+                // Button styles
+                btnAkb.classList.add('bg-slate-900', 'text-white', 'shadow-lg');
+                btnAkb.classList.remove('text-slate-400');
+                btnLko.classList.remove('bg-slate-900', 'text-white', 'shadow-lg');
+                btnLko.classList.add('text-slate-400');
+                // Map visibility
+                mapAkb.style.opacity = '1';
+                mapAkb.style.pointerEvents = 'auto';
+                mapLko.style.opacity = '0';
+                mapLko.style.pointerEvents = 'none';
+            }
         }
-
-        function renderContent() {
-            const grid = document.getElementById('product-grid');
-            const lang = localStorage.getItem('selectedLang') || 'en';
-
-            grid.innerHTML = productsData[currentCat].map(p => `
-                <div class="bg-white p-6 rounded-[2.5rem] border shadow-sm group hover:shadow-2xl transition-all" data-aos="fade-up">
-                    <div class="h-56 overflow-hidden rounded-3xl mb-6 bg-slate-100">
-                        <img src="${p.images[0]}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 leading-none mb-2" data-en="${p.nameEn}" data-hi="${p.nameHi}" style="font-family: math;">${lang === 'en' ? p.nameEn : p.nameHi}</h3>
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-8 h-8 line-clamp-2" data-en="${p.shortEn}" data-hi="${p.shortHi}">${lang === 'en' ? p.shortEn : p.shortHi}</p>
-                    <div class="grid grid-cols-2 gap-3">
-                        <a href="product-details.html?id=${p.id}&cat=${currentCat}" class="py-4 bg-slate-900 text-white text-[9px] font-black uppercase text-center rounded-xl hover:bg-blue-600 transition-all tracking-widest" data-en="View Details" data-hi="विवरण देखें">${lang === 'en' ? 'View Details' : 'विवरण देखें'}</a>
-                        <a href="tel:+919125050055" class="py-4 border-2 border-slate-900 text-slate-900 text-[9px] font-black uppercase text-center rounded-xl hover:bg-slate-50 transition-all tracking-widest" data-en="Quick Call" data-hi="कॉल करें">${lang === 'en' ? 'Quick Call' : 'कॉल करें'}</a>
-                    </div>
-                </div>
-            `).join('');
-
-            if (typeof applyLanguage === 'function') applyLanguage(lang);
-            AOS.refresh();
-        }
-
-        window.onload = () => { AOS.init(); renderContent(); };
     </script>
 </body>
 

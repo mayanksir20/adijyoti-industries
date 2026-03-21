@@ -24,37 +24,44 @@
   </div>
 
   <div id="mobileSidebar"
-    class="fixed inset-y-0 left-0 w-[280px] backdrop-blur-xl z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6 border-r border-white/10">
+    class="fixed inset-y-0 left-0 w-[280px] bg-[#161f31] backdrop-blur-xl z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6 border-r border-white/10">
     <div class="flex items-center justify-between mb-10">
       <div class="text-2xl font-bold bebas text-[#1976d2]">ADIJYOTI</div>
-      <button onclick="toggleMobileMenu()" class="p-2 text-slate-400"><i data-lucide="x"></i></button>
+      <button onclick="toggleMobileMenu()" class="p-2 text-slate-400">
+        <i data-lucide="x"></i>
+      </button>
     </div>
     <div class="flex flex-col gap-6 font-bold text-slate-300">
       <a href="index.html" class="text-[#1976d2]" data-en="Home" data-hi="होम">Home</a>
       <a href="about.html" class="hover:text-white" data-en="About" data-hi="हमारे बारे में">About</a>
       <a href="products.html" class="hover:text-white" data-en="Products" data-hi="मशीनें">Products</a>
-      <a href="contact.html" class="hover:text-white" data-en="Contact" data-hi="संपर्क करें">Contact Us</a>
+      <a href="contact.html" class="hover:text-white" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a>
       <hr class="border-white/10">
       <div class="flex flex-col gap-4">
         <p class="text-[10px] uppercase text-slate-500 tracking-widest">Our Services</p>
         <a href="pmfme.html" class="flex items-center gap-3"><i data-lucide="utensils"
             class="w-5 h-5 text-[#1976d2]"></i> PMFME</a>
-        <a href="#solar" class="flex items-center gap-3"><i data-lucide="sun" class="w-5 h-5 text-yellow-500"></i>
-          Solar</a>
+        <a href="pm-surya-ghar.html" class="flex items-center gap-3"><i data-lucide="sun"
+            class="w-5 h-5 text-yellow-500"></i> Solar</a>
+        <a href="pmksy.html" class="flex items-center gap-3"><i data-lucide="snowflake"
+            class="w-5 h-5 text-emerald-500"></i> PMKSY</a>
       </div>
     </div>
   </div>
 
-  <nav class="fixed top-0 w-full z-[100] backdrop-blur-md border-b border-white/10 shadow-2xl">
+  <nav class="fixed top-0 w-full z-[100] backdrop-blur-md border-b border-white/10 shadow-2xl bg-white/80">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
       <a href="index.html" class="flex items-center gap-3">
         <div
-          class="bg-[#1d70d1] text-white w-12 h-12 flex items-center justify-center rounded-2xl font-bold text-2xl shadow-lg shadow-blue-500/20">
-          AJ</div>
+          class="bg-[#1d70d1] text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-2xl font-bold text-xl md:text-2xl shadow-lg shadow-blue-500/20">
+          AJ
+        </div>
         <div>
-          <div class="text-2xl font-bold tracking-[0.2em] leading-none bebas text-slate-900 uppercase">ADIJYOTI</div>
-          <div class="text-[10px] uppercase font-bold text-[#1d70d1] tracking-widest">Industries OPC Pvt Ltd</div>
+          <div class="text-xl md:text-2xl font-bold tracking-[0.2em] leading-none bebas text-slate-900 uppercase">
+            ADIJYOTI</div>
+          <div class="text-[8px] md:text-[10px] uppercase font-bold text-[#1d70d1] tracking-widest">Industries OPC Pvt
+            Ltd</div>
         </div>
       </a>
 
@@ -81,7 +88,7 @@
                   <div class="text-[10px] text-slate-400">35% Subsidy Support</div>
                 </div>
               </a>
-              <a href=" pm-surya-ghar.html"
+              <a href="pm-surya-ghar.html"
                 class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all">
                 <i data-lucide="sun" class="w-6 h-6 text-yellow-500"></i>
                 <div>
@@ -90,6 +97,43 @@
                   <div class="text-[10px] text-slate-400">Free Solar Electricity</div>
                 </div>
               </a>
+              <a href="pmksy.html"
+                class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all group">
+                <div
+                  class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center transition-transform">
+                  <i data-lucide="snowflake" class="w-6 h-6 text-emerald-500"></i>
+                </div>
+
+                <div>
+                  <div class="text-sm font-bold text-white uppercase tracking-wide" data-en="PMKSY (Agro)"
+                    data-hi="पीएमकेएसवाई (कृषि)">
+                    PMKSY (Agro)
+                  </div>
+                  <div class="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-0.5"
+                    data-en="Infrastructure & Cold Chain" data-hi="बुनियादी ढांचा और कोल्ड चेन">
+                    Infrastructure & Cold Chain
+                  </div>
+                </div>
+              </a>
+              <a href="industrial-solutions.html"
+                class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all group">
+                <div
+                  class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center transition-transform group-hover:scale-110 border border-amber-500/20">
+                  <i data-lucide="factory" class="w-6 h-6 text-amber-500"></i>
+                </div>
+
+                <div>
+                  <div class="text-sm font-bold text-white uppercase tracking-wide" data-en="Industrial Solutions"
+                    data-hi="औद्योगिक समाधान">
+                    Industrial Solutions
+                  </div>
+                  <div class="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-0.5"
+                    data-en="Custom Machinery & Solar Setup" data-hi="कस्टम मशीनरी और सौर सेटअप">
+                    Custom Machinery & Solar Setup
+                  </div>
+                </div>
+              </a>
+
             </div>
           </div>
         </div>
@@ -97,12 +141,20 @@
         <a href="products.html" class="nav-link hover:text-[#1d70d1]" data-en="Products" data-hi="मशीनें">Products</a>
         <a href="contact.html" class="nav-link hover:text-[#1d70d1]" data-en="Contact Us" data-hi="संपर्क करें">Contact
           Us</a>
-
-        <button onclick="toggleLang()"
+        <button onclick="toggleLang()" id="langBtn"
           class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">
           ENGLISH / हिंदी
         </button>
       </div>
+
+      <div class="flex lg:hidden items-center gap-4">
+        <button onclick="toggleLang()"
+          class="text-[10px] font-black bg-slate-100 px-3 py-1.5 rounded-lg">EN/हिं</button>
+        <button onclick="toggleMobileMenu()" class="p-2 bg-slate-900 text-white rounded-xl shadow-lg">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
     </div>
   </nav>
   <!-- Nvbar and Mobile Menu End -->
@@ -527,10 +579,11 @@
   <!-- Our Specialization Section End-->
 
   <!-- Coustomer Feedback Section -->
-  <section class="relative py-24 px-6 bg-[#f5f3ff] overflow-hidden">
+  <section class="relative py-24 px-6 bg-[#f5f3ff] overflow-hidden" id="testimonials">
     <div class="max-w-7xl mx-auto relative z-20">
+
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-        <div class="text-left">
+        <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-4">
             <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest" data-en="Testimonials"
               data-hi="प्रशंसापत्र">Testimonials</span>
@@ -541,20 +594,48 @@
           </h2>
         </div>
 
-        <div class="flex gap-3">
+        <div class="flex gap-3" data-aos="fade-left" data-aos-delay="200">
           <button onclick="prevSlide()"
-            class="group p-4 rounded-2xl bg-white border border-slate-200 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 shadow-sm">
+            class="group p-4 rounded-2xl bg-white border border-slate-200 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 shadow-sm active:scale-90">
             <i data-lucide="chevron-left" class="w-6 h-6 text-slate-600 group-hover:text-white"></i>
           </button>
           <button onclick="nextSlide()"
-            class="group p-4 rounded-2xl bg-white border border-slate-200 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 shadow-sm">
+            class="group p-4 rounded-2xl bg-white border border-slate-200 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 shadow-sm active:scale-90">
             <i data-lucide="chevron-right" class="w-6 h-6 text-slate-600 group-hover:text-white"></i>
           </button>
         </div>
       </div>
 
-      <div class="relative overflow-hidden">
-        <div id="feedback-track" class="flex transition-transform duration-700 ease-in-out" style="gap: 24px;">
+      <div class="relative overflow-hidden p-4 -m-4">
+        <div id="feedback-track"
+          class="flex transition-transform duration-700 ease-in-out cursor-grab active:cursor-grabbing"
+          style="gap: 24px;" data-aos="fade-up" data-aos-delay="400">
+
+          <div
+            class="min-w-[320px] md:min-w-[400px] bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl shadow-blue-500/5 group hover:-translate-y-2 transition-transform duration-500">
+            <div class="flex gap-1 mb-6 text-orange-400">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-600 font-medium italic mb-8"
+              data-en="&ldquo;Adijyoti Industries helped us set up our flour mill perfectly. The PMFME subsidy process was seamless with their guidance.&rdquo;"
+              data-hi="&ldquo;आदिज्योति इंडस्ट्रीज ने हमारी आटा मिल स्थापित करने में बहुत मदद की। उनके मार्गदर्शन से पीएमएफएमई सब्सिडी प्रक्रिया बहुत आसान रही।&rdquo;">
+              "Adijyoti Industries helped us set up our flour mill perfectly. The PMFME subsidy process was seamless
+              with their guidance."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center font-black text-blue-600">
+                RK</div>
+              <div>
+                <h4 class="font-black text-slate-900 uppercase text-sm">Rajesh Kumar</h4>
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Flour Mill Owner</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

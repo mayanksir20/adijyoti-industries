@@ -13,6 +13,29 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap');
+
+        .bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .popup-overlay {
+            display: none;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+        }
+    </style>
 </head>
 
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -168,8 +191,7 @@
     <!-- Nvbar and Mobile Menu End -->
 
     <!-- Bredcrum Section -->
-    <div id="heroSection"
-        class="relative pt-24 md:pt-28 pb-6 md:pb-8 hero-gradient px-4 md:px-6 border-b border-slate-100 bg-white">
+    <div id="heroSection" class="relative pt-24 md:pt-28 pb-6 md:pb-8 px-4 md:px-6 border-b border-slate-100 bg-white">
 
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#1d70d1]/5 blur-[80px] rounded-full -translate-y-1/2"></div>
         <div class="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/5 blur-[80px] rounded-full"></div>
@@ -241,87 +263,69 @@
         </div>
     </div>
     <!-- Bredcrum Section End -->
-
-    <div class="bg-white border-b sticky top-0 z-50 px-6 py-4 shadow-sm">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <nav class="text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="index.html" data-en="Home" data-hi="होम">Home</a> / <span class="text-slate-900"
-                    data-en="Products" data-hi="उत्पाद">Products</span>
-            </nav>
-            <div class="flex gap-2">
-                <button onclick="filter('machinery')" id="btn-machinery"
-                    class="filter-btn active px-8 py-2.5 border-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all"
-                    data-en="Machinery" data-hi="मशीनरी">Machinery</button>
-                <button onclick="filter('solar')" id="btn-solar"
-                    class="filter-btn px-8 py-2.5 border-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all"
-                    data-en="Solar Solutions" data-hi="सोलर समाधान">Solar Solutions</button>
-            </div>
-        </div>
+    <div class="hero-gradient py-20 px-6 text-center">
+        <h1 id="top-name" class="text-[#f59e0b] text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none"
+            style="font-family: serif;">...</h1>
     </div>
 
-    <section class="py-16 px-6 max-w-7xl mx-auto">
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"></div>
-    </section>
+    <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row gap-20">
+        <div class="lg:w-1/2">
+            <div class="h-[550px] rounded-[4rem] overflow-hidden bg-slate-50 border-8 border-white shadow-2xl">
+                <img id="main-img" class="w-full h-full object-cover">
+            </div>
+            <div id="thumb-grid" class="grid grid-cols-3 gap-6 mt-6"></div>
+        </div>
 
+        <div class="lg:w-1/2">
+            <h2 id="p-title" class="text-6xl font-black bebas text-slate-900 uppercase leading-none"></h2>
+            <p id="p-short" class="text-blue-600 font-black uppercase text-sm tracking-[0.3em] mt-4 mb-10"></p>
+            <p id="p-full" class="text-slate-600 text-lg leading-relaxed mb-8"></p>
 
+            <div class="bg-slate-50 p-10 rounded-[3rem] border mb-10">
+                <h4 class="text-[10px] font-black uppercase text-slate-900 tracking-widest mb-6" data-en="Key Features"
+                    data-hi="मुख्य विशेषताएं">Key Features</h4>
+                <ul id="features-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></ul>
+            </div>
 
-   <section class="py-24 px-6 bg-[#fff7ed] overflow-hidden relative border-t border-orange-100" data-aos="fade-up">
-    <div class="absolute top-0 right-0 w-80 h-80 bg-orange-200/20 blur-[100px] rounded-full -mr-20 -mt-20"></div>
-    
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
-        <div class="lg:w-2/3">
-            <h2 class="text-6xl md:text-8xl font-black bebas text-slate-900 leading-none mb-6" 
-                data-en="Need Custom Machinery?" 
-                data-hi="कस्टम मशीनरी चाहिए?">
-                Need Custom Machinery?
-            </h2>
-            <p class="text-orange-600 font-black uppercase tracking-[0.3em] mb-6 text-sm"
-               data-en="Design • Develop • Deliver" 
-               data-hi="डिज़ाइन • विकास • वितरण">
-                Design • Develop • Deliver
-            </p>
-            <p class="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-10"
-               data-en="If you have a unique business idea or need a machine with specific dimensions and capacity, our R&D team is ready to build it for you. From food processing to industrial automation, we customize everything as per your need."
-               data-hi="यदि आपके पास कोई अनोखा बिजनेस आइडिया है या आपको विशिष्ट आकार और क्षमता वाली मशीन की आवश्यकता है, तो हमारी R&D टीम इसे आपके लिए बनाने के लिए तैयार है। फूड प्रोसेसिंग से लेकर इंडस्ट्रियल ऑटोमेशन तक, हम आपकी जरूरत के अनुसार सब कुछ कस्टमाइज़ करते हैं।">
-               If you have a unique business idea or need a machine with specific dimensions and capacity...
-            </p>
-            
-            <div class="flex flex-wrap gap-4">
-                <a href="https://wa.me/919125050055?text=I%20want%20to%20discuss%20a%20custom%20machine%20project" 
-                   class="px-12 py-5 bg-slate-900 text-white font-black bebas text-2xl tracking-widest rounded-3xl hover:bg-blue-600 transition-all shadow-xl uppercase"
-                   data-en="Discuss Project" 
-                   data-hi="प्रोजेक्ट चर्चा करें">
-                    Discuss Project
+            <div class="flex gap-3 mt-6">
+                <button onclick="openPopup()"
+                    class="flex-1 h-14 bg-blue-600 text-white rounded-2xl font-black bebas text-xl tracking-widest hover:bg-black transition-all shadow-lg uppercase"
+                    data-en="BOOK NOW" data-hi="अभी बुक करें">
+                    BOOK NOW
+                </button>
+
+                <a href="tel:9125050055"
+                    class="flex-1 h-14 border-2 border-slate-900 text-slate-900 rounded-2xl flex items-center justify-center font-black bebas text-xl tracking-widest hover:bg-slate-50 transition-all uppercase"
+                    data-en="Call Now" data-hi="कॉल करें">
+                    Call Now
                 </a>
             </div>
         </div>
+    </div>
 
-        <div class="lg:w-1/3 w-full">
-            <div class="bg-white p-10 rounded-[4rem] border border-orange-100 shadow-xl shadow-orange-900/5">
-                <ul class="space-y-8">
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="settings-2" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="Custom Dimensions" data-hi="कस्टम आकार">Custom Dimensions</span>
-                    </li>
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="zap" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="Capacity Scaling" data-hi="क्षमता स्केलिंग">Capacity Scaling</span>
-                    </li>
-                    <li class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 shadow-inner">
-                            <i data-lucide="microscope" class="w-7 h-7"></i>
-                        </div>
-                        <span class="font-black text-slate-900 uppercase text-xs tracking-widest" data-en="R&D Support" data-hi="R&D सपोर्ट">R&D Support</span>
-                    </li>
-                </ul>
-            </div>
+    <div id="bookingPopup" class="popup-overlay p-4">
+        <div class="bg-white w-full max-w-xl rounded-[3rem] p-10 relative">
+            <button onclick="closePopup()" class="absolute top-8 right-8 text-slate-400 hover:text-black"><i
+                    data-lucide="x-circle"></i></button>
+            <h3 class="text-5xl font-black bebas mb-8 uppercase" data-en="Request Quotation"
+                data-hi="कोटेशन का अनुरोध करें">Request Quotation</h3>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Sent!');">
+                <input type="text" id="pop-product" readonly
+                    class="w-full p-5 bg-blue-50 border-none rounded-2xl font-black text-blue-600">
+                <input type="text" placeholder="Full Name" required class="w-full p-5 bg-slate-50 border rounded-2xl">
+                <input type="tel" placeholder="Contact Number" required
+                    class="w-full p-5 bg-slate-50 border rounded-2xl">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="City" class="p-5 bg-slate-50 border rounded-2xl">
+                    <input type="text" placeholder="State/Pincode" class="p-5 bg-slate-50 border rounded-2xl">
+                </div>
+                <textarea placeholder="Address" class="w-full p-5 bg-slate-50 border rounded-2xl h-24"></textarea>
+                <button type="submit"
+                    class="w-full py-6 bg-slate-900 text-white font-black bebas text-2xl rounded-2xl tracking-widest uppercase"
+                    data-en="Send Now" data-hi="अभी भेजें">Send Now</button>
+            </form>
         </div>
     </div>
-</section>
 
     <!-- Footer Section  -->
     <footer class="relative bg-slate-900 pt-24 pb-12 px-6 overflow-hidden">
@@ -453,38 +457,50 @@
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
     <script>
-        let currentCat = 'machinery';
+        const urlParams = new URLSearchParams(window.location.search);
+        const pId = urlParams.get('id');
+        const pCat = urlParams.get('cat');
+        const lang = localStorage.getItem('selectedLang') || 'en';
 
-        function filter(cat) {
-            currentCat = cat;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(`btn-${cat}`).classList.add('active');
-            renderContent();
+        if (pId && pCat && productsData[pCat]) {
+            const p = productsData[pCat].find(x => x.id == pId);
+            if (p) {
+                document.getElementById('top-name').innerText = lang === 'en' ? p.nameEn : p.nameHi;
+                document.getElementById('top-name').setAttribute('data-en', p.nameEn);
+                document.getElementById('top-name').setAttribute('data-hi', p.nameHi);
+
+                document.getElementById('p-title').innerText = lang === 'en' ? p.nameEn : p.nameHi;
+                document.getElementById('p-title').setAttribute('data-en', p.nameEn);
+                document.getElementById('p-title').setAttribute('data-hi', p.nameHi);
+
+                document.getElementById('p-short').innerText = lang === 'en' ? p.shortEn : p.shortHi;
+                document.getElementById('p-short').setAttribute('data-en', p.shortEn);
+                document.getElementById('p-short').setAttribute('data-hi', p.shortHi);
+
+                document.getElementById('p-full').innerText = lang === 'en' ? p.fullEn : p.fullHi;
+                document.getElementById('p-full').setAttribute('data-en', p.fullEn);
+                document.getElementById('p-full').setAttribute('data-hi', p.fullHi);
+
+                document.getElementById('main-img').src = p.images[0];
+                document.getElementById('pop-product').value = p.nameEn;
+
+                document.getElementById('features-list').innerHTML = p.featuresEn.map((fEn, i) => `
+                    <li class="flex items-center gap-3 text-sm font-bold text-slate-700 uppercase" data-en="${fEn}" data-hi="${p.featuresHi[i]}">
+                        <div class="w-2 h-2 rounded-full bg-blue-600"></div> ${lang === 'en' ? fEn : p.featuresHi[i]}
+                    </li>
+                `).join('');
+
+                document.getElementById('thumb-grid').innerHTML = p.images.slice(1, 4).map(img => `
+                    <div class="h-28 rounded-3xl overflow-hidden cursor-pointer border-4 border-white shadow-md hover:border-blue-600 transition-all" onclick="document.getElementById('main-img').src='${img}'">
+                        <img src="${img}" class="w-full h-full object-cover">
+                    </div>
+                `).join('');
+            }
         }
 
-        function renderContent() {
-            const grid = document.getElementById('product-grid');
-            const lang = localStorage.getItem('selectedLang') || 'en';
-
-            grid.innerHTML = productsData[currentCat].map(p => `
-                <div class="bg-white p-6 rounded-[2.5rem] border shadow-sm group hover:shadow-2xl transition-all" data-aos="fade-up">
-                    <div class="h-56 overflow-hidden rounded-3xl mb-6 bg-slate-100">
-                        <img src="${p.images[0]}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 leading-none mb-2" data-en="${p.nameEn}" data-hi="${p.nameHi}" style="font-family: math;">${lang === 'en' ? p.nameEn : p.nameHi}</h3>
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-8 h-8 line-clamp-2" data-en="${p.shortEn}" data-hi="${p.shortHi}">${lang === 'en' ? p.shortEn : p.shortHi}</p>
-                    <div class="grid grid-cols-2 gap-3">
-                        <a href="product-details.html?id=${p.id}&cat=${currentCat}" class="py-4 bg-slate-900 text-white text-[9px] font-black uppercase text-center rounded-xl hover:bg-blue-600 transition-all tracking-widest" data-en="View Details" data-hi="विवरण देखें">${lang === 'en' ? 'View Details' : 'विवरण देखें'}</a>
-                        <a href="tel:+919125050055" class="py-4 border-2 border-slate-900 text-slate-900 text-[9px] font-black uppercase text-center rounded-xl hover:bg-slate-50 transition-all tracking-widest" data-en="Quick Call" data-hi="कॉल करें">${lang === 'en' ? 'Quick Call' : 'कॉल करें'}</a>
-                    </div>
-                </div>
-            `).join('');
-
-            if (typeof applyLanguage === 'function') applyLanguage(lang);
-            AOS.refresh();
-        }
-
-        window.onload = () => { AOS.init(); renderContent(); };
+        function openPopup() { document.getElementById('bookingPopup').classList.add('active'); lucide.createIcons(); }
+        function closePopup() { document.getElementById('bookingPopup').classList.remove('active'); }
+        lucide.createIcons();
     </script>
 </body>
 

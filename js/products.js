@@ -1,20 +1,38 @@
 const productsData = {
     machinery: [
         {
-            id: 1,
-            nameEn: "Automatic Flour Mill",
-            nameHi: "स्वचालित आटा मिल (चक्की)",
-            shortEn: "PMFME Approved | 5HP Heavy Duty",
-            shortHi: "PMFME स्वीकृत | 5HP हैवी ड्यूटी",
-            fullEn: "Industrial-grade automatic flour mill with cool-grinding technology. Preserves nutrients and provides high output.",
-            fullHi: "कूल-ग्राइंडिंग तकनीक के साथ औद्योगिक आटा मिल। पोषक तत्वों को सुरक्षित रखता है और उच्च उत्पादन देता है।",
-            featuresEn: ["5HP Copper Motor", "70kg/hr Capacity", "SS 304 Food Grade", "Low Noise"],
-            featuresHi: ["5HP कॉपर मोटर", "70kg/घंटा क्षमता", "SS 304 फूड ग्रेड", "कम शोर"],
-            images: [
-                "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800",
-                "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800",
-                "https://images.unsplash.com/photo-1581092921461-eab62e92c859?w=800",
-                "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?w=800"
+            "id": 1,
+            "nameEn": "Industrial Achar (Pickle) Making Machine",
+            "nameHi": "औद्योगिक अचार बनाने की मशीन",
+            "shortEn": "PMFME Approved | SS 304 | Multi-Fruit & Veg",
+            "shortHi": "PMFME स्वीकृत | SS 304 | मल्टी-फ्रूट और वेजी",
+            "fullEn": "This industrial-grade pickle making machine is engineered for high-efficiency mixing and marinating of various fruits and vegetables. It features a food-grade stainless steel drum that ensures uniform spice distribution while maintaining the perfect texture of ingredients. Designed for long-running hours, it helps businesses scale up production while keeping authentic taste and hygiene intact. Fully compliant with PMFME schemes, it's the ideal choice for growing food processing units.",
+            "fullHi": "यह औद्योगिक अचार मशीन विभिन्न फलों और सब्जियों के कुशल मिश्रण और मैरिनेशन के लिए बनाई गई है। इसमें एक फूड-ग्रेड स्टेनलेस स्टील ड्रम है जो मसालों का समान वितरण और सामग्री की सही बनावट सुनिश्चित करता है। लंबे समय तक चलने के लिए डिज़ाइन की गई यह मशीन स्वाद और स्वच्छता बनाए रखते हुए उत्पादन बढ़ाने में मदद करती है। PMFME योजनाओं के अनुकूल, यह खाद्य प्रसंस्करण इकाइयों के लिए एक आदर्श विकल्प है।",
+            "featuresEn": [
+                "Food Grade SS 304 Body",
+                "Uniform Spice Mixing",
+                "Variable Speed Control",
+                "High Batch Capacity",
+                "Easy Tilting Mechanism",
+                "Heavy Duty Industrial Motor",
+                "Leak-proof Hygiene Design",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "फूड ग्रेड SS 304 बॉडी",
+                "समान मसाला मिश्रण",
+                "वैरिएबल स्पीड कंट्रोल",
+                "उच्च बैच क्षमता",
+                "आसान टिल्टिंग मैकेनिज्म",
+                "हैवी ड्यूटी इंडस्ट्रियल मोटर",
+                "लीक-प्रूफ हाइजीन डिज़ाइन",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/achar-mix-machine (1).png",
+                "../assets/products/achar-mix-machine (2).png",
+                "../assets/products/achar-mix-machine (3).png",
+                "../assets/products/achar-mix-machine (4).png"
             ]
         },
         {

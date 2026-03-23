@@ -271,7 +271,7 @@
     <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row gap-20">
         <div class="lg:w-1/2">
             <div class="h-[550px] rounded-[4rem] overflow-hidden bg-slate-50 border-8 border-white shadow-2xl">
-                <img id="main-img" class="w-full h-full object-cover">
+                <img id="main-img" class="w-full h-full object-contain transition-all duration-700 cursor-zoom-in">
             </div>
             <div id="thumb-grid" class="grid grid-cols-3 gap-6 mt-6"></div>
         </div>
@@ -492,7 +492,7 @@
 
                 document.getElementById('thumb-grid').innerHTML = p.images.slice(1, 4).map(img => `
                     <div class="h-28 rounded-3xl overflow-hidden cursor-pointer border-4 border-white shadow-md hover:border-blue-600 transition-all" onclick="document.getElementById('main-img').src='${img}'">
-                        <img src="${img}" class="w-full h-full object-cover">
+                        <img src="${img}" class="w-full h-full object-contain">
                     </div>
                 `).join('');
             }

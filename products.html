@@ -469,7 +469,7 @@
             grid.innerHTML = productsData[currentCat].map(p => `
                 <div class="bg-white p-6 rounded-[2.5rem] border shadow-sm group hover:shadow-2xl transition-all" data-aos="fade-up">
                     <div class="h-56 overflow-hidden rounded-3xl mb-6 bg-slate-100">
-                        <img src="${p.images[0]}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="${p.images[0]}" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <h3 class="text-2xl font-black text-slate-900 leading-none mb-2" data-en="${p.nameEn}" data-hi="${p.nameHi}" style="font-family: math;">${lang === 'en' ? p.nameEn : p.nameHi}</h3>
                     <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-8 h-8 line-clamp-2" data-en="${p.shortEn}" data-hi="${p.shortHi}">${lang === 'en' ? p.shortEn : p.shortHi}</p>

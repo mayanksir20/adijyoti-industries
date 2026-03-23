@@ -36,75 +36,287 @@ const productsData = {
             ]
         },
         {
-            id: 2,
-            nameEn: "Puffed Rice Plant",
-            nameHi: "मुरमुरा (लाई) प्लांट",
-            shortEn: "Fully Automatic Roaster System",
-            shortHi: "पूर्ण स्वचालित रोस्टर सिस्टम",
-            fullEn: "Complete solution for puffed rice production. Includes cleaner, roaster, and grader for rural entrepreneurs.",
-            fullHi: "मुरमुरा उत्पादन के लिए संपूर्ण समाधान। ग्रामीण उद्यमियों के लिए क्लीनर, रोस्टर और ग्रेडर शामिल है।",
-            featuresEn: ["LPG/Biomass Fuel", "200kg/h Output", "Full Automation", "Low Maintenance"],
-            featuresHi: ["LPG/बायोमास ईंधन", "200kg/घंटा आउटपुट", "पूर्ण स्वचालन", "कम रखरखाव"],
-            images: [
-                "https://images.unsplash.com/photo-1558444479-c86e10556181?w=800",
-                "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800",
-                "https://images.unsplash.com/photo-1569335468143-bc0393282f9d?w=800",
-                "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800"
+            "id": 2,
+            "nameEn": "Papad Making Machine",
+            "nameHi": "पापड़ निर्माण मशीन",
+            "shortEn": "PMFME Approved | Fully Automatic | High Precision",
+            "shortHi": "PMFME स्वीकृत | पूर्ण स्वचालित | उच्च सटीकता",
+            "fullEn": "This industrial-grade automatic papad making machine is designed for high-speed production with uniform thickness and perfect round shape. It features an advanced rolling system that ensures consistent quality while handling various types of dough like urad, moong, and rice. The heavy-duty construction and energy-efficient motor make it a reliable solution for scaling up your food processing business. Fully compliant with PMFME standards, this machine simplifies the entire manufacturing process, from dough sheeting to cutting, with minimal manual effort.",
+            "fullHi": "यह औद्योगिक-ग्रेड स्वचालित पापड़ बनाने की मशीन समान मोटाई और सही गोल आकार के साथ उच्च गति उत्पादन के लिए डिज़ाइन की गई है। इसमें एक उन्नत रोलिंग सिस्टम है जो उड़द, मूंग और चावल जैसे विभिन्न प्रकार के आटे को प्रोसेस करते समय लगातार गुणवत्ता सुनिश्चित करता है। इसका हैवी-ड्यूटी निर्माण और ऊर्जा-कुशल मोटर आपके खाद्य प्रसंस्करण व्यवसाय को बढ़ाने के लिए एक विश्वसनीय समाधान बनाते हैं। PMFME मानकों के पूर्णतः अनुकूल, यह मशीन न्यूनतम मानवीय प्रयास के साथ आटे की लोई से लेकर कटिंग तक की पूरी निर्माण प्रक्रिया को सरल बनाती है।",
+            "featuresEn": [
+                "Food Grade SS Construction",
+                "Adjustable Papad Thickness",
+                "Uniform Shape & Size",
+                "High Production Output",
+                "Low Power Consumption",
+                "Easy to Clean & Maintain",
+                "Heavy Duty Performance",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "फूड ग्रेड SS निर्माण",
+                "एडजस्टेबल पापड़ मोटाई",
+                "समान आकार और साइज",
+                "उच्च उत्पादन आउटपुट",
+                "कम बिजली की खपत",
+                "साफ-सफाई में आसान",
+                "हैवी ड्यूटी परफॉरमेंस",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/papad-mix-machine (1).png",
+                "../assets/products/papad-mix-machine (2).png",
+                "../assets/products/papad-mix-machine (3).png",
+                "../assets/products/papad-mix-machine (4).png"
             ]
         },
         {
-            id: 3,
-            nameEn: "Oil Extraction Machine",
-            nameHi: "तेल निकालने की मशीन",
-            shortEn: "Cold Press Technology | Multi-seed",
-            shortHi: "कोल्ड प्रेस तकनीक | मल्टी-सीड",
-            fullEn: "Extract pure oil from mustard, groundnut, and sunflower. Heavy-duty expeller for high recovery rates.",
-            fullHi: "सरसों, मूंगफली और सूरजमुखी से शुद्ध तेल निकालें। उच्च रिकवरी दर के लिए हैवी-ड्यूटी एक्सपेलर।",
-            featuresEn: ["Cold Press Tech", "High Oil Recovery", "Filter Press Included", "Easy to Clean"],
-            featuresHi: ["कोल्ड प्रेस टेक", "उच्च तेल रिकवरी", "फिल्टर प्रेस शामिल", "साफ करने में आसान"],
-            images: [
-                "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800",
-                "https://images.unsplash.com/photo-1621460245084-378396c0032e?w=800",
-                "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=800",
-                "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800"
+            "id": 3,
+            "nameEn": "Industrial Bakery Oven (Bread Making Machine)",
+            "nameHi": "औद्योगिक बेकरी ओवन (ब्रेड बनाने की मशीन)",
+            "shortEn": "PMFME Approved | Multi-Purpose Baking | Gas & Electric",
+            "shortHi": "PMFME स्वीकृत | बहुउद्देशीय बेकिंग | गैस और इलेक्ट्रिक",
+            "fullEn": "This versatile industrial bakery oven is the ultimate solution for baking high-quality bread, buns, pav, and rusks with perfect crust and texture. Beyond bread, it is highly efficient for making a wide variety of bakery items including cookies, cakes, biscuits, pizzas, and traditional naans or khari. The advanced heat distribution system ensures even baking across all trays, while the precision temperature control allows for consistent results every time. Built with heavy-duty stainless steel, this oven is designed to handle high-volume production for commercial bakeries and food startups.",
+            "fullHi": "यह बहुमुखी औद्योगिक बेकरी ओवन उच्च गुणवत्ता वाली ब्रेड, बन, पाव और रस (रस्क) बनाने के लिए सबसे अच्छा समाधान है। ब्रेड के अलावा, यह कुकीज़, केक, बिस्कुट, पिज्जा और पारंपरिक नान या खारी सहित विभिन्न प्रकार के बेकरी आइटम बनाने के लिए अत्यधिक कुशल है। इसका उन्नत हीट डिस्ट्रीब्यूशन सिस्टम सभी ट्रे में एक समान बेकिंग सुनिश्चित करता है, जबकि सटीक तापमान नियंत्रण हर बार एक जैसे परिणाम देता है। हैवी-ड्यूटी स्टेनलेस स्टील से निर्मित, यह ओवन कमर्शियल बेकरी और फूड स्टार्टअप्स के लिए बड़े पैमाने पर उत्पादन करने के लिए डिज़ाइन किया गया है।",
+            "featuresEn": [
+                "Multi-Product Baking: Bread, Bun, Cake, Cookies, Pizza & More",
+                "Uniform Heat Circulation",
+                "Digital Temperature Control",
+                "Food Grade SS Body",
+                "Energy Efficient Design",
+                "High Batch Capacity",
+                "Internal Lighting & Glass Window",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "मल्टी-प्रोडक्ट बेकिंग: ब्रेड, बन, केक, कुकीज़, पिज्जा और बहुत कुछ",
+                "समान हीट सर्कुलेशन",
+                "डिजिटल तापमान नियंत्रण",
+                "फूड ग्रेड SS बॉडी",
+                "ऊर्जा कुशल डिज़ाइन",
+                "उच्च बैच क्षमता",
+                "इंटरनल लाइटिंग और ग्लास विंडो",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/bakery-oven (1).png",
+                "../assets/products/bakery-oven (2).png",
+                "../assets/products/bakery-oven (3).png",
+                "../assets/products/bakery-oven (4).png"
             ]
         },
         {
-            id: 4,
-            nameEn: "Spices Grinding Machine",
-            nameHi: "मसाला पिसाई मशीन",
-            shortEn: "Three Stage Impact Pulverizer",
-            shortHi: "थ्री स्टेज इम्पैक्ट पल्वेराइज़र",
-            fullEn: "Grind Turmeric, Chilli, and Coriander with ease. Maintains aroma and color of the spices.",
-            fullHi: "हल्दी, मिर्च और धनिया आसानी से पीसें। मसालों की खुशबू और रंग बनाए रखता है।",
-            featuresEn: ["Micro Grinding", "Dust-Free System", "Compact Design", "Heavy Duty Hammers"],
-            featuresHi: ["माइक्रो ग्राइंडिंग", "डस्ट-फ्री सिस्टम", "कॉम्पैक्ट डिजाइन", "हैवी ड्यूटी हैमर्स"],
-            images: [
-                "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=800",
-                "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800",
-                "https://images.unsplash.com/photo-1509358271058-acd22cc93898?w=800",
-                "https://images.unsplash.com/photo-1599940824399-b87987cb9723?w=800"
+            "id": 4,
+            "nameEn": "Fully Automatic Cookie and Biscuit Production Plant",
+            "nameHi": "पूर्ण स्वचालित कुकी और बिस्कुट उत्पादन प्लांट",
+            "shortEn": "High Speed Depositor | Multi-Shape Cookies | PMFME Approved",
+            "shortHi": "हाई स्पीड डिपॉजिटर | मल्टी-शेप कुकीज़ | PMFME स्वीकृत",
+            "fullEn": "This integrated production line offers a high-speed, fully automatic solution for large-scale manufacturing of cookies and biscuits. From precise dough depositing to consistent forming into various shapes (chocolate chip cookies, traditional biscuits, intricately patterned dough pieces), the plant streamlines the entire production process with high efficiency. Precision servo motors and PLC control guarantee consistent weight and perfect shape every time, ensuring high-quality results. With a heavy-duty design for continuous 24/7 operation and a focus on hygienic SS 304 construction, this plant is ideal for established bakery businesses looking to significantly scale up their production capacity while reducing labor costs and ensuring food safety compliance.",
+            "fullHi": "यह एकीकृत उत्पादन लाइन कुकीज़ और बिस्कुट के बड़े पैमाने पर निर्माण के लिए एक उच्च गति, पूर्ण स्वचालित समाधान प्रदान करती है। सटीक आटा डिपोजिशन से लेकर विभिन्न आकारों (चॉकलेट चिप कुकीज़, पारंपरिक बिस्कुट, जटिल पैटर्न वाले आटे के टुकड़े) में सुसंगत आकार देने तक, यह प्लांट पूरी उत्पादन प्रक्रिया को उच्च दक्षता के साथ सुव्यवस्थित करता है। सटीक सर्वो मोटर्स और PLC नियंत्रण हर बार सुसंगत वजन और सही आकार की गारंटी देते हैं, जिससे उच्च गुणवत्ता वाले परिणाम सुनिश्चित होते हैं। निरंतर 24/7 संचालन के लिए हैवी-ड्यूटी डिज़ाइन और स्वच्छतापूर्ण SS 304 निर्माण पर ध्यान देने के साथ, यह प्लांट उन स्थापित बेकरी व्यवसायों के लिए आदर्श है जो श्रम लागत को कम करते हुए और खाद्य सुरक्षा अनुपालन सुनिश्चित करते हुए अपनी उत्पादन क्षमता को महत्वपूर्ण रूप से बढ़ाना चाहते हैं।",
+            "featuresEn": [
+                "Integrated Dough Depositor & Forming System",
+                "Servo Motor Driven Precision",
+                "Multi-Shape Capabilities (e.g., Chocolate Chip, Intricate Patterns)",
+                "Hygienic SS 304 Construction",
+                "Fully Automatic Operation",
+                "High Volume Output",
+                "Energy Efficient Process",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "एकीकृत आटा डिपॉजिटर और फार्मिंग सिस्टम",
+                "सर्वो मोटर चालित सटीकता",
+                "मल्टी-शेप क्षमताएं (जैसे, चॉकलेट चिप, जटिल पैटर्न)",
+                "हाइजीनिक SS 304 निर्माण",
+                "पूर्णतः स्वचालित संचालन",
+                "उच्च वॉल्यूम आउटपुट",
+                "ऊर्जा कुशल प्रक्रिया",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/biscuit making machine (1).png",
+                "../assets/products/biscuit making machine (2).png",
+                "../assets/products/biscuit making machine (3).png",
+                "../assets/products/biscuit making machine (4).png"
             ]
         },
         {
-            id: 5,
-            nameEn: "Dals Processing Unit",
-            nameHi: "दाल प्रोसेसिंग यूनिट",
-            shortEn: "Cleaner, Grader & Polisher",
-            shortHi: "क्लीनर, ग्रेडर और पॉलिशर",
-            fullEn: "Process Toor, Moong, and Urad dal. Includes grading for uniform quality and polishing for better market value.",
-            fullHi: "तूर, मूंग और उड़द दाल को प्रोसेस करें। बेहतर मार्केट वैल्यू के लिए पॉलिशिंग और ग्रेडिंग शामिल है।",
-            featuresEn: ["Multi-Grain Support", "High Polishing", "Low Husk Breakage", "Energy Efficient"],
-            featuresHi: ["मल्टी-ग्रेन सपोर्ट", "हाई पॉलिशिंग", "कम भूसी टूटना", "ऊर्जा कुशल"],
-            images: [
-                "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
-                "https://images.unsplash.com/photo-1547514701-42782101795e?w=800",
-                "https://images.unsplash.com/photo-1585994424789-13763f14292c?w=800",
-                "https://images.unsplash.com/photo-1495107333211-e122444ee258?w=800"
+            "id": 5,
+            "nameEn": "Fully Automatic Chips & Kurkure Production and Packaging Plant",
+            "nameHi": "पूर्ण स्वचालित चिप्स और कुरकुरे उत्पादन और पैकेजिंग प्लांट",
+            "shortEn": "PMFME Approved | End-to-End Solution | Multiproduct Packaging",
+            "shortHi": "PMFME स्वीकृत | एंड-टू-एंड समाधान | मल्टीप्रोडक्ट पैकेजिंग",
+            "fullEn": "This integrated production and packaging line is the complete, high-volume solution for large-scale manufacturing and packaging of various snack foods. It includes the entire process from automatic feeding of raw materials, single-screw extrusion (for puffs and kurkure) or continuous frying (for chips), automatic seasoning, cooling, and high-precision, fully automatic vertical form-fill-seal (VFFS) packaging. This plant is highly versatile, capable of producing and packaging classic potato chips, banana chips, ring puffs, ball puffs, a wide range of extruded snacks (Kurkure style), bhujia, mix sev, namkeen (various kinds), popped corn, and various pulse-based or grain-based expanded snacks. The entire plant is constructed with food-grade SS 304, features advanced PLC-based automation for precise control, and is designed for efficient, continuous 24/7 commercial operation.",
+            "fullHi": "यह एकीकृत उत्पादन और पैकेजिंग लाइन विभिन्न स्नैक फूड्स के बड़े पैमाने पर निर्माण और पैकेजिंग के लिए संपूर्ण, उच्च-वॉल्यूम समाधान है। इसमें कच्चे माल की स्वचालित फीडिंग, सिंगल-स्क्रू एक्सट्रूज़न (पफ्स और कुरकुरे के लिए) या निरंतर फ्राइंग (चिप्स के लिए), स्वचालित सीज़निंग, कूलिंग और उच्च-सटीक, पूर्ण स्वचालित वर्टिकल फॉर्म-फिल-सील (VFFS) पैकेजिंग तक पूरी प्रक्रिया शामिल है। यह प्लांट अत्यधिक बहुमुखी है, जो क्लासिक आलू के चिप्स, केले के चिप्स, रिंग पफ्स, बॉल पफ्स, एक्सट्रूडेड स्नैक्स की एक विस्तृत श्रृंखला (कुरकुरे स्टाइल), भुजिया, मिक्स सेव, नमकीन (विभिन्न प्रकार), पॉप्ड कॉर्न और विभिन्न दाल-आधारित या अनाज-आधारित विस्तारित स्नैक्स का उत्पादन और पैकेजिंग करने में सक्षम है। पूरा प्लांट फूड-ग्रेड SS 304 के साथ निर्मित है, सटीक नियंत्रण के लिए उन्नत PLC-आधारित स्वचालन की सुविधा देता है और कुशल, निरंतर 24/7 वाणिज्यिक संचालन के लिए डिज़ाइन किया गया है।",
+            "featuresEn": [
+                "End-to-End Automated Line (Feeding to Packaging)",
+                "Multiproduct Extrusion & Frying Capabilities",
+                "Classic Chips (Potato, Banana, etc.) Production",
+                "Kurkure (Extruded Snacks), Puffs, & Namkeen Production",
+                "High-Precision VFFS Packaging (Up to 120 Packs/Min)",
+                "Hygienic SS 304 Construction & Food Safety Focus",
+                "Advanced PLC control & Servo Technology",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "एंड-टू-एंड स्वचालित लाइन (फीडिंग से पैकेजिंग तक)",
+                "मल्टीप्रोडक्ट एक्सट्रूज़न और फ्राइंग क्षमताएं",
+                "क्लासिक चिप्स (आलू, केला, आदि) उत्पादन",
+                "कुरकुरे (एक्सट्रूडेड स्नैक्स), पफ्स और नमकीन उत्पादन",
+                "उच्च-सटीक VFFS पैकेजिंग (120 पैक/मिनट तक)",
+                "हाइजीनिक SS 304 निर्माण और खाद्य सुरक्षा फोकस",
+                "उन्नत PLC नियंत्रण और सर्वो तकनीक",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/chips-kurkure (1).png",
+                "../assets/products/chips-kurkure (2).png",
+                "../assets/products/chips-kurkure (3).png",
+                "../assets/products/chips-kurkure (4).png"
             ]
         },
         {
-            id: 6,
+            "id": 6,
+            "nameEn": "Multi-Purpose Jam, Jelly, Ketchup & Sauce Processing Plant",
+            "nameHi": "बहुउद्देशीय जैम, जेली, केचप और सॉस प्रोसेसिंग प्लांट",
+            "shortEn": "PMFME Approved | Steam Jacketed Kettle | Automated Filling",
+            "shortHi": "PMFME स्वीकृत | स्टीम जैकेटेड केतली | स्वचालित फिलिंग",
+            "fullEn": "This high-performance integrated plant is designed for the professional manufacturing of a wide range of fruit and vegetable-based products. It is highly efficient for producing thick fruit jams, clear jellies, tomato ketchup, chili sauces, and various fruit pulps. The line includes advanced steam-jacketed boiling kettles with high-speed stirrers for uniform cooking, vacuum evaporators for preserving natural flavors, and an automated filling and capping system. Built with premium SS 316 and SS 304 food-grade materials, this plant ensures maximum hygiene and long-term durability. It is the perfect solution for food entrepreneurs looking to process seasonal fruits and vegetables into high-demand retail products with high shelf life.",
+            "fullHi": "यह उच्च-प्रदर्शन एकीकृत प्लांट फलों और सब्जियों पर आधारित उत्पादों के पेशेवर निर्माण के लिए डिज़ाइन किया गया है। यह गाढ़े फ्रूट जैम, पारदर्शी जेली, टोमैटो केचप, चिली सॉस और विभिन्न फलों के पल्प बनाने के लिए अत्यधिक कुशल है। इस लाइन में समान कुकिंग के लिए हाई-स्पीड स्टिरर के साथ उन्नत स्टीम-जैकेटेड उबलने वाली केतली, प्राकृतिक स्वाद बनाए रखने के लिए वैक्यूम इवेपोरेटर और एक स्वचालित फिलिंग और कैपिंग सिस्टम शामिल है। प्रीमियम SS 316 और SS 304 फूड-ग्रेड सामग्री से निर्मित, यह प्लांट अधिकतम स्वच्छता और दीर्घकालिक स्थायित्व सुनिश्चित करता है। यह उन खाद्य उद्यमियों के लिए एकदम सही समाधान है जो मौसमी फलों और सब्जियों को उच्च शेल्फ लाइफ वाले खुदरा उत्पादों में संसाधित करना चाहते हैं।",
+            "featuresEn": [
+                "Versatile Production: Jam, Jelly, Ketchup, Sauce & Pulp",
+                "Steam Jacketed Kettles with Variable Stirrers",
+                "Vacuum Evaporation for Flavor Retention",
+                "Automated Piston Filling & Capping Line",
+                "Hygienic SS 316 Contact Parts",
+                "Digital Temperature & Process Control",
+                "Easy to Scale Production Volume",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "बहुमुखी उत्पादन: जैम, जेली, केचप, सॉस और पल्प",
+                "वेरिएबल स्टिरर के साथ स्टीम जैकेटेड केतली",
+                "स्वाद बनाए रखने के लिए वैक्यूम इवेपोरेशन",
+                "स्वचालित पिस्टन फिलिंग और कैपिंग लाइन",
+                "हाइजीनिक SS 316 संपर्क भाग",
+                "डिजिटल तापमान और प्रक्रिया नियंत्रण",
+                "उत्पादन मात्रा बढ़ाने में आसान",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/jam-jelly-ketchup (1).png",
+                "../assets/products/jam-jelly-ketchup (2).png",
+                "../assets/products/jam-jelly-ketchup (3).png",
+                "../assets/products/jam-jelly-ketchup (4).png"
+            ]
+        },
+        {
+            "id": 7,
+            "nameEn": "Multi-Purpose Namkeen & French Fries Production Line",
+            "nameHi": "बहुउद्देशीय नमकीन और फ्रेंच फ्राइज़ उत्पादन लाइन",
+            "shortEn": "All-Type Namkeen | Automatic Frying | SS 304 Grade",
+            "shortHi": "सभी प्रकार की नमकीन | स्वचालित फ्राइंग | SS 304 ग्रेड",
+            "fullEn": "This versatile industrial production line is designed for high-speed manufacturing of all types of Indian namkeen and potato-based snacks. It is highly efficient for producing classic French fries, potato chips, bhujia, sev, gathiya, and various pulse-based namkeens. The line features an automatic frying system with precision temperature control, ensuring uniform crispiness and minimal oil absorption. Built with heavy-duty food-grade SS 304, it includes an integrated de-oiling system and an automated seasoning tumbler to provide consistent taste. This plant is the perfect solution for scaling up snack businesses with high output requirements and consistent quality standards.",
+            "fullHi": "यह बहुमुखी औद्योगिक उत्पादन लाइन सभी प्रकार की भारतीय नमकीन और आलू आधारित स्नैक्स के हाई-स्पीड निर्माण के लिए डिज़ाइन की गई है। यह क्लासिक फ्रेंच फ्राइज़, आलू के चिप्स, भुजिया, सेव, गाठिया और विभिन्न दाल-आधारित नमकीन बनाने के लिए अत्यधिक कुशल है। इस लाइन में सटीक तापमान नियंत्रण के साथ एक स्वचालित फ्राइंग सिस्टम है, जो समान कुरकुरापन और कम तेल सोखना सुनिश्चित करता है। हैवी-ड्यूटी फूड-ग्रेड SS 304 से निर्मित, इसमें एक एकीकृत डी-ऑयलिंग सिस्टम और निरंतर स्वाद प्रदान करने के लिए एक स्वचालित सीज़निंग टंबलर शामिल है। यह प्लांट उच्च आउटपुट आवश्यकताओं और सुसंगत गुणवत्ता मानकों वाले स्नैक व्यवसायों को बढ़ाने के लिए एकदम सही समाधान है।",
+            "featuresEn": [
+                "Multi-Functional: French Fries, Sev, Bhujia & Chips",
+                "Automatic Continuous Frying System",
+                "Advanced De-Oiling Technology",
+                "Uniform Seasoning & Flavoring Tumbler",
+                "Food Grade SS 304 Construction",
+                "Precision Temperature & Speed Control",
+                "Low Oil Consumption Design",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "बहु-कार्यात्मक: फ्रेंच फ्राइज़, सेव, भुजिया और चिप्स",
+                "स्वचालित निरंतर फ्राइंग सिस्टम",
+                "उन्नत डी-ऑयलिंग तकनीक",
+                "समान सीज़निंग और फ्लेवरिंग टंबलर",
+                "फूड ग्रेड SS 304 निर्माण",
+                "सटीक तापमान और गति नियंत्रण",
+                "कम तेल खपत डिज़ाइन",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/namkeen-machine (1).png",
+                "../assets/products/namkeen-machine (2).png",
+                "../assets/products/namkeen-machine (3).png",
+                "../assets/products/namkeen-machine (4).png"
+            ]
+        },
+        {
+            "id": 8,
+            "nameEn": "Fully Automatic Maggi Noodles, Pasta & Sevai Production Plant",
+            "nameHi": "पूर्ण स्वचालित मैगी नूडल्स, पास्ता और सेवई उत्पादन प्लांट",
+            "shortEn": "Multi-Extrusion Technology | PMFME Approved | Versatile Production",
+            "shortHi": "मल्टी-एक्सट्रूज़न तकनीक | PMFME स्वीकृत | बहुमुखी उत्पादन",
+            "fullEn": "This advanced integrated production line is a versatile solution for manufacturing a variety of popular flour-based products including instant noodles (Maggi style), various pasta shapes (macaroni, fusilli, penne), and traditional vermicelli (sevai). The plant features a high-torque twin-screw extruder that ensures perfect dough consistency and texture. It includes an automated mixing system, precision cutting tools for different shapes, and a multi-stage drying conveyor to maintain optimal moisture levels. Constructed with food-grade SS 304, the system is designed for high-volume commercial production with minimal manual intervention. It is an ideal setup for entrepreneurs looking to enter the fast-growing ready-to-cook food market with a single, multi-functional machinery line.",
+            "fullHi": "यह उन्नत एकीकृत उत्पादन लाइन इंस्टेंट नूडल्स (मैगी स्टाइल), विभिन्न पास्ता आकार (मैकरोनी, फुसिली, पेने) और पारंपरिक सेंवई (सेवई) सहित विभिन्न लोकप्रिय आटा-आधारित उत्पादों के निर्माण के लिए एक बहुमुखी समाधान है। इस प्लांट में एक हाई-टॉर्क ट्विन-स्क्रू एक्सट्रूडर है जो सही डो (आटा) स्थिरता और बनावट सुनिश्चित करता है। इसमें एक स्वचालित मिक्सिंग सिस्टम, विभिन्न आकारों के लिए सटीक कटिंग टूल्स और इष्टतम नमी के स्तर को बनाए रखने के लिए एक मल्टी-स्टेज सुखाने वाला कन्वेयर शामिल है। फूड-ग्रेड SS 304 के साथ निर्मित, यह सिस्टम न्यूनतम मैनुअल हस्तक्षेप के साथ उच्च-मात्रा वाले व्यावसायिक उत्पादन के लिए डिज़ाइन किया गया है। यह उन उद्यमियों के लिए एक आदर्श सेटअप है जो एकल, बहु-कार्यात्मक मशीनरी लाइन के साथ तेजी से बढ़ते रेडी-टू-कुक खाद्य बाजार में प्रवेश करना चाहते हैं।",
+            "featuresEn": [
+                "Multi-Product Capability: Noodles, Pasta & Sevai",
+                "Advanced Twin-Screw Extrusion Technology",
+                "Interchangeable Dies for Different Shapes",
+                "Fully Automated Mixing & Steaming Unit",
+                "Continuous Multi-Layer Drying System",
+                "Hygienic SS 304 Food-Grade Construction",
+                "PLC Control for Precision Processing",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "मल्टी-प्रोडक्ट क्षमता: नूडल्स, पास्ता और सेवई",
+                "उन्नत ट्विन-स्क्रू एक्सट्रूज़न तकनीक",
+                "विभिन्न आकारों के लिए बदलने योग्य डाइज़",
+                "पूर्ण स्वचालित मिक्सिंग और स्टीमिंग यूनिट",
+                "निरंतर मल्टी-लेयर सुखाने की प्रणाली",
+                "हाइजीनिक SS 304 फूड-ग्रेड निर्माण",
+                "सटीक प्रसंस्करण के लिए PLC नियंत्रण",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/noodle-pasta-plant (1).png",
+                "../assets/products/noodle-pasta-plant (2).png",
+                "../assets/products/noodle-pasta-plant (3).png",
+                "../assets/products/noodle-pasta-plant (4).png"
+            ]
+        },
+        {
+            "id": 13,
+            "nameEn": "Fully Automatic Fruit Juice & Beverage Processing Plant",
+            "nameHi": "पूर्ण स्वचालित फ्रूट जूस और बेवरेज प्रोसेसिंग प्लांट",
+            "shortEn": "UHT Technology | Automated Filtration | SS 316 L Grade",
+            "shortHi": "UHT तकनीक | स्वचालित फिल्ट्रेशन | SS 316 L ग्रेड",
+            "fullEn": "This high-capacity industrial beverage plant is engineered for the production of high-quality fruit juices, flavored water, and dairy-based beverages. The system includes an advanced multi-stage filtration unit, pasteurization, and a UHT treatment section to ensure maximum product shelf life without preservatives. It features high-torque mixing tanks, automated sugar syrup preparation, and a precise blending unit. Constructed with pharmaceutical-grade SS 316 L contact parts, it guarantees total hygiene and compliance with international food safety standards. The entire line is PLC-controlled, allowing for consistent taste, texture, and automated cleaning (CIP) processes.",
+            "fullHi": "यह उच्च क्षमता वाला औद्योगिक बेवरेज प्लांट उच्च गुणवत्ता वाले फलों के जूस, फ्लेवर्ड पानी और डेयरी-आधारित पेय पदार्थों के उत्पादन के लिए तैयार किया गया है। सिस्टम में अधिकतम उत्पाद शेल्फ लाइफ सुनिश्चित करने के लिए एक उन्नत मल्टी-स्टेज फिल्ट्रेशन यूनिट, पास्चुरीकरण और एक UHT उपचार अनुभाग शामिल है। इसमें हाई-टॉर्क मिक्सिंग टैंक, स्वचालित शुगर सिरप तैयारी और एक सटीक सम्मिश्रण इकाई है। फार्मास्युटिकल-ग्रेड SS 316 L संपर्क भागों के साथ निर्मित, यह कुल स्वच्छता और अंतरराष्ट्रीय खाद्य सुरक्षा मानकों के अनुपालन की गारंटी देता है। पूरी लाइन PLC-नियंत्रित है, जो सुसंगत स्वाद, बनावट और स्वचालित सफाई (CIP) प्रक्रियाओं की अनुमति देती है।",
+            "featuresEn": [
+                "Complete Juice Extraction & Processing Line",
+                "UHT Pasteurization for Long Shelf Life",
+                "Pharmaceutical Grade SS 316 L Contact Parts",
+                "Automated Blending & Mixing System",
+                "Integrated CIP (Clean-In-Place) System",
+                "PLC Touch Screen Interface for Total Control",
+                "High-Speed Bottling & Filling Compatibility",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "पूर्ण जूस निष्कर्षण और प्रसंस्करण लाइन",
+                "लंबी शेल्फ लाइफ के लिए UHT पास्चुरीकरण",
+                "फार्मास्युटिकल ग्रेड SS 316 L संपर्क भाग",
+                "स्वचालित सम्मिश्रण और मिश्रण प्रणाली",
+                "एकीकृत CIP (क्लीन-इन-प्लेस) प्रणाली",
+                "कुल नियंत्रण के लिए PLC टच स्क्रीन इंटरफेस",
+                "हाई-स्पीड बॉटलिंग और फिलिंग संगतता",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/beverage-plant (1).png",
+                "../assets/products/beverage-plant (2).png",
+                "../assets/products/beverage-plant (3).png",
+                "../assets/products/beverage-plant (4).png"
+            ]
+        },
+        {
+            id: 77,
             nameEn: "Rice Mill Machine",
             nameHi: "राइस मिल मशीन",
             shortEn: "Combined Hulling & Polishing",

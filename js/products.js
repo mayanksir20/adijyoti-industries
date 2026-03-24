@@ -281,7 +281,7 @@ const productsData = {
             ]
         },
         {
-            "id": 13,
+            "id": 9,
             "nameEn": "Fully Automatic Fruit Juice & Beverage Processing Plant",
             "nameHi": "पूर्ण स्वचालित फ्रूट जूस और बेवरेज प्रोसेसिंग प्लांट",
             "shortEn": "UHT Technology | Automated Filtration | SS 316 L Grade",
@@ -313,6 +313,181 @@ const productsData = {
                 "../assets/products/beverage-plant (2).png",
                 "../assets/products/beverage-plant (3).png",
                 "../assets/products/beverage-plant (4).png"
+            ]
+        },
+        {
+            "id": 10,
+            "nameEn": "Fully Automatic Ice Cream & Frozen Dessert Production Plant",
+            "nameHi": "पूर्ण स्वचालित आइसक्रीम और फ्रोजन डेजर्ट उत्पादन प्लांट",
+            "shortEn": "Batch & Continuous Freezers | Multi-Flavor | PMFME Approved",
+            "shortHi": "बैच और निरंतर फ्रीजर | मल्टी-फ्लेवर | PMFME स्वीकृत",
+            "fullEn": "This premium industrial plant is a complete solution for manufacturing all types of ice cream, kulfi, and frozen desserts. The line is equipped with advanced pasteurization tanks, high-pressure homogenizers, and aging vats to ensure a smooth and creamy texture. It features both batch and continuous freezers for versatile production, allowing for the creation of cups, cones, sticks (kulfi/candies), and bulk family packs. With an integrated fruit and nut feeder and ripple pump for flavored syrups, this plant can produce a wide variety of premium flavors. Constructed with high-grade SS 304, the system includes a semi-automatic or fully automatic filling and packaging line, designed for high hygiene and maximum efficiency.",
+            "fullHi": "यह प्रीमियम औद्योगिक प्लांट सभी प्रकार की आइसक्रीम, कुल्फी और फ्रोजन डेजर्ट के निर्माण के लिए एक संपूर्ण समाधान है। इस लाइन में स्मूथ और मलाईदार बनावट सुनिश्चित करने के लिए उन्नत पास्चुरीकरण टैंक, उच्च-दबाव वाले होमोजेनाइज़र और एजिंग वैट लगे हैं। इसमें बहुमुखी उत्पादन के लिए बैच और निरंतर फ्रीजर दोनों शामिल हैं, जो कप, कोन, स्टिक (कुल्फी/कैंडी) और बल्क फैमिली पैक बनाने की अनुमति देते हैं। फ्लेवर्ड सिरप के लिए एकीकृत फ्रूट और नट फीडर और रिपल पंप के साथ, यह प्लांट प्रीमियम फ्लेवर की एक विस्तृत श्रृंखला तैयार कर सकता है। हाई-ग्रेड SS 304 के साथ निर्मित, इस सिस्टम में सेमी-ऑटोमैटिक या फुल-ऑटोमैटिक फिलिंग और पैकेजिंग लाइन शामिल है, जो उच्च स्वच्छता और अधिकतम दक्षता के लिए डिज़ाइन की गई है।",
+            "featuresEn": [
+                "Complete Processing: Mix Preparation to Final Packaging",
+                "Continuous & Batch Freezing Options",
+                "High-Pressure Homogenizer for Smooth Texture",
+                "Integrated Aging Vats for Quality Mix",
+                "Fruit, Nut & Ripple Injection Systems",
+                "Multi-Shape Filling (Cups, Cones, Sticks, Tubs)",
+                "Hygienic SS 304 Construction & CIP Ready",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण प्रसंस्करण: मिक्स तैयारी से लेकर अंतिम पैकेजिंग तक",
+                "निरंतर और बैच फ्रीजिंग विकल्प",
+                "स्मूथ बनावट के लिए उच्च-दबाव होमोजेनाइज़र",
+                "गुणवत्तापूर्ण मिक्स के लिए एकीकृत एजिंग वैट",
+                "फ्रूट, नट और रिपल इंजेक्शन सिस्टम",
+                "मल्टी-शेप फिलिंग (कप, कोन, स्टिक, टब)",
+                "हाइजीनिक SS 304 निर्माण और CIP हेतु तैयार",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/ice-cream-plant (1).png",
+                "../assets/products/ice-cream-plant (2).png",
+                "../assets/products/ice-cream-plant (3).png",
+                "../assets/products/ice-cream-plant (4).png"
+            ]
+        },
+        {
+            "id": 11,
+            "nameEn": "Commercial Refrigeration & Industrial Cold Storage Solutions",
+            "nameHi": "वाणिज्यिक प्रशीतन और औद्योगिक कोल्ड स्टोरेज समाधान",
+            "shortEn": "All Major Brands Available | Energy Efficient | Heavy-Duty Cooling",
+            "shortHi": "सभी प्रमुख ब्रांड उपलब्ध | ऊर्जा कुशल | हैवी-ड्यूटी कूलिंग",
+            "fullEn": "We provide a comprehensive range of commercial refrigeration and industrial cold storage solutions tailored for diverse business needs. We deal in all major leading brands, offering you the flexibility to choose the best equipment that fits your budget and requirements. Our lineup includes high-efficiency deep freezers, visi-coolers, pastry cabinets, and large-scale modular cold rooms. Engineered with advanced compressor technology and high-density PUF insulation, these units ensure consistent cooling even in high ambient temperatures. Ideal for supermarkets, hotels, food processing units, and dairy plants.",
+            "fullHi": "हम विभिन्न व्यावसायिक आवश्यकताओं के लिए तैयार वाणिज्यिक प्रशीतन और औद्योगिक कोल्ड स्टोरेज समाधानों की एक विस्तृत श्रृंखला प्रदान करते हैं। हम सभी प्रमुख और लीडिंग ब्रांड्स में डील करते हैं, जिससे आपको अपनी पसंद और बजट के अनुसार सर्वश्रेष्ठ उपकरण चुनने की पूरी आजादी मिलती है। हमारी लाइनअप में डीप फ्रीजर, विजी-कूलर, पेस्ट्री कैबिनेट और बड़े पैमाने पर मॉड्यूलर कोल्ड रूम शामिल हैं। उन्नत कंप्रेसर तकनीक और हाई-डेंसिटी PUF इंसुलेशन के साथ निर्मित, ये इकाइयाँ भारी गर्मी में भी बेहतरीन कूलिंग सुनिश्चित करती हैं। यह सुपरमार्केट, होटल और फूड प्रोसेसिंग यूनिट्स के लिए एकदम सही है।",
+            "featuresEn": [
+                "All Major Commercial Brands Provided",
+                "Customized Solutions Based on Your Choice",
+                "Advanced Energy-Efficient Compressor Technology",
+                "High-Density PUF Insulation for Cooling Retention",
+                "Digital Temperature Display & Precision Controllers",
+                "Heavy-Duty Build for 24/7 Commercial Usage",
+                "Eco-Friendly Refrigerants Used",
+                "PMFME Subsidy Ready"
+            ],
+            "featuresHi": [
+                "सभी प्रमुख कमर्शियल ब्रांड्स उपलब्ध",
+                "आपकी पसंद के आधार पर कस्टमाइज्ड समाधान",
+                "उन्नत ऊर्जा-कुशल कंप्रेसर तकनीक",
+                "कूलिंग बनाए रखने के लिए हाई-डेंसिटी PUF इंसुलेशन",
+                "डिजिटल तापमान डिस्प्ले और सटीक कंट्रोलर",
+                "24/7 व्यावसायिक उपयोग के लिए हैवी-ड्यूटी निर्माण",
+                "पर्यावरण के अनुकूल रेफ्रिजरेंट्स का उपयोग",
+                "PMFME सब्सिडी हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/commercial-fridge (1).png",
+                "../assets/products/commercial-fridge (2).png",
+                "../assets/products/commercial-fridge (3).png",
+                "../assets/products/commercial-fridge (4).png"
+            ]
+        },
+        {
+            "id": 12,
+            "nameEn": "Fully Automatic All-Type Dal (Pulses) Processing & Packaging Plant",
+            "nameHi": "पूर्ण स्वचालित सभी प्रकार की दाल प्रोसेसिंग और पैकेजिंग प्लांट",
+            "shortEn": "Custom Sizes Available | Mini & Commercial Plants | PMFME Approved",
+            "shortHi": "सभी साइज़ में उपलब्ध | मिनी और कमर्शियल प्लांट | PMFME स्वीकृत",
+            "fullEn": "Our integrated Dal Mill plant offers a complete end-to-end solution for processing all types of pulses including Toor, Moong, Chana, Masoor, and Urad dal. We provide machines in all sizes—from small-scale mini dal mills for rural entrepreneurs to heavy-duty industrial plants for large-scale manufacturing. The automated line starts with advanced cleaning and de-stoning, followed by precision de-husking, and multi-stage polishing. The plant is equipped with high-tech color sorters and a fully automatic packaging system. Built with heavy-duty materials, this plant ensures maximum recovery with minimum breakage, customized exactly according to your production capacity and business needs.",
+            "fullHi": "हमारा एकीकृत दाल मिल प्लांट सभी प्रकार की दालों (तूर, मूंग, चना, मसूर और उड़द) के प्रसंस्करण के लिए एक संपूर्ण समाधान प्रदान करता है। हम छोटी 'मिनी दाल मिल' से लेकर बड़ी 'इंडस्ट्रियल यूनिट्स' तक, हर साइज की मशीनें आपकी जरूरत और बजट के अनुसार उपलब्ध कराते हैं। स्वचालित लाइन सफाई और डी-स्टोनिंग के साथ शुरू होती है, जिसके बाद सटीक छिलका उतारना और मल्टी-स्टेज पॉलिशिंग होती है। प्लांट हाई-टेक कलर सॉर्टर्स और पूर्ण स्वचालित पैकेजिंग सिस्टम से लैस है। हैवी-ड्यूटी सामग्री से निर्मित यह प्लांट न्यूनतम टूटन के साथ अधिकतम रिकवरी सुनिश्चित करता है, जिसे विशेष रूप से आपकी उत्पादन क्षमता (Capacity) के अनुसार तैयार किया जा सकता है।",
+            "featuresEn": [
+                "Scalable Solutions: Small, Medium & Large Capacity Plants",
+                "Complete Line: Cleaning, Pitting, De-husking & Polishing",
+                "Suitable for All Pulses (Toor, Moong, Chana, Urad, etc.)",
+                "Advanced Multi-Stage Polishing for Premium Finish",
+                "High-Tech Color Sorter for Grading & Quality Control",
+                "Fully Automatic Weighing & Bag Packaging System",
+                "Customized Design Based on Your Requirement",
+                "PMFME Subsidy & Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "स्केलेबल समाधान: छोटी, मध्यम और बड़ी क्षमता वाले प्लांट",
+                "संपूर्ण लाइन: सफाई, पिटिंग, डी-हस्किंग और पॉलिशिंग",
+                "सभी दालों (तूर, मूंग, चना, उड़द, आदि) के लिए उपयुक्त",
+                "प्रीमियम फिनिश के लिए उन्नत मल्टी-स्टेज पॉलिशिंग",
+                "ग्रेडिंग और गुणवत्ता नियंत्रण के लिए हाई-टेक कलर सॉर्टर",
+                "पूर्ण स्वचालित वजन और बैग पैकेजिंग सिस्टम",
+                "आपकी आवश्यकता के अनुसार कस्टमाइज्ड डिज़ाइन",
+                "PMFME सब्सिडी और सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/dal-mill-plant (1).png",
+                "../assets/products/dal-mill-plant (2).png",
+                "../assets/products/dal-mill-plant (3).png",
+                "../assets/products/dal-mill-plant (4).png"
+            ]
+        },
+        {
+            "id": 13,
+            "nameEn": "Integrated Dairy Processing Plant (Milk, Curd, Paneer & Butter)",
+            "nameHi": "एकीकृत डेयरी प्रोसेसिंग प्लांट (दूध, दही, पनीर और मक्खन)",
+            "shortEn": "Pasteurization | Automated Filling | Small to Large Scale",
+            "shortHi": "पास्चुरीकरण | स्वचालित फिलिंग | छोटे से बड़े पैमाने तक",
+            "fullEn": "We provide complete end-to-end dairy processing solutions for producing high-quality milk, curd (dahi), paneer, cream, and butter. Our plant range starts from small-scale units for local startups to fully automated high-capacity industrial lines for established brands. The plant features advanced pasteurization to ensure safety, high-pressure homogenizers for smooth texture, and specialized equipment for paneer pressing and butter churning. It also includes automated pouch and cup filling machines for hygienic packaging. Built with high-grade SS 316 and SS 304, our dairy plants are designed for maximum hygiene and efficiency, customized exactly according to your milk handling capacity.",
+            "fullHi": "हम उच्च गुणवत्ता वाले दूध, दही, पनीर, क्रीम और मक्खन के उत्पादन के लिए संपूर्ण डेयरी प्रोसेसिंग समाधान प्रदान करते हैं। हमारी रेंज स्थानीय स्टार्टअप के लिए छोटी इकाइयों से लेकर बड़े ब्रांडों के लिए पूर्ण स्वचालित औद्योगिक लाइनों तक उपलब्ध है। इस प्लांट में सुरक्षा के लिए उन्नत पास्चुरीकरण, मलाईदार बनावट के लिए उच्च-दबाव होमोजेनाइज़र, और पनीर प्रेसिंग एवं मक्खन निकालने (churning) के लिए विशेष उपकरण शामिल हैं। इसमें स्वच्छ पैकेजिंग के लिए स्वचालित पाउच और कप फिलिंग मशीनें भी दी गई हैं। हाई-ग्रेड SS 316 और SS 304 के साथ निर्मित, हमारे डेयरी प्लांट अधिकतम स्वच्छता और दक्षता सुनिश्चित करते हैं, जिन्हें आपकी दूध प्रसंस्करण क्षमता के अनुसार कस्टमाइज किया जा सकता है।",
+            "featuresEn": [
+                "Multi-Product: Milk, Dahi, Paneer, Butter, Ghee & Cream",
+                "Available in All Capacities (Small, Medium & Large)",
+                "Advanced Pasteurization & Homogenization Technology",
+                "Automated Pouch, Bottle & Cup Filling Systems",
+                "Specialized Paneer Pressing & Vacuum Packaging",
+                "Industrial Butter Churner & Ghee Boiler Units",
+                "Hygienic SS 316/304 Construction & CIP Integration",
+                "PMFME Subsidy & Dairy Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "मल्टी-प्रोडक्ट: दूध, दही, पनीर, मक्खन, घी और क्रीम",
+                "सभी क्षमताओं में उपलब्ध (छोटी, मध्यम और बड़ी)",
+                "उन्नत पास्चुरीकरण और होमोजेनाइजेशन तकनीक",
+                "स्वचालित पाउच, बोतल और कप फिलिंग सिस्टम",
+                "विशेष पनीर प्रेसिंग और वैक्यूम पैकेजिंग",
+                "औद्योगिक मक्खन चर्नर और घी बॉयलर इकाइयां",
+                "हाइजीनिक SS 316/304 निर्माण और CIP इंटीग्रेशन",
+                "PMFME सब्सिडी और डेयरी सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/dairy-plant (4).png",
+                "../assets/products/dairy-plant (2).png",
+                "../assets/products/dairy-plant (3).png",
+                "../assets/products/dairy-plant (1).png"
+            ]
+        },
+        {
+            "id": 18,
+            "nameEn": "Fully Automatic All-Type Spices (Masala) Processing & Packaging Plant",
+            "nameHi": "पूर्ण स्वचालित सभी प्रकार की मसाला प्रोसेसिंग और पैकेजिंग प्लांट",
+            "shortEn": "Grinding | Blending | Fine Pulverizing | Small to Large Scale",
+            "shortHi": "पिसाई | सम्मिश्रण | फाइन पल्वेराइजिंग | छोटे से बड़े पैमाने तक",
+            "fullEn": "We offer complete integrated solutions for the processing and packaging of all types of spices, including turmeric, coriander, chili, black pepper, and mixed masalas. Our range includes high-efficiency impact pulverizers, cool-grinding technology to preserve natural oils and aroma, and advanced blenders for uniform mixing of spice blends. We provide machines in all capacities—from compact units for small businesses to heavy-duty automated lines for large-scale industrial production. The plant is equipped with precision sifting machines for uniform powder quality and fully automatic pouch packing machines with nitrogen flushing for long-lasting freshness. Built with food-grade SS 304, these plants are designed for dust-free, hygienic operation and maximum durability.",
+            "fullHi": "हम हल्दी, धनिया, मिर्च, काली मिर्च और मिश्रित मसालों सहित सभी प्रकार के मसालों के प्रसंस्करण और पैकेजिंग के लिए संपूर्ण एकीकृत समाधान प्रदान करते हैं। हमारी रेंज में उच्च दक्षता वाले इम्पैक्ट पल्वेराइजर, प्राकृतिक तेलों और सुगंध को बनाए रखने के लिए कूल-ग्राइंडिंग तकनीक, और मसाला मिश्रणों के समान मिश्रण के लिए उन्नत ब्लेंडर शामिल हैं। हम छोटी कॉम्पैक्ट इकाइयों से लेकर बड़े पैमाने पर औद्योगिक उत्पादन के लिए हैवी-ड्यूटी स्वचालित लाइनों तक, हर क्षमता में मशीनें उपलब्ध कराते हैं। प्लांट पाउडर की गुणवत्ता के लिए सटीक सिफ्टिंग मशीनों और लंबे समय तक ताजगी के लिए नाइट्रोजन फ्लशिंग के साथ पूर्ण स्वचालित पाउच पैकिंग मशीनों से लैस है। फूड-ग्रेड SS 304 के साथ निर्मित, ये प्लांट डस्ट-फ्री, स्वच्छ संचालन और अधिकतम स्थायित्व के लिए डिज़ाइन किए गए हैं।",
+            "featuresEn": [
+                "Complete Line: Cleaning, Grinding, Blending & Packaging",
+                "Available in All Sizes (Mini to Commercial Scale)",
+                "Advanced Cool-Grinding Technology for Aroma Retention",
+                "High-Speed Impact Pulverizers & Ribbon Blenders",
+                "Precision Sifting for Consistent Powder Quality",
+                "Fully Automatic Pouch Packaging with Nitrogen Flushing",
+                "Dust-Free Hygienic Operation & SS 304 Construction",
+                "PMFME Subsidy & SME Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण लाइन: सफाई, पिसाई, सम्मिश्रण और पैकेजिंग",
+                "सभी साइज़ में उपलब्ध (मिनी से कमर्शियल स्केल तक)",
+                "सुगंध बनाए रखने के लिए उन्नत कूल-ग्राइंडिंग तकनीक",
+                "हाई-स्पीड इम्पैक्ट पल्वेराइजर और रिबन ब्लेंडर",
+                "समान पाउडर गुणवत्ता के लिए सटीक सिफ्टिंग",
+                "नाइट्रोजन फ्लशिंग के साथ पूर्ण स्वचालित पाउच पैकेजिंग",
+                "डस्ट-फ्री स्वच्छ संचालन और SS 304 निर्माण",
+                "PMFME सब्सिडी और SME सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/spices-plant (1).png",
+                "../assets/products/spices-plant (2).png",
+                "../assets/products/spices-plant (3).png",
+                "../assets/products/spices-plant (4).png"
             ]
         },
         {

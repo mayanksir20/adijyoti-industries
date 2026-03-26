@@ -37,8 +37,8 @@ const productsData = {
         },
         {
             "id": 2,
-            "nameEn": "Papad Making Machine",
-            "nameHi": "पापड़ निर्माण मशीन",
+            "nameEn": "Automatic All Type Papad Making Machine",
+            "nameHi": "सभी प्रकार के ऑटोमैटिक पापड़ निर्माण मशीन",
             "shortEn": "PMFME Approved | Fully Automatic | High Precision",
             "shortHi": "PMFME स्वीकृत | पूर्ण स्वचालित | उच्च सटीकता",
             "fullEn": "This industrial-grade automatic papad making machine is designed for high-speed production with uniform thickness and perfect round shape. It features an advanced rolling system that ensures consistent quality while handling various types of dough like urad, moong, and rice. The heavy-duty construction and energy-efficient motor make it a reliable solution for scaling up your food processing business. Fully compliant with PMFME standards, this machine simplifies the entire manufacturing process, from dough sheeting to cutting, with minimal manual effort.",
@@ -456,7 +456,7 @@ const productsData = {
             ]
         },
         {
-            "id": 18,
+            "id": 14,
             "nameEn": "Fully Automatic All-Type Spices (Masala) Processing & Packaging Plant",
             "nameHi": "पूर्ण स्वचालित सभी प्रकार की मसाला प्रोसेसिंग और पैकेजिंग प्लांट",
             "shortEn": "Grinding | Blending | Fine Pulverizing | Small to Large Scale",
@@ -488,6 +488,391 @@ const productsData = {
                 "../assets/products/spices-plant (2).png",
                 "../assets/products/spices-plant (3).png",
                 "../assets/products/spices-plant (4).png"
+            ]
+        },
+        {
+            "id": 15,
+            "nameEn": "Fully Automatic Poha, Daliya & Oats Processing Plant",
+            "nameHi": "पूर्ण स्वचालित पोहा, दलिया और ओट्स प्रोसेसिंग प्लांट",
+            "shortEn": "Steaming | Flaking | Drying | Custom Capacity Units",
+            "shortHi": "स्टीमिंग | फ्लेकिंग | ड्राइंग | कस्टमाइज्ड क्षमता इकाइयां",
+            "fullEn": "We provide high-performance integrated plants for the manufacturing of Poha (Flattened Rice), Wheat Daliya, and Rolled Oats. Our plant range is designed to handle all stages of production, including grain cleaning, pre-conditioning, steaming, high-precision flaking, and continuous drying. We offer solutions for all business sizes—from mini-processing units for small startups to high-capacity industrial lines for established brands. Built with heavy-duty food-grade SS 304, these machines ensure uniform thickness of flakes and preserve the natural nutritional value of the grains. The plant is equipped with automated moisture control and precision packaging systems, making it a complete solution for healthy breakfast cereal production.",
+            "fullHi": "हम पोहा (चिवड़ा), गेहूं का दलिया और ओट्स (जई) के निर्माण के लिए उच्च-प्रदर्शन एकीकृत प्लांट प्रदान करते हैं। हमारी प्लांट रेंज उत्पादन के सभी चरणों को संभालने के लिए डिज़ाइन की गई है, जिसमें अनाज की सफाई, प्री-कंडीशनिंग, स्टीमिंग, सटीक फ्लेकिंग और निरंतर सुखाना शामिल है। हम सभी व्यावसायिक आकारों के लिए समाधान प्रदान करते हैं—छोटे स्टार्टअप के लिए मिनी-प्रोसेसिंग यूनिट्स से लेकर स्थापित ब्रांडों के लिए उच्च-क्षमता वाली औद्योगिक लाइनें। हैवी-ड्यूटी फूड-ग्रेड SS 304 के साथ निर्मित, ये मशीनें फ्लेक्स की समान मोटाई सुनिश्चित करती हैं और अनाज के प्राकृतिक पोषण मूल्य को बनाए रखती हैं। प्लांट स्वचालित नमी नियंत्रण और सटीक पैकेजिंग सिस्टम से लैस है, जो इसे स्वस्थ नाश्ता अनाज उत्पादन के लिए एक संपूर्ण समाधान बनाता है।",
+            "featuresEn": [
+                "Multi-Purpose: Poha, Daliya, Oats & Multi-Grain Flakes",
+                "Available in All Capacities (Small to Large Scale)",
+                "Advanced Steam Conditioning & Flaking Technology",
+                "Uniform Thickness Control for Premium Quality",
+                "Continuous Drying System for Long Shelf Life",
+                "Hygienic Dust-Free Operation with SS 304 Build",
+                "Automated Weighing & Pouch Packaging Line",
+                "PMFME Subsidy & Agri-Business Scheme Ready"
+            ],
+            "featuresHi": [
+                "बहु-उद्देशीय: पोहा, दलिया, ओट्स और मल्टी-ग्रेन फ्लेक्स",
+                "सभी क्षमताओं में उपलब्ध (छोटे से बड़े पैमाने तक)",
+                "उन्नत स्टीम कंडीशनिंग और फ्लेकिंग तकनीक",
+                "प्रीमियम गुणवत्ता के लिए समान मोटाई नियंत्रण",
+                "लंबी शेल्फ लाइफ के लिए निरंतर सुखाने की प्रणाली",
+                "SS 304 निर्माण के साथ स्वच्छ डस्ट-फ्री ऑपरेशन",
+                "स्वचालित वजन और पाउच पैकेजिंग लाइन",
+                "PMFME सब्सिडी और कृषि-व्यवसाय योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/poha-daliya-plant (1).png",
+                "../assets/products/poha-daliya-plant (2).png",
+                "../assets/products/poha-daliya-plant (3).png",
+                "../assets/products/poha-daliya-plant (4).png"
+            ]
+        },
+        {
+            "id": 16,
+            "nameEn": "All-Type Rice Mill Plant (Commercial, Mini & Tractor-Mounted)",
+            "nameHi": "सभी प्रकार के राइस मिल प्लांट (कमर्शियल, मिनी और ट्रैक्टर-माउंटेड)",
+            "shortEn": "Mobile & Stationary Units | High Recovery | Small to Big Scale",
+            "shortHi": "मोबाइल और स्टेशनरी यूनिट्स | हाई रिकवरी | छोटे से बड़े पैमाने तक",
+            "fullEn": "We offer a complete range of Rice Milling solutions tailored for every business size. Our lineup includes large-scale industrial plants with advanced color sorters, compact mini rice mills for small entrepreneurs, and specialized tractor-mounted mobile rice mills for on-site processing. These machines feature high-efficiency cleaning, de-husking, and multi-stage polishing to produce premium quality rice with minimum breakage. Built with heavy-duty materials, our plants ensure maximum grain recovery. Whether you need a fixed factory setup or a mobile unit that can be moved via tractor to different farms, we provide customized solutions exactly according to your requirements.",
+            "fullHi": "हम हर व्यावसायिक आकार के लिए राइस मिलिंग समाधानों की एक विस्तृत श्रृंखला प्रदान करते हैं। हमारी लाइनअप में उन्नत कलर सॉर्टर्स के साथ बड़े पैमाने के औद्योगिक प्लांट, छोटे उद्यमियों के लिए कॉम्पैक्ट मिनी राइस मिल और ऑन-साइट प्रोसेसिंग के लिए विशेष 'ट्रैक्टर-माउंटेड मोबाइल राइस मिल' शामिल हैं। इन मशीनों में न्यूनतम टूटन के साथ प्रीमियम गुणवत्ता वाले चावल का उत्पादन करने के लिए उच्च-दक्षता वाली सफाई, छिलका उतारना (husking) और मल्टी-स्टेज पॉलिशिंग की सुविधा है। हैवी-ड्यूटी सामग्री से निर्मित, हमारे प्लांट अधिकतम रिकवरी सुनिश्चित करते हैं। चाहे आपको एक निश्चित फैक्ट्री सेटअप चाहिए या एक ऐसी मोबाइल यूनिट जिसे ट्रैक्टर के जरिए अलग-अलग खेतों तक ले जाया जा सके, हम आपकी जरूरत के अनुसार कस्टमाइज्ड समाधान प्रदान करते हैं।",
+            "featuresEn": [
+                "Complete Range: Industrial, Mini & Mobile Rice Mills",
+                "Tractor-Mounted Units for Easy Transportation & On-Farm Milling",
+                "Advanced Husking & Multi-Stage Polishing for Premium Rice",
+                "High-Tech Color Sorter Integration for Grading",
+                "Maximum Recovery with Minimum Grain Breakage",
+                "Heavy-Duty Construction for Long-Term Durability",
+                "Customized Capacity as per Business Requirement",
+                "PMFME Subsidy & Agriculture Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण रेंज: इंडस्ट्रियल, मिनी और मोबाइल राइस मिल",
+                "आसान परिवहन और खेतों पर मिलिंग के लिए ट्रैक्टर-माउंटेड यूनिट्स",
+                "प्रीमियम चावल के लिए उन्नत हस्किंग और मल्टी-स्टेज पॉलिशिंग",
+                "ग्रेडिंग के लिए हाई-टेक कलर सॉर्टर इंटीग्रेशन",
+                "न्यूनतम अनाज टूटन के साथ अधिकतम रिकवरी",
+                "दीर्घकालिक स्थायित्व के लिए हैवी-ड्यूटी निर्माण",
+                "व्यावसायिक आवश्यकता के अनुसार कस्टमाइज्ड क्षमता",
+                "PMFME सब्सिडी और कृषि सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/rice-mill (1).png",
+                "../assets/products/rice-mill (2).png",
+                "../assets/products/rice-mill (3).png",
+                "../assets/products/rice-mill (4).png"
+            ]
+        },
+        {
+            "id": 17,
+            "nameEn": "Modern Cold Press & Fully Automatic Industrial Oil Expeller Plant",
+            "nameHi": "आधुनिक कोल्ड प्रेस और पूर्ण स्वचालित औद्योगिक तेल एक्सपेलर प्लांट",
+            "shortEn": "Modern Cold Press | Hot Press | Seed Cleaning | Multi-Stage Filtration",
+            "shortHi": "आधुनिक कोल्ड प्रेस | हॉट प्रेस | बीज की सफाई | मल्टी-स्टेज फिल्ट्रेशन",
+            "fullEn": "We provide complete integrated solutions for oil extraction from various seeds including Mustard, Groundnut, Sunflower, Soybean, Sesame, and Cottonseed. Our range features the latest Modern Cold Press (Kacchi Ghani) technology that uses low-temperature extraction to preserve natural nutrients, vitamins, and aroma. We also offer heavy-duty industrial oil expellers, advanced seed cleaners, and multi-stage filter presses for crystal-clear oil quality. Machines are available in all capacities—from small-scale units for startups to large-scale automated industrial lines. Built with heavy-duty cast iron and food-grade SS 304, these plants ensure maximum oil recovery with minimum power consumption for 24/7 commercial operation.",
+            "fullHi": "हम सरसों, मूंगफली, सूरजमुखी, सोयाबीन, तिल और कपास के बीज सहित विभिन्न बीजों से तेल निकालने के लिए संपूर्ण एकीकृत समाधान प्रदान करते हैं। हमारी रेंज में नवीनतम आधुनिक 'कोल्ड प्रेस' (कच्ची घानी) तकनीक शामिल है जो प्राकृतिक पोषक तत्वों, विटामिन और सुगंध को बनाए रखने के लिए कम तापमान पर तेल निकालती है। साथ ही, हम उच्च दक्षता वाले औद्योगिक तेल एक्सपेलर, उन्नत बीज क्लीनर और क्रिस्टल-क्लियर तेल के लिए मल्टी-स्टेज फिल्टर प्रेस भी प्रदान करते हैं। हम छोटी इकाइयों से लेकर बड़े पैमाने पर औद्योगिक उत्पादन के लिए हैवी-ड्यूटी स्वचालित लाइनों तक, हर क्षमता में मशीनें उपलब्ध कराते हैं। हैवी-ड्यूटी कास्ट आयरन और फूड-ग्रेड SS 304 के साथ निर्मित, ये प्लांट न्यूनतम बिजली खपत के साथ अधिकतम तेल रिकवरी सुनिश्चित करते हैं।",
+            "featuresEn": [
+                "Modern Cold Press Technology for Nutrient & Aroma Retention",
+                "Versatile Extraction: Mustard, Groundnut, Sunflower, Soyabean & More",
+                "Available in All Capacities (Small Mini Units to Large Industrial Plants)",
+                "Advanced Seed Cleaning & High-Precision Multi-Stage Filtration",
+                "Heavy-Duty Construction for Continuous 24/7 Commercial Usage",
+                "Maximum Oil Recovery Rate with Energy Efficient Design",
+                "Hygienic SS 304 Contact Parts for Pure & Healthy Oil Production",
+                "PMFME Subsidy & Agri-Business Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "पोषक तत्वों और सुगंध को बनाए रखने के लिए आधुनिक कोल्ड प्रेस तकनीक",
+                "बहुमुखी निष्कर्षण: सरसों, मूंगफली, सूरजमुखी, सोयाबीन और बहुत कुछ",
+                "सभी क्षमताओं में उपलब्ध (छोटी मिनी इकाइयों से लेकर बड़े औद्योगिक प्लांट तक)",
+                "एकीकृत बीज सफाई और उच्च-सटीक मल्टी-स्टेज तेल फिल्ट्रेशन",
+                "निरंतर 24/7 व्यावसायिक उपयोग के लिए हैवी-ड्यूटी निर्माण",
+                "ऊर्जा कुशल डिज़ाइन के साथ अधिकतम तेल रिकवरी दर",
+                "शुद्ध और स्वस्थ तेल उत्पादन के लिए हाइजीनिक SS 304 भाग",
+                "PMFME सब्सिडी और कृषि-व्यवसाय सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/oil-mill-plant (1).png",
+                "../assets/products/oil-mill-plant (2).png",
+                "../assets/products/oil-mill-plant (3).png",
+                "../assets/products/oil-mill-plant (4).png"
+            ]
+        },
+        {
+            "id": 18,
+            "nameEn": "Fully Automatic Bakery Plant (Cake, Toast, Rusk & Cookies)",
+            "nameHi": "पूर्ण स्वचालित बेकरी प्लांट (केक, टोस्ट, रस और कुकीज़)",
+            "shortEn": "Rotary Rack Ovens | Automatic Slicing | Small to Industrial Scale",
+            "shortHi": "रोटरी रैक ओवन | स्वचालित स्लाइसिंग | छोटे से औद्योगिक पैमाने तक",
+            "fullEn": "We offer complete end-to-end bakery solutions for the production of premium cakes, crispy rusks (toast), biscuits, and cookies. Our plant range includes everything from compact rotary rack ovens for small bakeries to fully automated tunnel ovens for large-scale industrial manufacturing. The line features high-speed planetary mixers for perfect batter consistency, automatic cake depositors, precision rusk slicing machines, and continuous cooling conveyors. Built with food-grade SS 304, these plants ensure uniform baking and consistent quality. Whether you are starting a local bakery or a large commercial production house, we provide customized machinery setups tailored to your specific production capacity.",
+            "fullHi": "हम प्रीमियम केक, कुरकुरे रस (टोस्ट), बिस्कुट और कुकीज़ के उत्पादन के लिए संपूर्ण बेकरी समाधान प्रदान करते हैं। हमारी प्लांट रेंज में छोटी बेकरी के लिए कॉम्पैक्ट रोटरी रैक ओवन से लेकर बड़े पैमाने पर औद्योगिक निर्माण के लिए पूर्ण स्वचालित टनल ओवन तक सब कुछ शामिल है। इस लाइन में सही बैटर के लिए हाई-स्पीड प्लैनेटरी मिक्सर, स्वचालित केक डिपॉजिटर, सटीक रस स्लाइसिंग मशीन और निरंतर कूलिंग कन्वेयर शामिल हैं। फूड-ग्रेड SS 304 के साथ निर्मित, ये प्लांट समान बेकिंग और सुसंगत गुणवत्ता सुनिश्चित करते हैं। चाहे आप एक स्थानीय बेकरी शुरू कर रहे हों या एक बड़ा कमर्शियल प्रोडक्शन हाउस, हम आपकी विशिष्ट उत्पादन क्षमता के अनुसार कस्टमाइज्ड मशीनरी सेटअप प्रदान करते हैं।",
+            "featuresEn": [
+                "Multi-Product Capability: Cakes, Rusks, Toast, Biscuits & Cookies",
+                "Available in All Sizes (Small Batch to High-Volume Industrial)",
+                "Advanced Rotary Rack Ovens with Precision Temperature Control",
+                "High-Speed Automatic Slicing & Packaging Solutions",
+                "Planetary Mixers & Spiral Kneaders for Superior Dough Quality",
+                "Hygienic SS 304 Construction & Energy Efficient Burners",
+                "Customized Layout Design as per Factory Space",
+                "PMFME Subsidy & SME Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "मल्टी-प्रोडक्ट क्षमता: केक, रस, टोस्ट, बिस्कुट और कुकीज़",
+                "सभी आकारों में उपलब्ध (छोटे बैच से लेकर हाई-वॉल्यूम इंडस्ट्रियल तक)",
+                "सटीक तापमान नियंत्रण के साथ उन्नत रोटरी रैक ओवन",
+                "हाई-स्पीड स्वचालित स्लाइसिंग और पैकेजिंग समाधान",
+                "बेहतर डो (आटा) गुणवत्ता के लिए प्लैनेटरी मिक्सर और स्पाइरल नीडर",
+                "हाइजीनिक SS 304 निर्माण और ऊर्जा कुशल बर्नर",
+                "फैक्ट्री स्पेस के अनुसार कस्टमाइज्ड लेआउट डिज़ाइन",
+                "PMFME सब्सिडी और SME सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/bakery-plant (1).png",
+                "../assets/products/bakery-plant (2).png",
+                "../assets/products/bakery-plant (3).png",
+                "../assets/products/bakery-plant (4).png"
+            ]
+        },
+        {
+            "id": 19,
+            "nameEn": "Fully Automatic Animal & Poultry Feed Processing Plant",
+            "nameHi": "पूर्ण स्वचालित पशु और पोल्ट्री आहार प्रोसेसिंग प्लांट",
+            "shortEn": "Cattle, Poultry & Fish Feed | Pellet & Mash | Small to Large Scale",
+            "shortHi": "पशु, पोल्ट्री और मछली आहार | पेलेट और मैश | छोटे से बड़े पैमाने तक",
+            "fullEn": "We provide complete integrated solutions for manufacturing high-quality balanced feed for Cattle (Cow/Buffalo), Poultry (Chicken), Goats, and Fish. Our plant range includes high-speed hammer mills for grinding, ribbon blenders for uniform mixing, and advanced pellet mills to create easy-to-digest feed pellets. We offer machines for all business scales—from small mini-feed units for farmers to fully automated high-capacity industrial lines. For fish feed, we also provide specialized extruders for floating and sinking pellets. Built with heavy-duty materials and high-torque motors, these plants ensure maximum nutritional retention and consistent pellet quality, customized exactly to your production needs.",
+            "fullHi": "हम गाय, भैंस, मुर्गी, बकरी और मछली के लिए उच्च गुणवत्ता वाले संतुलित आहार के निर्माण के लिए संपूर्ण एकीकृत समाधान प्रदान करते हैं। हमारी प्लांट रेंज में पिसाई के लिए हाई-स्पीड हैमर मिल, समान मिश्रण के लिए रिबन ब्लेंडर और आसानी से पचने वाले फीड पेलेट्स बनाने के लिए उन्नत पेलेट मिल शामिल हैं। हम सभी व्यावसायिक स्तरों के लिए मशीनें उपलब्ध कराते हैं—किसानों के लिए छोटी मिनी-फीड इकाइयों से लेकर पूर्ण स्वचालित उच्च-क्षमता वाली औद्योगिक लाइनों तक। मछली के आहार के लिए हम फ्लोटिंग और सिंकिंग पेलेट्स के लिए विशेष एक्सट्रूडर भी प्रदान करते हैं। हैवी-ड्यूटी सामग्री और हाई-टॉर्क मोटर्स के साथ निर्मित, ये प्लांट अधिकतम पोषण और सुसंगत पेलेट गुणवत्ता सुनिश्चित करते हैं।",
+            "featuresEn": [
+                "Multi-Purpose: Feed for Cattle, Poultry, Goat, Fish & More",
+                "Available in All Capacities (Mini Units to Large Commercial Plants)",
+                "Advanced Pellet Mill Technology for Higher Digestibility",
+                "High-Speed Hammer Mills & Precision Ribbon Blenders",
+                "Floating Fish Feed Extruder Options Available",
+                "Heavy-Duty Industrial Build for 24/7 Operation",
+                "Automated Weighing & Bag Packing Systems",
+                "PMFME Subsidy & Animal Husbandry Scheme Ready"
+            ],
+            "featuresHi": [
+                "बहु-उद्देशीय: गाय-भैंस, मुर्गी, बकरी, मछली और अन्य के लिए आहार",
+                "सभी क्षमताओं में उपलब्ध (मिनी यूनिट से बड़े कमर्शियल प्लांट तक)",
+                "बेहतर पाचनशक्ति के लिए उन्नत पेलेट मिल तकनीक",
+                "हाई-स्पीड हैमर मिल और सटीक रिबन ब्लेंडर",
+                "फ्लोटिंग फिश फीड एक्सट्रूडर विकल्प उपलब्ध",
+                "24/7 संचालन के लिए हैवी-ड्यूटी औद्योगिक निर्माण",
+                "स्वचालित वजन और बैग पैकिंग सिस्टम",
+                "PMFME सब्सिडी और पशुपालन सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/animal-feed-plant (1).png",
+                "../assets/products/animal-feed-plant (2).png",
+                "../assets/products/animal-feed-plant (3).png",
+                "../assets/products/animal-feed-plant (4).png"
+            ]
+        },
+        {
+            "id": 20,
+            "nameEn": "Integrated Mushroom Cultivation & Processing Plant",
+            "nameHi": "एकीकृत मशरूम उत्पादन और प्रोसेसिंग प्लांट",
+            "shortEn": "Climate Controlled (AC) | Substrate Mixing | Complete Setup",
+            "shortHi": "क्लाइमेट कंट्रोल्ड (AC) | सबस्ट्रेट मिक्सिंग | संपूर्ण सेटअप",
+            "fullEn": "We provide a complete end-to-end solution for modern mushroom cultivation and processing. Our setup includes high-tech climate control systems (Industrial AC & Humidifiers) to maintain the perfect temperature and humidity for Button, Oyster, and Milky mushrooms. We offer all necessary machinery including substrate mixers, compost pasteurization units, bagging machines, and specialized stainless steel racks. Whether you need a small-scale indoor setup or a large-scale commercial farm, we provide everything required—from growing equipment to high-speed dehydration and canning units for processed mushrooms. Our systems are designed for maximum yield and zero-waste production, customized as per your farm size.",
+            "fullHi": "हम आधुनिक मशरूम की खेती और प्रसंस्करण (Processing) के लिए संपूर्ण एंड-टू-एंड समाधान प्रदान करते हैं। हमारे सेटअप में बटन, ऑयस्टर और मिल्की मशरूम के लिए सटीक तापमान और आर्द्रता बनाए रखने के लिए हाई-टेक क्लाइमेट कंट्रोल सिस्टम (इंडस्ट्रियल AC और ह्यूमिडिफायर) शामिल हैं। हम सबस्ट्रेट मिक्सर, कम्पोस्ट पास्चुरीकरण इकाइयाँ, बैगिंग मशीन और विशेष स्टेनलेस स्टील रैक सहित सभी आवश्यक मशीनरी प्रदान करते हैं। चाहे आपको छोटे स्तर के इनडोर सेटअप की आवश्यकता हो या बड़े पैमाने के व्यावसायिक फार्म की, हम उगाने के उपकरण से लेकर प्रोसेस्ड मशरूम के लिए हाई-स्पीड डिहाइड्रेशन और कैनिंग यूनिट तक सब कुछ उपलब्ध कराते हैं।",
+            "featuresEn": [
+                "Complete Farm Setup: Button, Oyster & Milky Mushrooms",
+                "Advanced Industrial AC & Humidity Control Systems",
+                "Substrate Mixing & Compost Pasteurization Units",
+                "Multi-Tier Stainless Steel Growing Rack Systems",
+                "Available in All Capacities (Small to High-Volume Commercial)",
+                "Automated Misting & Irrigation Control Panel",
+                "Dehydration & Canning Equipment for Processing",
+                "PMFME Subsidy & NHB (National Horticulture Board) Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण फार्म सेटअप: बटन, ऑयस्टर और मिल्की मशरूम",
+                "उन्नत इंडस्ट्रियल AC और ह्यूमिडिटी कंट्रोल सिस्टम",
+                "सबस्ट्रेट मिक्सिंग और कम्पोस्ट पास्चुरीकरण इकाइयाँ",
+                "मल्टी-टियर स्टेनलेस स्टील ग्रोइंग रैक सिस्टम",
+                "सभी क्षमताओं में उपलब्ध (छोटे से बड़े कमर्शियल स्तर तक)",
+                "स्वचालित मिस्टिंग और सिंचाई कंट्रोल पैनल",
+                "प्रोसेसिंग के लिए डिहाइड्रेशन और कैनिंग उपकरण",
+                "PMFME सब्सिडी और NHB (राष्ट्रीय बागवानी बोर्ड) हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/mushroom-plant (1).png",
+                "../assets/products/mushroom-plant (2).png",
+                "../assets/products/mushroom-plant (3).png",
+                "../assets/products/mushroom-plant (4).png"
+            ]
+        },
+        {
+            "id": 21,
+            "nameEn": "Fully Automatic Multi-Grain Milling Plant (Atta, Besan, Rice & Suji)",
+            "nameHi": "पूर्ण स्वचालित मल्टी-ग्रेन मिलिंग प्लांट (आटा, बेसन, चावल और सूजी)",
+            "shortEn": "Stone-less Pulverizers | Precision Cleaning | Small to Big Scale",
+            "shortHi": "स्टोन-लेस पल्वेराइजर | सटीक सफाई | छोटे से बड़े पैमाने तक",
+            "fullEn": "We offer complete integrated solutions for the milling and processing of all types of grains including Wheat (Atta/Maida/Suji), Gram (Besan), Rice, and Corn. Our plant range includes advanced stone-less pulverizers for fine grinding, high-efficiency vibro-screen cleaners for de-stoning, and automated moisture controllers to maintain product quality. We provide machines in all capacities—from compact mini-chakkis for local retail to high-speed fully automated industrial lines for mass production. Built with heavy-duty materials and food-grade SS 304, these plants ensure maximum output with minimum power consumption and dust-free operation, making them perfect for premium flour and pulse processing.",
+            "fullHi": "हम गेहूं (आटा/मैदा/सूजी), चना (बेसन), चावल और मक्का सहित सभी प्रकार के अनाज के मिलिंग और प्रसंस्करण के लिए संपूर्ण समाधान प्रदान करते हैं। हमारी प्लांट रेंज में बारीक पिसाई के लिए उन्नत स्टोन-लेस पल्वेराइजर, कंकड़ निकालने के लिए उच्च-दक्षता वाले वाइब्रो-स्क्रीन क्लीनर और उत्पाद की गुणवत्ता बनाए रखने के लिए स्वचालित नमी नियंत्रक शामिल हैं। हम छोटी मिनी-चक्की से लेकर बड़े पैमाने पर उत्पादन के लिए हाई-स्पीड पूर्ण स्वचालित औद्योगिक लाइनों तक, हर क्षमता में मशीनें उपलब्ध कराते हैं। हैवी-ड्यूटी सामग्री और फूड-ग्रेड SS 304 के साथ निर्मित, ये प्लांट न्यूनतम बिजली खपत और डस्ट-फ्री ऑपरेशन के साथ अधिकतम उत्पादन सुनिश्चित करते हैं।",
+            "featuresEn": [
+                "Multi-Grain: Wheat, Gram (Besan), Rice, Maize & More",
+                "Available in All Capacities (Home-Scale to Industrial Giants)",
+                "Advanced Stone-less Pulverizers & Impact Mills",
+                "Integrated Cleaning, De-stoning & Grading System",
+                "Uniform Particle Size Control for Premium Product",
+                "Fully Automatic Weighing & Pouch Packing Solutions",
+                "Hygienic Dust-Free Operation & SS 304 Construction",
+                "PMFME Subsidy & Government Industry Scheme Ready"
+            ],
+            "featuresHi": [
+                "मल्टी-ग्रेन: गेहूं, चना (बेसन), चावल, मक्का और अन्य",
+                "सभी क्षमताओं में उपलब्ध (होम-स्केल से बड़ी इंडस्ट्री तक)",
+                "उन्नत स्टोन-लेस पल्वेराइजर और इम्पैक्ट मिल्स",
+                "एकीकृत सफाई, डी-स्टोनिंग और ग्रेडिंग सिस्टम",
+                "प्रीमियम उत्पाद के लिए समान कण आकार (Size) नियंत्रण",
+                "पूर्ण स्वचालित वजन और पाउच पैकेजिंग समाधान",
+                "हाइजीनिक डस्ट-फ्री ऑपरेशन और SS 304 निर्माण",
+                "PMFME सब्सिडी और सरकारी उद्योग योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/flour-mill-plant (1).png",
+                "../assets/products/flour-mill-plant (2).png",
+                "../assets/products/flour-mill-plant (3).png",
+                "../assets/products/flour-mill-plant (4).png"
+            ]
+        },
+        {
+            "id": 22,
+            "nameEn": "Fully Automatic Modern Jaggery (Gud) Processing Plant",
+            "nameHi": "पूर्ण स्वचालित आधुनिक गुड़ उद्योग प्रोसेसिंग प्लांट",
+            "shortEn": "Sugarcane Crushing | Steam Boiling | Powder & Cube Making",
+            "shortHi": "गन्ना क्रशिंग | स्टीम बॉइलिंग | पाउडर और क्यूब मेकिंग",
+            "fullEn": "We provide complete end-to-end solutions for modern Jaggery (Gud) production. Our plant range includes high-recovery multi-roller sugarcane crushers, advanced steam-based boiling systems to prevent charring, and automated filtration for pure, chemical-free jaggery. We offer machines in all capacities—from mini-plants for farmers to large-scale industrial units. The plant is equipped with specialized machinery for making various forms of jaggery, including traditional blocks (Bheli), high-demand Jaggery Powder, and Liquid Jaggery (Kakvi). Built with food-grade SS 304 contact parts, our plants ensure maximum hygiene, consistent golden color, and long shelf life, making them ideal for premium export-quality production.",
+            "fullHi": "हम आधुनिक गुड़ उत्पादन के लिए संपूर्ण एंड-टू-एंड समाधान प्रदान करते हैं। हमारी प्लांट रेंज में हाई-रिकवरी मल्टी-रोलर गन्ना क्रशर, जलने से बचाने के लिए उन्नत स्टीम-आधारित बॉइलिंग सिस्टम और शुद्ध, रसायन मुक्त गुड़ के लिए स्वचालित फिल्ट्रेशन शामिल हैं। हम सभी क्षमताओं में मशीनें उपलब्ध कराते हैं—किसानों के लिए मिनी-प्लांट से लेकर बड़े पैमाने पर औद्योगिक इकाइयों तक। प्लांट पारंपरिक भेली (ब्लॉक), गुड़ पाउडर और तरल गुड़ (काकवी) बनाने के लिए विशेष मशीनरी से लैस है। फूड-ग्रेड SS 304 संपर्क भागों के साथ निर्मित, हमारे प्लांट अधिकतम स्वच्छता, सुसंगत सुनहरा रंग और लंबी शेल्फ लाइफ सुनिश्चित करते हैं, जो प्रीमियम निर्यात-गुणवत्ता (Export Quality) के उत्पादन के लिए एकदम सही हैं।",
+            "featuresEn": [
+                "Complete Line: Crushing, Boiling, Filtration & Molding",
+                "Available in All Capacities (Small Mini Units to Big Industrial Plants)",
+                "Advanced Steam Boiling Technology for Nutrient Retention",
+                "Specialized Jaggery Powder & Cube Making Machines",
+                "High-Recovery Sugarcane Crushers with Maximum Juice Extraction",
+                "Hygienic SS 304 Construction & Chemical-Free Processing",
+                "Automatic Weighing & Pouch Packaging Solutions",
+                "PMFME Subsidy & Agri-Business Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण लाइन: क्रशिंग, बॉइलिंग, फिल्ट्रेशन और मोल्डिंग",
+                "सभी क्षमताओं में उपलब्ध (छोटी मिनी इकाइयों से बड़े इंडस्ट्रियल प्लांट तक)",
+                "पोषक तत्वों को बनाए रखने के लिए उन्नत स्टीम बॉइलिंग तकनीक",
+                "विशेष गुड़ पाउडर और क्यूब (ढेली) बनाने वाली मशीनें",
+                "अधिकतम रस निकालने के लिए हाई-रिकवरी गन्ना क्रशर",
+                "हाइजीनिक SS 304 निर्माण और रसायन मुक्त प्रोसेसिंग",
+                "स्वचालित वजन और पाउच पैकेजिंग समाधान",
+                "PMFME सब्सिडी और कृषि-व्यवसाय सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/jaggery-plant (3).png",
+                "../assets/products/jaggery-plant (2).png",
+                "../assets/products/jaggery-plant (1).png",
+                "../assets/products/jaggery-plant (4).png"
+            ]
+        },
+        {
+            "id": 23,
+            "nameEn": "Fully Automatic Makhana (Foxnut) Processing & Roasting Plant",
+            "nameHi": "पूर्ण स्वचालित मखाना (फॉक्स नट) प्रोसेसिंग और रोस्टिंग प्लांट",
+            "shortEn": "Cleaning | High-Pressure Popping | Grading | Flavored Roasting",
+            "shortHi": "सफाई | हाई-प्रेशर पॉपिंग | ग्रेडिंग | फ्लेवर्ड रोस्टिंग",
+            "fullEn": "We provide complete end-to-end solutions for the processing and value addition of Foxnuts (Makhana). Our plant range includes advanced high-pressure popping machines that ensure maximum expansion and crispiness. The line features automated cleaning and grading systems to sort Makhanas by size (6mm to 10mm+), followed by polishing for a premium white finish. We also offer specialized flavored roasting units and spice coating machines to create high-demand snacks like peri-peri or cheese makhana. Built with heavy-duty materials and food-grade SS 304, these plants are available in various capacities, from small mini-units for startups to large-scale industrial export lines.",
+            "fullHi": "हम मखाना (फॉक्स नट) के प्रसंस्करण और वैल्यू एडिशन के लिए संपूर्ण एंड-टू-एंड समाधान प्रदान करते हैं। हमारी प्लांट रेंज में उन्नत हाई-प्रेशर पॉपिंग मशीनें शामिल हैं जो अधिकतम फुलाव और कुरकुरापन सुनिश्चित करती हैं। इस लाइन में मखाना को आकार (6mm से 10mm+) के आधार पर छांटने के लिए स्वचालित सफाई और ग्रेडिंग सिस्टम, और प्रीमियम सफेद फिनिश के लिए पॉलिशिंग शामिल है। हम पेरी-पेरी या चीज़ मखाना जैसे हाई-डिमांड स्नैक्स बनाने के लिए विशेष फ्लेवर्ड रोस्टिंग और मसाला कोटिंग मशीनें भी प्रदान करते हैं। हैवी-ड्यूटी सामग्री और SS 304 के साथ निर्मित, ये प्लांट स्टार्टअप के लिए छोटी मिनी-इकाइयों से लेकर बड़े पैमाने पर निर्यात लाइनों तक उपलब्ध हैं।",
+            "featuresEn": [
+                "Complete Line: Cleaning, Popping, Grading & Polishing",
+                "Available in All Sizes (Mini Startup to Large Export Units)",
+                "Advanced High-Pressure Popping for Maximum Expansion",
+                "Multi-Stage Grading System for Precise Size Sorting",
+                "Integrated Flavored Roasting & Spice Coating Technology",
+                "Fully Automatic Pouch Packaging with Nitrogen Flushing",
+                "Hygienic SS 304 Construction & Energy Efficient Design",
+                "PMFME Subsidy & ODOP (One District One Product) Scheme Ready"
+            ],
+            "featuresHi": [
+                "संपूर्ण लाइन: सफाई, पॉपिंग, ग्रेडिंग और पॉलिशिंग",
+                "सभी साइज़ में उपलब्ध (मिनी स्टार्टअप से बड़ी एक्सपोर्ट यूनिट तक)",
+                "अधिकतम फुलाव के लिए उन्नत हाई-प्रेशर पॉपिंग तकनीक",
+                "सटीक आकार छंटाई के लिए मल्टी-स्टेज ग्रेडिंग सिस्टम",
+                "एकीकृत फ्लेवर्ड रोस्टिंग और मसाला कोटिंग तकनीक",
+                "नाइट्रोजन फ्लशिंग के साथ पूर्ण स्वचालित पाउच पैकेजिंग",
+                "हाइजीनिक SS 304 निर्माण और ऊर्जा कुशल डिज़ाइन",
+                "PMFME सब्सिडी और ODOP (एक जिला एक उत्पाद) योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/makhana-plant (1).png",
+                "../assets/products/makhana-plant (2).png",
+                "../assets/products/makhana-plant (3).png",
+                "../assets/products/makhana-plant (4).png"
+            ]
+        },
+        {
+            "id": 24,
+            "nameEn": "Fully Automatic All-Type Paste (Ginger, Garlic & Onion) Processing Plant",
+            "nameHi": "पूर्ण स्वचालित सभी प्रकार के पेस्ट (अदरक, लहसुन और प्याज) प्रोसेसिंग प्लांट",
+            "shortEn": "Peeling | Fine Grinding | Vacuum Packaging | Small to Big Scale",
+            "shortHi": "छीलना | बारीक पिसाई | वैक्यूम पैकेजिंग | छोटे से बड़े पैमाने तक",
+            "fullEn": "We provide complete end-to-end integrated solutions for the high-volume production of premium Ginger, Garlic, Onion, and Chili pastes. Our plant range starts from small-scale units for budding entrepreneurs to fully automated industrial lines for mass-market brands. The process features advanced vegetable washers, high-speed automated peelers to reduce waste, and cold-grinding technology to preserve the natural pungency and color of the ingredients. The plant is equipped with vacuum-sealed packaging systems to ensure a long shelf life without the need for excessive preservatives. Built with food-grade SS 316 and SS 304, these plants ensure maximum hygiene and easy cleaning (CIP) for consistent, export-quality paste production.",
+            "fullHi": "हम प्रीमियम अदरक, लहसुन, प्याज और मिर्च के पेस्ट के उच्च-मात्रा में उत्पादन के लिए संपूर्ण एंड-टू-एंड एकीकृत समाधान प्रदान करते हैं। हमारी प्लांट रेंज में छोटे उद्यमियों के लिए छोटी इकाइयों से लेकर बड़े ब्रांडों के लिए पूर्ण स्वचालित औद्योगिक लाइनें शामिल हैं। इस प्रक्रिया में उन्नत वेजिटेबल वाशर, बर्बादी को कम करने के लिए हाई-स्पीड स्वचालित पीलर, और सामग्री के प्राकृतिक तीखेपन और रंग को बनाए रखने के लिए कोल्ड-ग्राइंडिंग तकनीक शामिल है। प्लांट वैक्यूम-सील्ड पैकेजिंग सिस्टम से लैस है ताकि बिना अधिक प्रिजर्वेटिव के लंबी शेल्फ लाइफ सुनिश्चित की जा सके। फूड-ग्रेड SS 316 और SS 304 के साथ निर्मित, ये प्लांट सुसंगत और निर्यात-गुणवत्ता (Export Quality) के उत्पादन के लिए अधिकतम स्वच्छता और आसान सफाई सुनिश्चित करते हैं।",
+            "featuresEn": [
+                "Multi-Purpose: Suitable for Ginger, Garlic, Onion & Chili Paste",
+                "Available in All Capacities (Mini Units to Large Industrial Plants)",
+                "Advanced Peeling Technology with Minimal Product Loss",
+                "High-Speed Precision Grinders for Smooth Texture",
+                "Cold-Grinding Process to Retain Natural Aroma & Color",
+                "Automated Pouch & Jar Filling with Vacuum Sealing",
+                "Hygienic SS 316/304 Construction & Easy Maintenance",
+                "PMFME Subsidy & Food Processing Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "बहु-उद्देशीय: अदरक, लहसुन, प्याज और मिर्च पेस्ट के लिए उपयुक्त",
+                "सभी क्षमताओं में उपलब्ध (मिनी इकाइयों से बड़े औद्योगिक प्लांट तक)",
+                "न्यूनतम नुकसान के साथ उन्नत पीलिंग (छीलने) की तकनीक",
+                "स्मूथ टेक्सचर के लिए हाई-स्पीड सटीक ग्राइंडर",
+                "प्राकृतिक सुगंध और रंग बनाए रखने के लिए कोल्ड-ग्राइंडिंग प्रक्रिया",
+                "वैक्यूम सीलिंग के साथ स्वचालित पाउच और जार फिलिंग",
+                "हाइजीनिक SS 316/304 निर्माण और आसान रखरखाव",
+                "PMFME सब्सिडी और खाद्य प्रसंस्करण सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/paste-plant (1).png",
+                "../assets/products/paste-plant (2).png",
+                "../assets/products/paste-plant (3).png",
+                "../assets/products/paste-plant (4).png"
+            ]
+        },
+        {
+            "id": 25,
+            "nameEn": "Fully Automatic Pani Puri (Pani Batasa) Making Plant",
+            "nameHi": "पूर्ण स्वचालित पानी पूरी (पानी बताशा) मेकिंग प्लांट",
+            "shortEn": "Automatic Cutting | Continuous Frying | Small to Large Scale",
+            "shortHi": "स्वचालित कटिंग | निरंतर फ्राइंग | छोटे से बड़े पैमाने तक",
+            "fullEn": "We offer complete automated solutions for the mass production of crispy and uniform Pani Puris (Pani Batasa). Our plant range includes high-torque dough kneaders, precision sheet rollers, and automatic die-cutting machines that ensure every puri is of the same size and shape. The line features a continuous deep-frying system with precise temperature control to achieve the perfect puff and golden-brown color with minimal oil absorption. We provide machines in all capacities—from compact units for local suppliers to high-speed industrial lines for packaged snack brands. Built with food-grade SS 304, these plants ensure 100% hygiene and a dust-free production environment.",
+            "fullHi": "हम कुरकुरी और एक समान पानी पूरी (पानी बताशा) के बड़े पैमाने पर उत्पादन के लिए पूर्ण स्वचालित समाधान प्रदान करते हैं। हमारी प्लांट रेंज में हाई-टॉर्क डो नीडर, सटीक शीट रोलर्स और स्वचालित डाई-कटिंग मशीनें शामिल हैं जो सुनिश्चित करती हैं कि हर पूरी एक ही आकार और शेप की हो। इस लाइन में सटीक तापमान नियंत्रण के साथ एक निरंतर डीप-फ्राइंग सिस्टम है ताकि न्यूनतम तेल सोखने के साथ सही फुलाव और सुनहरा रंग प्राप्त किया जा सके। हम सभी क्षमताओं में मशीनें प्रदान करते हैं—स्थानीय आपूर्तिकर्ताओं के लिए कॉम्पैक्ट इकाइयों से लेकर पैक्ड स्नैक ब्रांडों के लिए हाई-स्पीड औद्योगिक लाइनों तक।",
+            "featuresEn": [
+                "Complete Automation: Mixing, Sheeting, Cutting & Frying",
+                "Available in All Capacities (Small Mini Units to Big Industrial Plants)",
+                "Precision Die-Cutting for Uniform Size & Weight",
+                "Continuous Frying System with Automated Oil Filtration",
+                "Low Oil Absorption Technology for Crispy Texture",
+                "High-Speed Production with Minimal Labor Requirement",
+                "Hygienic SS 304 Construction & Easy-to-Clean Design",
+                "PMFME Subsidy & Micro-Industry Government Scheme Ready"
+            ],
+            "featuresHi": [
+                "पूर्ण स्वचालन: मिक्सिंग, शीटिंग, कटिंग और फ्राइंग",
+                "सभी क्षमताओं में उपलब्ध (छोटी मिनी इकाइयों से बड़े इंडस्ट्रियल प्लांट तक)",
+                "समान आकार और वजन के लिए सटीक डाई-कटिंग",
+                "स्वचालित तेल फिल्ट्रेशन के साथ निरंतर फ्राइंग सिस्टम",
+                "कुरकुरे टेक्सचर के लिए कम तेल सोखने की तकनीक",
+                "न्यूनतम श्रम आवश्यकता के साथ हाई-स्पीड उत्पादन",
+                "हाइजीनिक SS 304 निर्माण और आसान सफाई वाला डिज़ाइन",
+                "PMFME सब्सिडी और सूक्ष्म उद्योग सरकारी योजनाओं हेतु तैयार"
+            ],
+            "images": [
+                "../assets/products/pani-puri-machine  (4).png",
+                "../assets/products/pani-puri-machine  (2).png",
+                "../assets/products/pani-puri-machine  (3).png",
+                "../assets/products/pani-puri-machine  (1).png"
             ]
         },
         {

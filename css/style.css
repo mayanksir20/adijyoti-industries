@@ -186,29 +186,37 @@ body {
   }
 }
 
+/* Active Link Styling */
+.active-mobile {
+  color: #1d70d1 !important;
+}
 
+/* Hover effect: Sirf unpe jo active nahi hain */
+.nav-hover:not(.active-mobile):hover {
+  color: #ffffff !important;
+}
 
 #feedback-track {
-        display: flex;
-        will-change: transform;
-    }
+  display: flex;
+  will-change: transform;
+}
 
-    /* Desktop: Exactly 2 cards visible (50% - gap) */
-    .feedback-card {
-        min-width: 100%; 
-        flex-shrink: 0;
-    }
+/* Desktop: Exactly 2 cards visible (50% - gap) */
+.feedback-card {
+  min-width: 100%;
+  flex-shrink: 0;
+}
 
-    @media (min-width: 1024px) {
-        .feedback-card {
-            min-width: calc(50% - 12px); /* 12px is half of gap-6 (24px) */
-        }
-    }
+@media (min-width: 1024px) {
+  .feedback-card {
+    min-width: calc(50% - 12px); /* 12px is half of gap-6 (24px) */
+  }
+}
 
-    /* Square Image Styling */
-    .client-img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 24px; /* Modern Square */
-    }
+/* Square Image Styling */
+.client-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 24px; /* Modern Square */
+}

@@ -77,31 +77,101 @@ function applyLanguage(lang) {
 
 
 
+// Active menu item logic
 function handleActiveLinks() {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-    // 1. Handle Main Nav Links
+    // --- 1. Desktop Handle ---
+    // Main Links (Home, Products, Contact)
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('text-[#1d70d1]');
         }
     });
 
-    // 2. Handle Dropdown Items & Parent Highlight
+    // Services Parent Logic
     const servicesParent = document.getElementById('servicesParent');
-    const dropdownItems = document.querySelectorAll('.nav-dropdown-item');
-
-    dropdownItems.forEach(item => {
+    document.querySelectorAll('.nav-dropdown-item').forEach(item => {
         if (item.getAttribute('href') === currentPath) {
-            // Highlight the dropdown text inside the card
-            item.querySelector('.text-white').classList.replace('text-white', 'text-[#1d70d1]');
-            // Highlight the PARENT "Services" button
-            servicesParent.classList.add('text-[#1d70d1]');
+            const textElement = item.querySelector('.text-white');
+            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
+            if (servicesParent) servicesParent.classList.add('text-[#1d70d1]');
         }
     });
+
+    // About Us Parent Logic (FIXED)
+    const aboutParent = document.getElementById('aboutParent');
+    document.querySelectorAll('.about-dropdown-item').forEach(item => {
+        if (item.getAttribute('href') === currentPath) {
+            const textElement = item.querySelector('.text-white');
+            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
+            if (aboutParent) aboutParent.classList.add('text-[#1d70d1]');
+        }
+    });
+
+    // --- 2. Mobile Handle (FIXED) ---
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    if (mobileSidebar) {
+        const allMobileLinks = mobileSidebar.querySelectorAll('a');
+        allMobileLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                // Highlighting the link itself
+                link.classList.add('text-[#1d70d1]');
+
+                // If link is inside About Submenu
+                if (link.closest('#mobileAboutSub')) {
+                    const mobileAboutBtn = document.getElementById('mobileAboutBtn');
+                    const mobileAboutSub = document.getElementById('mobileAboutSub');
+
+                    if (mobileAboutBtn) mobileAboutBtn.classList.add('text-[#1d70d1]');
+                    if (mobileAboutSub) mobileAboutSub.classList.remove('hidden'); // Keeping it open
+                }
+            }
+        });
+    }
 }
 
 window.addEventListener('DOMContentLoaded', handleActiveLinks);
 
 
 
+
+
+function openModal(imgSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        
+        // Modal dikhao aur image source set karo
+        modalImg.src = imgSrc;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        
+        // Scroll lock karo
+        document.body.style.overflow = 'hidden';
+        
+        // Animation effects
+        setTimeout(() => {
+            modalImg.classList.remove('scale-90', 'opacity-0');
+            modalImg.classList.add('scale-100', 'opacity-100');
+        }, 20);
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        
+        // Reverse animation
+        modalImg.classList.remove('scale-100', 'opacity-100');
+        modalImg.classList.add('scale-90', 'opacity-0');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto'; // Scroll unlock
+        }, 300);
+    }
+
+    // Keyboard 'Escape' button logic
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });

@@ -76,6 +76,17 @@ const customerData = [
         feedbackHi: "आदिज्योति इंडस्ट्रीज के साथ जुड़कर मैंने PMKSY योजना के तहत ड्रिप इरिगेशन प्लांट और सोलर सेटअप लगवाया है। आज अयोध्या में मेरी फसल बहुत अच्छी हो रही है और आस-पास के लोग भी इसे देखकर प्रेरित हो रहे हैं। मैं बहुत खुश हूँ!",
         img: "../assets/image/pmksy-2.jpg"
     },
+    {
+        nameEn: "Nirpendra Verma",
+        nameHi: "नृपेंद्र वर्मा",
+        roleEn: "Industrial Mill Owner",
+        roleHi: "औद्योगिक मिल मालिक",
+        locationEn: "Ambedkar Nagar, Uttar Pradesh",
+        locationHi: "अम्बेडकर नगर, उत्तर प्रदेश",
+        feedbackEn: "I installed a solar plant through Adijyoti Industries to run my composite mill (Flour, Oil, and Rice). Since then, my electricity bill has become zero. It’s the best investment for any mill owner in Ambedkar Nagar!",
+        feedbackHi: "मैंने अपनी मिली-जुली मिल (आटा, तेल और राइस मिल) चलाने के लिए आदिज्योति इंडस्ट्रीज के माध्यम से सोलर प्लांट लगवाया है। जब से यह लगा है, मेरा बिजली का बिल 0 आ रहा है। अम्बेडकर नगर के किसी भी मिल मालिक के लिए यह सबसे अच्छा निवेश है!",
+        img: "../assets/image/nirpendra-verma.jpeg"
+    },
 
 ];
 

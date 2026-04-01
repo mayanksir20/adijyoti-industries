@@ -24,39 +24,67 @@
     </div>
 
     <div id="mobileSidebar"
-        class="fixed inset-y-0 left-0 w-[280px] bg-[#161f31] backdrop-blur-xl z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6 border-r border-white/10">
+        class="fixed inset-y-0 left-0 w-[280px] bg-[#161f31] backdrop-blur-xl z-[200] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden p-6 border-r border-white/10 overflow-y-auto">
+
         <div class="flex items-center justify-between mb-10">
             <div class="text-2xl font-bold bebas text-[#1976d2]">ADIJYOTI</div>
             <button onclick="toggleMobileMenu()" class="p-2 text-slate-400">
                 <i data-lucide="x"></i>
             </button>
         </div>
+
         <div class="flex flex-col gap-6 font-bold text-slate-300">
-            <a href="index.html" class="text-[#1976d2]" data-en="Home" data-hi="होम">Home</a>
-            <a href="about.html" class="hover:text-white" data-en="About" data-hi="हमारे बारे में">About</a>
-            <a href="products.html" class="hover:text-white" data-en="Products" data-hi="मशीनें">Products</a>
-            <a href="contact.html" class="hover:text-white" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a>
+            <a href="index.html" class="nav-hover transition-all" data-en="Home" data-hi="होम">Home</a>
+
+            <div class="flex flex-col">
+                <button id="mobileAboutBtn"
+                    onclick="document.getElementById('mobileAboutSub').classList.toggle('hidden')"
+                    class="flex items-center justify-between nav-hover transition-all">
+                    <span data-en="About" data-hi="हमारे बारे में">About</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </button>
+                <div id="mobileAboutSub" class="hidden flex flex-col gap-4 pl-4 mt-4 border-l border-white/10">
+                    <a href="about.html" class="text-sm nav-hover transition-all" data-en="About Company"
+                        data-hi="कंपनी के बारे में">About Company</a>
+                    <a href="mission-vision.html" class="text-sm nav-hover transition-all"
+                        data-en="Our Mission & Vision" data-hi="हमारा लक्ष्य और विजन">Our Mission & Vision</a>
+                    <a href="directors.html" class="text-sm nav-hover transition-all" data-en="Our Directors"
+                        data-hi="हमारे निदेशक">Our Directors</a>
+                    <a href="locations.html" class="text-sm nav-hover transition-all" data-en="Our Presence Location"
+                        data-hi="हमारी उपस्थिति">Our Presence Location</a>
+                </div>
+            </div>
+
+            <a href="products.html" class="nav-hover transition-all" data-en="Products" data-hi="मशीनें">Products</a>
+            <a href="contact.html" class="nav-hover transition-all" data-en="Contact Us" data-hi="संपर्क करें">Contact
+                Us</a>
+
             <hr class="border-white/10">
+
             <div class="flex flex-col gap-4">
                 <p class="text-[10px] uppercase text-slate-500 tracking-widest">Our Services</p>
-                <a href="pmfme.html" class="flex items-center gap-3"><i data-lucide="utensils"
-                        class="w-5 h-5 text-[#1976d2]"></i> PMFME</a>
-                <a href="pm-surya-ghar.html" class="flex items-center gap-3"><i data-lucide="sun"
-                        class="w-5 h-5 text-yellow-500"></i> Solar</a>
-                <a href="pmksy.html" class="flex items-center gap-3"><i data-lucide="snowflake"
-                        class="w-5 h-5 text-emerald-500"></i> PMKSY</a>
+                <a href="pmfme.html" class="flex items-center gap-3 nav-hover transition-all">
+                    <i data-lucide="utensils" class="w-5 h-5 text-[#1976d2]"></i> PMFME
+                </a>
+                <a href="pm-surya-ghar.html" class="flex items-center gap-3 nav-hover transition-all">
+                    <i data-lucide="sun" class="w-5 h-5 text-yellow-500"></i> Solar
+                </a>
+                <a href="pmksy.html" class="flex items-center gap-3 nav-hover transition-all">
+                    <i data-lucide="snowflake" class="w-5 h-5 text-emerald-500"></i> PMKSY
+                </a>
+                <a href="industrial-solutions.html" class="flex items-center gap-3 nav-hover transition-all">
+                    <i data-lucide="factory" class="w-5 h-5 text-emerald-500"></i> Industrial Solutions
+                </a>
             </div>
         </div>
     </div>
 
     <nav class="fixed top-0 w-full z-[100] backdrop-blur-md border-b border-white/10 shadow-2xl bg-white/80">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-
             <a href="index.html" class="flex items-center gap-3">
                 <div
                     class="bg-[#1d70d1] text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-2xl font-bold text-xl md:text-2xl shadow-lg shadow-blue-500/20">
-                    AJ
-                </div>
+                    AJ</div>
                 <div>
                     <div
                         class="text-xl md:text-2xl font-bold tracking-[0.2em] leading-none bebas text-slate-900 uppercase">
@@ -70,8 +98,45 @@
             <div class="hidden lg:flex items-center text-slate-700 gap-10 font-bold desktop-nav-links">
                 <a href="index.html" class="nav-link hover:text-[#1d70d1] transition-all" data-en="Home"
                     data-hi="होम">Home</a>
-                <a href="about.html" class="nav-link hover:text-[#1d70d1] transition-all" data-en="About"
-                    data-hi="हमारे बारे में">About</a>
+
+                <div class="relative group">
+                    <button id="aboutParent" type="button"
+                        class="flex items-center gap-1 hover:text-[#1d70d1] transition-colors py-8">
+                        <span data-en="About Us" data-hi="हमारे बारे में">About Us</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+
+                    <div
+                        class="absolute top-full -left-4 w-64 pt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div
+                            class="bg-[#161f31]/95 backdrop-blur-xl shadow-2xl rounded-b-[2rem] border border-white/10 p-2 overflow-hidden mt-0">
+                            <a href="about.html"
+                                class="about-dropdown-item block p-4 hover:bg-white/5 rounded-2xl transition-all group">
+                                <div class="text-sm font-bold text-white" data-en="About Company"
+                                    data-hi="कंपनी के बारे में">About
+                                    Company</div>
+                            </a>
+                            <a href="mission-vision.html"
+                                class="about-dropdown-item block p-4 hover:bg-white/5 rounded-2xl transition-all group border-t border-white/5">
+                                <div class="text-sm font-bold text-white" data-en="Our Mission & Vision"
+                                    data-hi="हमारा लक्ष्य और विजन">
+                                    Our Mission & Vision</div>
+                            </a>
+                            <a href="directors.html"
+                                class="about-dropdown-item block p-4 hover:bg-white/5 rounded-2xl transition-all group border-t border-white/5">
+                                <div class="text-sm font-bold text-white" data-en="Our Directors"
+                                    data-hi="हमारे निदेशक">Our Directors
+                                </div>
+                            </a>
+                            <a href="locations.html"
+                                class="about-dropdown-item block p-4 hover:bg-white/5 rounded-2xl transition-all group border-t border-white/5">
+                                <div class="text-sm font-bold text-white" data-en="Our Presence Location"
+                                    data-hi="हमारी उपस्थिति">Our
+                                    Presence Location</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="relative group">
                     <button id="servicesParent"
@@ -109,37 +174,29 @@
                                     class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center transition-transform">
                                     <i data-lucide="snowflake" class="w-6 h-6 text-emerald-500"></i>
                                 </div>
-
                                 <div>
                                     <div class="text-sm font-bold text-white uppercase tracking-wide"
-                                        data-en="PMKSY (Agro)" data-hi="पीएमकेएसवाई (कृषि)">
-                                        PMKSY (Agro)
-                                    </div>
+                                        data-en="PMKSY (Agro)" data-hi="पीएमकेएसवाई (कृषि)">PMKSY (Agro)</div>
                                     <div class="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-0.5"
-                                        data-en="Infrastructure & Cold Chain" data-hi="बुनियादी ढांचा और कोल्ड चेन">
-                                        Infrastructure & Cold Chain
-                                    </div>
+                                        data-en="Infrastructure & Cold Chain">Infrastructure & Cold Chain</div>
                                 </div>
                             </a>
                             <a href="industrial-solutions.html"
                                 class="nav-dropdown-item flex items-center gap-4 p-4 hover:bg-white/5 rounded-2xl transition-all group">
                                 <div
-                                    class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center transition-transform group-hover:scale-110 border border-amber-500/20">
+                                    class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
                                     <i data-lucide="factory" class="w-6 h-6 text-amber-500"></i>
                                 </div>
-
                                 <div>
                                     <div class="text-sm font-bold text-white uppercase tracking-wide"
-                                        data-en="Industrial Solutions" data-hi="औद्योगिक समाधान">
-                                        Industrial Solutions
-                                    </div>
-                                    <div class="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-0.5"
-                                        data-en="Custom Machinery & Solar Setup" data-hi="कस्टम मशीनरी और सौर सेटअप">
-                                        Custom Machinery & Solar Setup
-                                    </div>
+                                        data-en="Industrial Solutions">
+                                        Industrial Solutions</div>
+                                    <div
+                                        class="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-0.5">
+                                        Custom Machinery
+                                        & Solar Setup</div>
                                 </div>
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -150,9 +207,8 @@
                     data-hi="संपर्क करें">Contact
                     Us</a>
                 <button onclick="toggleLang()" id="langBtn"
-                    class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">
-                    ENGLISH / हिंदी
-                </button>
+                    class="bg-[#f59e0b] text-white px-5 py-2 rounded-full text-xs font-black hover:bg-[#d97706] transition-all">ENGLISH
+                    / हिंदी</button>
             </div>
 
             <div class="flex lg:hidden items-center gap-4">
@@ -162,7 +218,6 @@
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
-
         </div>
     </nav>
     <!-- Nvbar and Mobile Menu End -->
@@ -425,7 +480,7 @@
 
 
 
-    <!-- Footer Section  -->
+   <!-- Footer Section  -->
     <footer class="relative bg-slate-900 pt-24 pb-12 px-6 overflow-hidden">
         <div class="absolute top-0 left-1/4 w-[400px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full"></div>
         <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-green-600/5 blur-[100px] rounded-full"></div>
@@ -467,17 +522,17 @@
                     <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8" data-en="Solutions"
                         data-hi="समाधान">Solutions</h4>
                     <ul class="space-y-4">
-                        <li><a href="/pmfme"
+                        <li><a href="pmfme.html"
                                 class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
                                 data-en="PMFME Scheme" data-hi="PMFME योजना">PMFME Scheme</a></li>
-                        <li><a href="/pmksy"
+                        <li><a href="pmksy.html"
                                 class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
                                 data-en="Agri Infrastructure" data-hi="एग्री इंफ्रास्ट्रक्चर">Agri Infrastructure</a>
                         </li>
-                        <li><a href="/solar"
+                        <li><a href="pm-surya-ghar.html"
                                 class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
                                 data-en="Solar Subsidy" data-hi="सोलर सब्सिडी">Solar Subsidy</a></li>
-                        <li><a href="/machines"
+                        <li><a href="products.html"
                                 class="text-slate-400 text-sm font-bold hover:text-blue-400 transition-colors"
                                 data-en="Custom Machines" data-hi="कस्टम मशीनें">Custom Machines</a></li>
                     </ul>
@@ -488,15 +543,17 @@
                         data-hi="सहायता">
                         Support</h4>
                     <ul class="space-y-4">
-                        <li><a href="/about" class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                        <li><a href="about.html"
+                                class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
                                 data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
-                        <li><a href="/contact"
+                        <li><a href="contact.html"
                                 class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
                                 data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
-                        <li><a href="/gallery"
+                        <li><a href="gallery.html"
                                 class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
                                 data-en="Project Gallery" data-hi="प्रोजेक्ट गैलरी">Project Gallery</a></li>
-                        <li><a href="/faq" class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
+                        <li><a href="faq.html"
+                                class="text-slate-400 text-sm font-bold hover:text-white transition-colors"
                                 data-en="Help Center" data-hi="सहायता केंद्र">Help Center</a></li>
                     </ul>
                 </div>

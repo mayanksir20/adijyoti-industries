@@ -137,41 +137,44 @@ window.addEventListener('DOMContentLoaded', handleActiveLinks);
 
 
 
+// Initialize Lucide Icons
+lucide.createIcons();
+
 function openModal(imgSrc) {
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImg');
-        
-        // Modal dikhao aur image source set karo
-        modalImg.src = imgSrc;
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        
-        // Scroll lock karo
-        document.body.style.overflow = 'hidden';
-        
-        // Animation effects
-        setTimeout(() => {
-            modalImg.classList.remove('scale-90', 'opacity-0');
-            modalImg.classList.add('scale-100', 'opacity-100');
-        }, 20);
-    }
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
 
-    function closeModal() {
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImg');
-        
-        // Reverse animation
-        modalImg.classList.remove('scale-100', 'opacity-100');
-        modalImg.classList.add('scale-90', 'opacity-0');
-        
-        setTimeout(() => {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = 'auto'; // Scroll unlock
-        }, 300);
-    }
+    modalImg.src = imgSrc;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
 
-    // Keyboard 'Escape' button logic
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeModal();
-    });
+    // Disable page scroll
+    document.body.style.overflow = 'hidden';
+
+    // Trigger animation
+    setTimeout(() => {
+        modalImg.classList.remove('scale-90', 'opacity-0');
+        modalImg.classList.add('scale-100', 'opacity-100');
+    }, 20);
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+
+    // Reverse animation
+    modalImg.classList.remove('scale-100', 'opacity-100');
+    modalImg.classList.add('scale-90', 'opacity-0');
+
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        // Enable page scroll
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
+
+// Escape Key to close modal
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+});

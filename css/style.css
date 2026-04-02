@@ -4,6 +4,7 @@
   --secondary-gray: #e7e7e7; /* Light Backgrounds / Borders */
   --text-dark: #333333; /* 3rd Color for readability */
   --white: #ffffff;
+   --text-muted: #666666; /* 3rd Color for readability */
 }
 
 body {
@@ -219,4 +220,8 @@ body {
   height: 150px;
   object-fit: cover;
   border-radius: 24px; /* Modern Square */
+}
+.email-text {
+  color: var(--text-muted);
+  font-size: 0.7rem;
 }

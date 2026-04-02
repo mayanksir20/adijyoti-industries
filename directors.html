@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -52,6 +53,10 @@
                         data-hi="हमारे निदेशक">Our Directors</a>
                     <a href="locations.html" class="text-sm nav-hover transition-all" data-en="Our Presence Location"
                         data-hi="हमारी उपस्थिति">Our Presence Location</a>
+                    <a href="gallery.html" class="text-sm nav-hover transition-all" data-en="Our Work Gallery"
+                        data-hi="हमारी कार्य गैलरी">
+                        Our Work Gallery
+                    </a>
                 </div>
             </div>
 
@@ -133,6 +138,26 @@
                                 <div class="text-sm font-bold text-white" data-en="Our Presence Location"
                                     data-hi="हमारी उपस्थिति">Our
                                     Presence Location</div>
+                            </a>
+                            <a href="gallery.html"
+                                class="about-dropdown-item block p-4 hover:bg-white/5 rounded-2xl transition-all group border-t border-white/5">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-white group-hover:bg-[#1d70d1] transition-colors">
+                                        <i data-lucide="image" class="w-4 h-4"></i>
+                                    </div>
+
+                                    <div>
+                                        <div class="text-sm font-bold text-white" data-en="Our Work Gallery"
+                                            data-hi="हमारी कार्य गैलरी">
+                                            Our Work Gallery
+                                        </div>
+                                        <p class="text-[10px] text-white/40 uppercase tracking-widest font-medium"
+                                            data-en="Photos & Media" data-hi="फोटो और मीडिया">
+                                            Photos & Media
+                                        </p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -289,139 +314,160 @@
 
     <section class="py-16 md:py-24 hero-gradient relative overflow-hidden">
         <div
-            class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/5 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3">
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/5 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3 animate-pulse">
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5" data-aos="fade-right" data-aos-duration="1000">
                     <div class="relative group">
-                        <div class="relative z-10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl shadow-blue-500/10 cursor-zoom-in"
-                            onclick="openModal('assets/images/leadership-team.jpg')">
+                        <div class="relative z-10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl shadow-blue-500/10 cursor-zoom-in transition-transform duration-500 hover:scale-[1.02]"
+                            onclick="openModal('./assets/image/logo-light.jpeg')">
                             <img src="./assets/image/logo-light.jpeg" alt="AdiJyoti Leadership"
                                 class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
                         </div>
 
-                        <div
-                            class="absolute -bottom-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-[#1d70d1] rounded-3xl -z-0 animate-pulse">
-                        </div>
-                        <div
-                            class="absolute -top-6 -left-6 w-16 h-16 md:w-24 md:h-24 border-4 border-slate-100 rounded-full -z-0">
-                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-[#1d70d1] rounded-3xl -z-0 animate-bounce"
+                            style="animation-duration: 3s;"></div>
 
-                        <div
-                            class="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-20 bg-white/90 backdrop-blur-md p-4 md:p-6 rounded-2xl shadow-xl border border-white/50">
+                        <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-20 bg-white/90 backdrop-blur-md p-4 md:p-6 rounded-2xl shadow-xl border border-white/50 text-center"
+                            data-aos="zoom-in" data-aos-delay="500">
                             <div class="text-[#1d70d1] font-black text-xl md:text-2xl tracking-tighter">15+</div>
-                            <div class="text-[8px] md:text-[10px] uppercase font-bold text-slate-500 tracking-widest">
-                                Years of Impact</div>
+                            <div class="text-[8px] md:text-[10px] uppercase font-bold text-slate-500 tracking-widest"
+                                data-en="Years of Impact" data-hi="प्रभाव के वर्ष">Years of Impact</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-7">
-                    <h2 class="text-[10px] font-black tracking-[0.4em] text-[#1d70d1] uppercase mb-4">Leadership Message
-                    </h2>
-                    <h3 class="text-4xl md:text-6xl font-bold text-slate-900 bebas tracking-wide mb-6 leading-tight">
-                        Leading with <span class="text-[#1d70d1]">Vision & Integrity</span>
-                    </h3>
+                    <div data-aos="fade-up" data-aos-duration="800">
+                        <h2 class="text-[10px] font-black tracking-[0.4em] text-[#1d70d1] uppercase mb-4"
+                            data-en="Leadership Message" data-hi="नेतृत्व संदेश">Leadership Message</h2>
 
-                    <div class="space-y-6 mb-10">
-                        <p
-                            class="text-base md:text-lg text-slate-700 italic font-medium leading-relaxed border-l-4 border-[#1d70d1] pl-6">
-                            "Humara lakshya sirf udyog lagana nahi, balki ek Atmanirbhar Bharat ki mazboot neev taiyar
-                            karna hai."
-                        </p>
+                        <h3
+                            class="text-4xl md:text-6xl font-bold text-slate-900 bebas tracking-wide mb-6 leading-tight">
+                            <span data-en="Leading with" data-hi="नेतृत्व के साथ">Leading with</span>
+                            <span class="text-[#1d70d1]" data-en="Vision & Integrity" data-hi="दृष्टि और अखंडता">Vision
+                                & Integrity</span>
+                        </h3>
+
+                        <div class="space-y-6 mb-10">
+                            <p class="text-base md:text-lg text-slate-700 italic font-medium leading-relaxed border-l-4 border-[#1d70d1] pl-6 transition-all hover:bg-white hover:shadow-sm py-2 rounded-r-xl"
+                                data-en='"Our goal is not just to set up industries, but to prepare a strong foundation for a self-reliant India."'
+                                data-hi='"हमारा लक्ष्य सिर्फ उद्योग लगाना नहीं, बल्कि एक आत्मनिर्भर भारत की मजबूत नींव तैयार करना है।"'>
+                                "Humara lakshya sirf udyog lagana nahi, balki ek Atmanirbhar Bharat ki mazboot neev
+                                taiyar karna hai."
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 pt-8 border-t border-slate-100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 border-t border-slate-100">
 
-                        <div
-                            class="flex items-center gap-4 p-3 md:p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
-                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] shadow-lg shadow-blue-500/10 cursor-zoom-in"
-                                style="width: 80px; height: 100px;"
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 group"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] w-[80px] h-[104px] cursor-zoom-in"
                                 onclick="openModal('./assets/image/vivek-verma.png')">
                                 <img src="./assets/image/vivek-verma.png"
-                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500">
                             </div>
-                            <div>
-                                <h4 class="text-base font-bold text-slate-900">Vivek Verma</h4>
-                                <p class="text-[8px] font-black text-[#1d70d1] uppercase tracking-wider mb-1">MD & CEO
-                                </p>
-                                <div class="flex gap-3 mt-2">
-                                    <a href="mailto:vivek@adijyotiindustries.com"
-                                        class="text-slate-400 hover:text-[#1d70d1] transition-all"><i data-lucide="mail"
-                                            class="w-4 h-4"></i></a>
-                                    <a href="tel:+919999999999"
-                                        class="text-slate-400 hover:text-[#1d70d1] transition-all"><i
-                                            data-lucide="phone" class="w-4 h-4"></i></a>
+                            <div class="flex-1 overflow-hidden">
+                                <h4
+                                    class="text-base font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
+                                    Vivek Verma</h4>
+                                <p class="text-[9px] font-black text-[#1d70d1] uppercase mb-1" data-en="MD & CEO"
+                                    data-hi="प्रबंध निदेशक और सीईओ">MD & CEO</p>
+                                <p class="text-[10px] text-slate-500 truncate mb-2">vivek@adijyotiindustries.com</p>
+                                <div class="flex gap-4 items-center text-slate-400">
+                                    <a href="mailto:..."
+                                        class="hover:text-[#1d70d1] transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-envelope text-sm"></i></a>
+                                    <a href="#" class="hover:text-[#0077b5] transform hover:scale-125 transition-all"><i
+                                            class="fa-brands fa-linkedin text-base"></i></a>
+                                    <a href="tel:..."
+                                        class="hover:text-green-600 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-phone text-sm"></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            class="flex items-center gap-4 p-3 md:p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
-                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] shadow-lg shadow-blue-500/10 cursor-zoom-in"
-                                style="width: 80px; height: 100px;"
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 group"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] w-[80px] h-[104px] cursor-zoom-in"
                                 onclick="openModal('./assets/image/tanya-yadav.jpg')">
                                 <img src="./assets/image/tanya-yadav.jpg"
-                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500">
                             </div>
-                            <div>
-                                <h4 class="text-base font-bold text-slate-900">Tanya Yadav</h4>
-                                <p class="text-[8px] font-black text-emerald-600 uppercase tracking-wider mb-1">Head of
-                                    Business Dev.</p>
-                                <div class="flex gap-3 mt-2">
-                                    <a href="mailto:tanya@adijyotiindustries.com"
-                                        class="text-slate-400 hover:text-emerald-500 transition-all"><i
-                                            data-lucide="mail" class="w-4 h-4"></i></a>
-                                    <a href="tel:+919999999999"
-                                        class="text-slate-400 hover:text-emerald-500 transition-all"><i
-                                            data-lucide="phone" class="w-4 h-4"></i></a>
+                            <div class="flex-1 overflow-hidden">
+                                <h4
+                                    class="text-base font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                    Tanya Yadav</h4>
+                                <p class="text-[9px] font-black text-emerald-600 uppercase mb-1"
+                                    data-en="Head of Business Dev." data-hi="व्यापार विकास प्रमुख">Head of Business Dev.
+                                </p>
+                                <p class="text-[10px] text-slate-500 truncate mb-2">tanya@adijyotiindustries.com</p>
+                                <div class="flex gap-4 items-center text-slate-400">
+                                    <a href="#"
+                                        class="hover:text-emerald-500 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-envelope text-sm"></i></a>
+                                    <a href="#" class="hover:text-[#0077b5] transform hover:scale-125 transition-all"><i
+                                            class="fa-brands fa-linkedin text-base"></i></a>
+                                    <a href="tel:..."
+                                        class="hover:text-green-600 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-phone text-sm"></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            class="flex items-center gap-4 p-3 md:p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
-                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] shadow-lg shadow-blue-500/10 cursor-zoom-in"
-                                style="width: 80px; height: 100px;" onclick="openModal('./assets/image/aman.png')">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 group"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] w-[80px] h-[104px] cursor-zoom-in"
+                                onclick="openModal('./assets/image/aman.png')">
                                 <img src="./assets/image/aman.png"
-                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500">
                             </div>
-                            <div>
-                                <h4 class="text-base font-bold text-slate-900">Aman Verma</h4>
-                                <p class="text-[8px] font-black text-amber-600 uppercase tracking-wider mb-1">Head of
-                                    Operations</p>
-                                <div class="flex gap-3 mt-2">
-                                    <a href="mailto:aman@adijyotiindustries.com"
-                                        class="text-slate-400 hover:text-amber-500 transition-all"><i data-lucide="mail"
-                                            class="w-4 h-4"></i></a>
-                                    <a href="tel:+919999999999"
-                                        class="text-slate-400 hover:text-amber-500 transition-all"><i
-                                            data-lucide="phone" class="w-4 h-4"></i></a>
+                            <div class="flex-1 overflow-hidden">
+                                <h4
+                                    class="text-base font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
+                                    Aman Verma</h4>
+                                <p class="text-[9px] font-black text-amber-600 uppercase mb-1"
+                                    data-en="Head of Operations" data-hi="संचालन प्रमुख">Head of Operations</p>
+                                <p class="text-[10px] text-slate-500 truncate mb-2">aman@adijyotiindustries.com</p>
+                                <div class="flex gap-4 items-center text-slate-400">
+                                    <a href="#" class="hover:text-amber-500 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-envelope text-sm"></i></a>
+                                    <a href="#" class="hover:text-[#0077b5] transform hover:scale-125 transition-all"><i
+                                            class="fa-brands fa-linkedin text-base"></i></a>
+                                    <a href="tel:..."
+                                        class="hover:text-green-600 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-phone text-sm"></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            class="flex items-center gap-4 p-3 md:p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
-                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] shadow-lg shadow-blue-500/10 cursor-zoom-in"
-                                style="width: 80px; height: 100px;" onclick="openModal('./assets/image/mayank.png')">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 group"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="relative flex-shrink-0 overflow-hidden rounded-xl border-2 border-[#1d70d1] w-[80px] h-[104px] cursor-zoom-in"
+                                onclick="openModal('./assets/image/mayank.png')">
                                 <img src="./assets/image/mayank.png"
-                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                                    class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500">
                             </div>
-                            <div>
-                                <h4 class="text-base font-bold text-slate-900">Mayank Chaudhary</h4>
-                                <p class="text-[8px] font-black text-purple-600 uppercase tracking-wider mb-1">Head of
-                                    Engineering</p>
-                                <div class="flex gap-3 mt-2">
-                                    <a href="mailto:mayank@adijyotiindustries.com"
-                                        class="text-slate-400 hover:text-purple-500 transition-all"><i
-                                            data-lucide="mail" class="w-4 h-4"></i></a>
-                                    <a href="tel:+919999999999"
-                                        class="text-slate-400 hover:text-purple-500 transition-all"><i
-                                            data-lucide="phone" class="w-4 h-4"></i></a>
+                            <div class="flex-1 overflow-hidden">
+                                <h4
+                                    class="text-base font-bold text-slate-900 group-hover:text-purple-600 transition-colors">
+                                    Mayank Chaudhary</h4>
+                                <p class="text-[9px] font-black text-purple-600 uppercase mb-1"
+                                    data-en="Head of Engineering" data-hi="तकनीकी प्रमुख">Head of Engineering</p>
+                                <p class="text-[10px] text-slate-500 truncate mb-2">mayank@adijyotiindustries.com</p>
+                                <div class="flex gap-4 items-center text-slate-400">
+                                    <a href="#"
+                                        class="hover:text-purple-500 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-envelope text-sm"></i></a>
+                                    <a href="#" class="hover:text-[#0077b5] transform hover:scale-125 transition-all"><i
+                                            class="fa-brands fa-linkedin text-base"></i></a>
+                                    <a href="tel:..."
+                                        class="hover:text-green-600 transform hover:scale-125 transition-all"><i
+                                            class="fa-solid fa-phone text-sm"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -432,9 +478,11 @@
         </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
 
+    <section class="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-100/30 blur-[120px] rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-16" data-aos="fade-up">
                 <div class="max-w-2xl">
                     <h2 class="text-[10px] font-black tracking-[0.4em] text-[#1d70d1] uppercase mb-4"
@@ -443,113 +491,167 @@
                         <span data-en="Our Core" data-hi="हमारी मुख्य">Our Core</span>
                         <span class="text-[#1d70d1]" data-en="Team Members" data-hi="टीम के सदस्य">Team Members</span>
                     </h3>
+                    <p class="mt-6 text-slate-600 text-sm md:text-base leading-relaxed border-l-4 border-blue-500 pl-6"
+                        data-en="Behind every successful project is a team of passionate experts. Meet the visionaries driving Adijyoti Industries forward."
+                        data-hi="हर सफल प्रोजेक्ट के पीछे भावुक विशेषज्ञों की एक टीम होती है। आदिज्योति इंडस्ट्रीज को आगे बढ़ाने वाले दूरदर्शी लोगों से मिलें।">
+                        Har safal project ke peeche experts ki ek team hoti hai. Meet the visionaries driving Adijyoti
+                        Industries forward.
+                    </p>
                 </div>
-                <p class="text-slate-500 text-xs md:text-sm max-w-xs border-l-2 border-slate-200 pl-4"
-                    data-en="A dedicated team of professionals working towards a common goal of excellence."
-                    data-hi="उत्कृष्टता के साझा लक्ष्य की ओर काम करने वाले पेशेवरों की एक समर्पित टीम।">
-                    Ek samarpit team jo har project ko perfection ke saath pura karti hai.
-                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+                <div class="group bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500"
                     data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-1.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <div class="relative mb-6">
+                            <div
+                                class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 border-2 border-white shadow-md relative z-10">
+                                <img src="assets/image/Alok.png" alt="Alok Verma"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            </div>
+                            <div
+                                class="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-50 rounded-lg -z-0 group-hover:rotate-12 transition-transform">
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Project Manager
-                            </p>
+
+                        <h4 class="text-xl font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors mb-1">
+                            Alok Verma</h4>
+                        <p class="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-4"
+                            data-en="Sales Head Manager" data-hi="बिक्री प्रमुख प्रबंधक">Sales Head Manager</p>
+
+                        <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow italic"
+                            data-en="Driving market expansion and building lasting client partnerships with a strategic approach."
+                            data-hi="रणनीतिक दृष्टिकोण के साथ बाजार विस्तार और स्थायी ग्राहक साझेदारी बनाना।">
+                            Market expansion aur client relationships ko majboot banane mein expert.
+                        </p>
+
+                        <div class="flex gap-3 pt-5 border-t border-slate-100">
+                            <a href="mailto:alok@adijyotiindustries.com"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </a>
+                            <a href="tel:+910000000000"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-green-500 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+                <div class="group bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500"
                     data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-2.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <div class="relative mb-6">
+                            <div
+                                class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 border-2 border-white shadow-md relative z-10">
+                                <img src="assets/images/jitendra-singh.jpg" alt="Jitendra Singh"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            </div>
+                            <div
+                                class="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-50 rounded-lg -z-0 group-hover:rotate-12 transition-transform">
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Technical Expert
-                            </p>
+
+                        <h4 class="text-xl font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors mb-1">
+                            Jitendra Singh</h4>
+                        <p class="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-4"
+                            data-en="Customer Success Manager" data-hi="ग्राहक सफलता प्रबंधक">Customer Success Manager
+                        </p>
+
+                        <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow italic"
+                            data-en="Ensuring seamless post-sales experiences and dedicated support for every client."
+                            data-hi="हर ग्राहक के लिए निर्बाध बिक्री के बाद के अनुभव और समर्पित सहायता सुनिश्चित करना।">
+                            Customer satisfaction inki priority hai. Seamless experience dena inki khoobi hai.
+                        </p>
+
+                        <div class="flex gap-3 pt-5 border-t border-slate-100">
+                            <a href="mailto:jitendra@adijyotiindustries.com"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </a>
+                            <a href="tel:+910000000000"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-green-500 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+                <div class="group bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500"
                     data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-3.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <div class="relative mb-6">
+                            <div
+                                class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 border-2 border-white shadow-md relative z-10">
+                                <img src="assets/image/vikas.png" alt="Vikas Verma"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            </div>
+                            <div
+                                class="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-50 rounded-lg -z-0 group-hover:rotate-12 transition-transform">
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Finance
-                                Consultant</p>
+
+                        <h4 class="text-xl font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors mb-1">
+                            Vikas Verma</h4>
+                        <p class="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-4"
+                            data-en="Product Manager" data-hi="उत्पाद प्रबंधक">Product Manager</p>
+
+                        <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow italic"
+                            data-en="Mastering product life-cycles and delivering high-quality industrial solutions."
+                            data-hi="उत्पाद जीवन-चक्र में महारत हासिल करना और उच्च गुणवत्ता वाले औद्योगिक समाधान प्रदान करना।">
+                            Product innovation aur quality control ke master. Behtar solutions dena inki specialty hai.
+                        </p>
+
+                        <div class="flex gap-3 pt-5 border-t border-slate-100">
+                            <a href="mailto:vikas@adijyotiindustries.com"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </a>
+                            <a href="tel:+910000000000"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-green-500 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-4.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                <div class="group bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-col h-full">
+                        <div class="relative mb-6">
+                            <div
+                                class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 border-2 border-white shadow-md relative z-10">
+                                <img src="assets/images/maneesh-kumar.jpg" alt="Maneesh Kumar"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            </div>
+                            <div
+                                class="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-50 rounded-lg -z-0 group-hover:rotate-12 transition-transform">
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Operations Head
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-5.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Marketing Lead
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                        <h4 class="text-xl font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors mb-1">
+                            Maneesh Kumar</h4>
+                        <p class="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-4"
+                            data-en="Accounts Manager & CFO" data-hi="अकाउंट्स मैनेजर और सीएफओ">Accounts Manager & CFO
+                        </p>
 
-                <div class="group bg-white p-6 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center gap-5">
-                        <div
-                            class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-white shadow-md">
-                            <img src="assets/images/team-6.jpg" alt="Member Name"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-[#1d70d1] transition-colors">
-                                Member Name</h4>
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Legal Advisor</p>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow italic"
+                            data-en="Expert in financial integrity and precision, ensuring company's fiscal health."
+                            data-hi="वित्तीय अखंडता और सटीकता के विशेषज्ञ, कंपनी के वित्तीय स्वास्थ्य को सुनिश्चित करते हैं।">
+                            Financial planning aur accounts ke expert. Budget ko perfection ke saath manage karte hain.
+                        </p>
+
+                        <div class="flex gap-3 pt-5 border-t border-slate-100">
+                            <a href="mailto:maneesh@adijyotiindustries.com"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </a>
+                            <a href="tel:+910000000000"
+                                class="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:bg-green-500 hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -558,6 +660,336 @@
         </div>
     </section>
 
+    <section class="py-20 md:py-32 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#1d70d1] rounded-full blur-[150px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-8">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1d70d1] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#1d70d1]"></span>
+                        </span>
+                        <span class="text-[10px] font-black tracking-[0.4em] text-[#1d70d1] uppercase"
+                            data-en="Walking the PM's Path" data-hi="पीएम के दिखाए मार्ग पर">
+                            Walking the PM's Path
+                        </span>
+                    </div>
+
+                    <h3 class="text-4xl md:text-6xl font-bold text-slate-900 bebas tracking-wide leading-[0.9] mb-8">
+                        <span data-en="EMPOWERING EVERY" data-hi="हर वर्ग का">EMPOWERING EVERY</span> <br>
+                        <span class="text-[#1d70d1]" data-en="DREAM & CLASS" data-hi="सपना और विकास">DREAM &
+                            CLASS</span>
+                    </h3>
+
+                    <div class="space-y-6 mb-10">
+                        <p class="text-slate-600 text-base md:text-lg leading-relaxed"
+                            data-en="Following the path shown by our Prime Minister, we are working tirelessly for the underprivileged and middle-class families. Today, through these government missions, common citizens are finally realizing their dreams and moving towards self-reliance."
+                            data-hi="प्रधानमंत्री जी के बताए मार्ग पर चलते हुए, हम कमजोर वर्ग और मध्यम वर्गीय परिवारों के उत्थान के लिए समर्पित हैं। आज इन सरकारी मिशनों के माध्यम से, आम नागरिक अपने सपनों को साकार कर आत्मनिर्भरता की ओर बढ़ रहा है।">
+                            PM Modi ke bataye marg par chalkar hum kamzor varg aur madhyam varg ke logon ke sapne sach
+                            kar rahe hain. Hamara maqsad har nagrik ko atmanirbhar banana hai.
+                        </p>
+
+                        <div
+                            class="relative p-6 rounded-3xl bg-slate-50 border-l-4 border-[#1d70d1] group hover:bg-blue-50 transition-colors duration-500">
+                            <i
+                                class="fa-solid fa-quote-left absolute top-4 right-6 text-3xl text-blue-100 group-hover:text-blue-200 transition-colors"></i>
+                            <p class="text-slate-900 font-bold italic relative z-10"
+                                data-en="&ldquo;Antyodaya - The rise and development of the last person in the line.&rdquo;"
+                                data-hi="&ldquo;अंत्योदय - पंक्ति में खड़े अंतिम व्यक्ति का उत्थान और विकास।&rdquo;">
+                                "Antyodaya - Har kamzor varg ke vyakti tak vikas pahunchana hi hamara sankalp hai."
+                            </p>
+                        </div>
+
+                        <div class="pt-6 mt-4 border-t border-slate-100 space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white text-[10px]">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-800 font-extrabold text-sm uppercase tracking-tight"
+                                    data-en="Sabka Saath, Sabka Vikas" data-hi="सबका साथ, सबका विकास">
+                                    Sabka Saath, Sabka Vikas
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-orange-500 flex-shrink-0 flex items-center justify-center text-white text-[10px]">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <p class="text-slate-800 font-extrabold text-sm uppercase tracking-tight"
+                                    data-en="Sabka Saath, Sabka Vikas, Sabka Vishwas, Sabka Prayas"
+                                    data-hi="सबका साथ, सबका विकास, सबका विश्वास, सबका प्रयास">
+                                    Sabka Saath, Sabka Vikas, Sabka Vishwas, Sabka Prayas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <div class="flex -space-x-3">
+                            <div
+                                class="w-10 h-10 rounded-full border-2 border-white bg-orange-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-people-group text-orange-600 text-[10px]"></i>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full border-2 border-white bg-blue-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-house-chimney-window text-blue-600 text-[10px]"></i>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full border-2 border-white bg-green-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-hands-holding-child text-green-600 text-[10px]"></i>
+                            </div>
+                        </div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest"
+                            data-en="Focus: Social Impact & Middle-Class Growth"
+                            data-hi="लक्ष्य: सामाजिक प्रभाव और मध्यम वर्ग का विकास">
+                            Focus: Social Impact & Middle-Class Growth
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="grid grid-cols-1 gap-6 relative z-10">
+                        <div
+                            class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[8px] border-white group">
+                            <div class="aspect-video w-full">
+                                <iframe src="https://www.youtube.com/embed/x0F2ulj3xC8?rel=0&modestbranding=1"
+                                    title="PM Vision 1" class="w-full h-full object-cover" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[8px] border-white group md:ml-12">
+                            <div class="aspect-video w-full">
+                                <iframe src="https://www.youtube.com/embed/0Sb7_58kOiw?rel=0&modestbranding=1"
+                                    title="PM Vision 2" class="w-full h-full object-cover" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-10 -right-4 md:-right-8 bg-white p-6 md:p-8 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] max-w-[260px] border border-slate-50 z-20"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white">
+                                <i class="fa-solid fa-heart-pulse text-[10px]"></i>
+                            </div>
+                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest"
+                                data-en="Mission In Action" data-hi="मिशन इन एक्शन">Mission In Action</p>
+                        </div>
+                        <p class="text-slate-800 font-bold text-sm leading-snug"
+                            data-en="&ldquo;Empowering the common man to lead an extraordinary life.&rdquo;"
+                            data-hi="&ldquo;आम आदमी को असाधारण जीवन जीने के लिए सशक्त बनाना।&rdquo;">
+                            "Aam aadmi ko mazboot banakar unke sapno ko udan dena hi hamara kaam hai."
+                        </p>
+                    </div>
+
+                    <div class="absolute -bottom-10 -left-6 md:-left-12 bg-white p-8 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] max-w-xs border border-slate-50 z-20"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+                                <i class="fa-solid fa-shield-heart text-[10px]"></i>
+                            </div>
+                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest"
+                                data-en="Director's Philosophy" data-hi="निर्देशक का दर्शन">Director's Philosophy</p>
+                        </div>
+                        <p class="text-slate-800 font-bold text-base leading-snug"
+                            data-en="&ldquo;We walk with the common man, for the progress of the nation.&rdquo;"
+                            data-hi="&ldquo;हम राष्ट्र की प्रगति के लिए आम आदमी के साथ चलते हैं।&rdquo;">
+                            "Hum madhyam aur kamzor varg ke saath milkar desh ko aage badha rahe hain."
+                        </p>
+                    </div>
+
+                    <div
+                        class="absolute -top-10 -right-10 w-48 h-48 bg-blue-100/50 rounded-full -z-0 blur-3xl animate-pulse">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50/50 relative overflow-hidden">
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-100/20 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h4 class="text-[10px] font-black tracking-[0.4em] text-[#1d70d1] uppercase mb-4"
+                    data-en="Government Initiatives" data-hi="सरकारी पहल">Government Initiatives</h4>
+                <h3 class="text-3xl md:text-5xl font-bold text-slate-900 bebas tracking-wider">
+                    <span data-en="CORE SCHEMES WE" data-hi="मुख्य योजनाएं जिन्हें हम">CORE SCHEMES WE</span>
+                    <span class="text-[#1d70d1]" data-en="EMPOWER" data-hi="सशक्त बनाते हैं">EMPOWER</span>
+                </h3>
+                <div class="h-1 w-20 bg-[#1d70d1] mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 hover:bg-[#1d70d1] transition-all duration-700 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-blue-500/20 hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-all duration-500 group-hover:rotate-[360deg]">
+                            <i class="fa-solid fa-solar-panel text-orange-500 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h5 class="text-xl font-bold mb-4 group-hover:text-white transition-colors"
+                            data-en="PM Surya Ghar" data-hi="पीएम सूर्य घर">PM Surya Ghar</h5>
+                        <p class="text-slate-500 text-[13px] leading-relaxed mb-6 group-hover:text-blue-50 transition-colors flex-grow"
+                            data-en="Contributing to national energy independence by providing free electricity solutions to every household."
+                            data-hi="हर घर को मुफ्त बिजली समाधान प्रदान करके राष्ट्रीय ऊर्जा स्वतंत्रता में योगदान देना।">
+                            Har ghar ko mufat bijli aur urja mein atmanirbhar banane ki disha mein hamara yogdaan.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 group-hover:border-white/10">
+                            <span
+                                class="text-[9px] font-black tracking-widest text-[#1d70d1] group-hover:text-white uppercase">Green
+                                Energy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 hover:bg-[#1d70d1] transition-all duration-700 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-blue-500/20 hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-all duration-500 group-hover:rotate-[360deg]">
+                            <i class="fa-solid fa-industry text-blue-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h5 class="text-xl font-bold mb-4 group-hover:text-white transition-colors"
+                            data-en="PMFME Scheme" data-hi="पीएमएफएमई योजना">PMFME Scheme</h5>
+                        <p class="text-slate-500 text-[13px] leading-relaxed mb-6 group-hover:text-blue-50 transition-colors flex-grow"
+                            data-en="Providing technical and financial consultancy to lift micro food processing enterprises to new heights."
+                            data-hi="सूक्ष्म खाद्य प्रसंस्करण उद्यमों को नई ऊंचाइयों पर ले जाने के लिए तकनीकी और वित्तीय परामर्श प्रदान करना।">
+                            Micro Food Processing enterprises ko unchaiyon par le jaane ke liye technical aur financial
+                            consultancy.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 group-hover:border-white/10">
+                            <span
+                                class="text-[9px] font-black tracking-widest text-[#1d70d1] group-hover:text-white uppercase">Food
+                                Tech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 hover:bg-[#1d70d1] transition-all duration-700 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-blue-500/20 hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-all duration-500 group-hover:rotate-[360deg]">
+                            <i class="fa-solid fa-wheat-awn text-green-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h5 class="text-xl font-bold mb-3 group-hover:text-white transition-colors"
+                            data-en="PMKSY Mission" data-hi="पीएमकेएसवाई मिशन">PMKSY Mission</h5>
+                        <p class="text-slate-500 text-[13px] leading-relaxed mb-6 group-hover:text-blue-50 transition-colors flex-grow"
+                            data-en="Implementing modern technical changes in agriculture and irrigation to double farmers' income."
+                            data-hi="किसानों की आय दोगुनी करने के लिए कृषि और सिंचाई में आधुनिक तकनीकी बदलाव लागू करना।">
+                            Krishi aur sinchai mein naye technical badlav laakar kisanon ki aay dugni karne ka sankalp.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 group-hover:border-white/10">
+                            <span
+                                class="text-[9px] font-black tracking-widest text-[#1d70d1] group-hover:text-white uppercase">Agri
+                                Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 hover:bg-[#1d70d1] transition-all duration-700 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-blue-500/20 hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-all duration-500 group-hover:rotate-[360deg]">
+                            <i class="fa-solid fa-user-graduate text-purple-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h5 class="text-xl font-bold mb-3 group-hover:text-white transition-colors"
+                            data-en="Skill India" data-hi="कौशल भारत">Skill India</h5>
+                        <p class="text-slate-500 text-[13px] leading-relaxed mb-6 group-hover:text-blue-50 transition-colors flex-grow"
+                            data-en="Our ultimate goal is to empower youth with skills and connect them with employment opportunities."
+                            data-hi="हमारा परम लक्ष्य युवाओं को कौशल के साथ सशक्त बनाना और उन्हें रोजगार के अवसरों से जोड़ना है।">
+                            Yuvaon ko hunar-mand banakar unhe rozgar aur swarozgar se jodna hamara param lakshya hai.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 group-hover:border-white/10">
+                            <span
+                                class="text-[9px] font-black tracking-widest text-[#1d70d1] group-hover:text-white uppercase">Skilled
+                                India</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white px-6 relative">
+        <div class="max-w-7xl mx-auto bg-slate-900 rounded-[4rem] p-12 md:p-24 relative overflow-hidden shadow-2xl"
+            data-aos="zoom-in" data-aos-duration="1200">
+
+            <div class="absolute inset-0 opacity-10 pointer-events-none group">
+                <img src="assets/image/india-map-pattern.png"
+                    class="object-cover w-full h-full scale-110 group-hover:scale-100 transition-transform duration-[10s]">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-[#1d70d1] rounded-full blur-[150px] opacity-20"></div>
+            </div>
+
+            <div class="relative z-10 text-center max-w-4xl mx-auto">
+                <div
+                    class="inline-block px-6 py-2 rounded-full border border-white/10 bg-white/5 mb-10 backdrop-blur-sm">
+                    <span class="text-[10px] font-black text-blue-400 uppercase tracking-[0.4em]"
+                        data-en="The Adijyoti Promise" data-hi="आदिज्योति का संकल्प">The Adijyoti Promise</span>
+                </div>
+
+                <h4 class="text-white text-3xl md:text-6xl font-bold mb-10 leading-[1.1] bebas tracking-wide">
+                    <span data-en="Our Vision," data-hi="हमारी सोच,">Our Vision,</span>
+                    <span class="text-[#1d70d1]" data-en="Nation's Passion:" data-hi="देश का जोश:">Nation's
+                        Passion:</span> <br>
+                    <span class="text-white/90 font-light" data-en="Standing with the Government."
+                        data-hi="सरकार के हर कदम के साथ।">Standing with the Government.</span>
+                </h4>
+
+                <p class="text-slate-400 text-base md:text-xl mb-16 leading-relaxed max-w-3xl mx-auto font-light"
+                    data-en="From PMFME to PM Surya Ghar, Adijyoti Industries is part of every mission that transforms India into a Global Industrial Hub. We don't just advise; we deliver change."
+                    data-hi="पीएमएफएमई से लेकर पीएम सूर्य घर तक, आदिज्योति इंडस्ट्रीज हर उस मिशन का हिस्सा है जो भारत को एक ग्लोबल इंडस्ट्रियल हब बनाने की ताकत रखता है। हम सिर्फ सलाह नहीं देते, हम बदलाव लाते हैं।">
+                    PMFME se lekar PM Surya Ghar tak, Adijyoti Industries har us mission ka hissa hai jo Bharat ko ek
+                    Global Industrial Hub banane ki takat rakhta hai. Hum Sirf salaah nahi dete, hum badlav laate hain.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
+                    <div class="group">
+                        <span
+                            class="block text-5xl md:text-6xl font-black text-white mb-3 group-hover:text-[#1d70d1] transition-colors duration-500">100%</span>
+                        <span class="text-[9px] text-blue-400 uppercase tracking-[0.3em] font-black"
+                            data-en="Commitment to GOI Missions" data-hi="भारत सरकार के मिशन के प्रति समर्पण">Commitment
+                            to GOI Missions</span>
+                    </div>
+
+                    <div class="w-16 h-px bg-white/10 hidden md:block group-hover:w-24 transition-all"></div>
+
+                    <div class="group">
+                        <span
+                            class="block text-5xl md:text-6xl font-black text-white mb-3 group-hover:text-[#1d70d1] transition-colors duration-500"
+                            data-en="Nationwide" data-hi="देशव्यापी">Nationwide</span>
+                        <span class="text-[9px] text-blue-400 uppercase tracking-[0.3em] font-black"
+                            data-en="Operational Reach" data-hi="परिचालन पहुंच">Operational Reach</span>
+                    </div>
+                </div>
+
+                <div class="mt-20 pt-10 border-t border-white/5 flex flex-col items-center gap-4">
+                    <div class="flex gap-6 opacity-40 grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-[8px] font-bold text-white tracking-widest uppercase">Atmanirbhar
+                            Bharat</span>
+                        <span class="text-[8px] font-bold text-white tracking-widest uppercase">Viksit Bharat
+                            @2047</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer Section  -->
 
     <footer class="relative bg-slate-900 pt-24 pb-12 px-6 overflow-hidden">

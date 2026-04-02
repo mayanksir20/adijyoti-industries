@@ -178,3 +178,55 @@ function closeModal() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
 });
+
+
+
+// serch logic find distric 1st section in our location page
+function searchInBento(query) {
+    const resultsDiv = document.getElementById('bentoResults');
+    const term = query.toLowerCase().trim();
+
+    // 1. Agar search box khali hai toh list chhupa do
+    if (term.length < 1) {
+        resultsDiv.classList.add('hidden');
+        return;
+    }
+
+    // 2. Apne purane 'locationData' array se filter karein
+    const matches = locationData.filter(loc => 
+        loc.district.toLowerCase().includes(term)
+    );
+
+    // 3. Results ko render karein
+    if (matches.length > 0) {
+        resultsDiv.classList.remove('hidden');
+        resultsDiv.innerHTML = matches.map(loc => `
+            <div onclick="window.location.href='tel:6387905006'" class="p-4 border-b border-slate-50 hover:bg-blue-50 cursor-pointer transition-all flex justify-between items-center group">
+                <div>
+                    <p class="text-slate-900 font-bold text-sm mb-0">${loc.district}</p>
+                    <p class="text-slate-400 text-[10px] uppercase font-bold tracking-tighter">${loc.state} • ${loc.type}</p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                </div>
+            </div>
+        `).join('');
+        
+        // Lucide icons ko naye elements ke liye refresh karein
+        lucide.createIcons();
+    } else {
+        // No results found view
+        resultsDiv.innerHTML = `<div class="p-5 text-slate-400 text-xs text-center font-medium">Hume ye district nahi mila.</div>`;
+        resultsDiv.classList.remove('hidden');
+    }
+}
+
+// 4. Click Outside Logic: Jab kahin aur click ho toh list band ho jaye
+document.addEventListener('click', function(event) {
+    const searchInput = document.getElementById('standaloneSearch');
+    const resultsDiv = document.getElementById('bentoResults');
+    
+    if (searchInput && !searchInput.contains(event.target)) {
+        resultsDiv.classList.add('hidden');
+    }
+});

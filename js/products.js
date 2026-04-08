@@ -878,174 +878,355 @@ const productsData = {
     ],
     solar: [
         {
-            id: 101,
-            nameEn: "Mono Perc Solar Panel",
-            nameHi: "मोनो पर्क सोलर पैनल",
-            shortEn: "550W High Efficiency | Half-Cut",
-            shortHi: "550W उच्च दक्षता | हाफ-कट",
-            fullEn: "Tier-1 solar panels compliant with PM-Surya Ghar Yojana. High performance even in low light.",
-            fullHi: "पीएम-सूर्य घर योजना के अनुरूप टियर-1 सोलर पैनल। कम रोशनी में भी उच्च प्रदर्शन।",
-            featuresEn: ["21.5% Efficiency", "144 Half-Cut Cells", "Weather Proof IP68", "25yr Warranty"],
-            featuresHi: ["21.5% दक्षता", "144 हाफ-कट सेल्स", "वेदर प्रूफ IP68", "25 साल वारंटी"],
-            images: [
-                "https://images.unsplash.com/photo-1509391366360-fe5bb584852a?w=800",
-                "https://images.unsplash.com/photo-1508514177221-18d14273d822?w=800",
-                "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e2?w=800",
-                "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800"
+            "id": 101,
+            "nameEn": "Mono Perc Solar Panel (550W - High Efficiency)",
+            "nameHi": "मोनो पर्क सोलर पैनल (550W - उच्च दक्षता)",
+            "shortEn": "Tier-1 Quality | 21.5% Efficiency | PM-Surya Ghar Approved",
+            "shortHi": "टियर-1 क्वालिटी | 21.5% दक्षता | पीएम-सूर्य घर स्वीकृत",
+            "fullEn": "Our Mono PERC (Passivated Emitter and Rear Cell) solar panels represent the pinnacle of modern solar technology. These 550W modules utilize 144 half-cut cell technology to reduce internal resistance and improve performance even in shaded conditions. Designed specifically for Indian weather, they offer high durability against dust and heat. These panels are fully compliant with the PM-Surya Ghar Muft Bijli Yojana and other government subsidies, ensuring a faster return on investment. Built with anti-reflective glass and a robust aluminum frame, they provide consistent energy output for over 25 years.",
+            "fullHi": "हमारे मोनो पर्क (Mono PERC) सोलर पैनल आधुनिक सौर तकनीक का शिखर हैं। ये 550W मॉड्यूल 144 हाफ-कट सेल तकनीक का उपयोग करते हैं ताकि आंतरिक प्रतिरोध को कम किया जा सके और छायादार स्थितियों में भी प्रदर्शन में सुधार हो सके। विशेष रूप से भारतीय मौसम के लिए डिज़ाइन किए गए, ये धूल और गर्मी के खिलाफ उच्च स्थायित्व प्रदान करते हैं। ये पैनल पीएम-सूर्य घर मुफ्त बिजली योजना और अन्य सरकारी सब्सिडी के पूरी तरह से अनुकूल हैं, जिससे निवेश पर त्वरित रिटर्न सुनिश्चित होता है। एंटी-रिफ्लेक्टिव ग्लास और मजबूत एल्यूमीनियम फ्रेम के साथ निर्मित, ये 25 से अधिक वर्षों तक निरंतर ऊर्जा उत्पादन प्रदान करते हैं।",
+            "featuresEn": [
+                "High Module Efficiency up to 21.5% with PERC Technology",
+                "144 Half-Cut Cell Design for Better Low-Light Performance",
+                "Tier-1 Quality Modules with PM-Surya Ghar Scheme Eligibility",
+                "PID Resistant & Anti-Reflective Coating for Maximum Absorption",
+                "IP68 Rated Junction Box for Extreme Weather Protection",
+                "High Snow Load (5400 Pa) and Wind Load (2400 Pa) Resistance",
+                "12-Year Product Warranty & 25-Year Linear Power Warranty",
+                "Ideal for Residential, Commercial, and Industrial Solar Plants"
+            ],
+            "featuresHi": [
+                "पर्क तकनीक के साथ 21.5% तक की उच्च मॉड्यूल दक्षता",
+                "कम रोशनी में बेहतर प्रदर्शन के लिए 144 हाफ-कट सेल डिजाइन",
+                "पीएम-सूर्य घर योजना पात्रता के साथ टियर-1 क्वालिटी मॉड्यूल",
+                "अधिकतम अवशोषण के लिए पीआईडी (PID) प्रतिरोधी और एंटी-रिफ्लेक्टिव कोटिंग",
+                "अत्यधिक मौसम सुरक्षा के लिए IP68 रेटेड जंक्शन बॉक्स",
+                "उच्च हिम भार (5400 Pa) और पवन भार (2400 Pa) सहन करने की क्षमता",
+                "12 साल की प्रोडक्ट वारंटी और 25 साल की लीनियर पावर वारंटी",
+                "आवासीय, वाणिज्यिक और औद्योगिक सोलर प्लांट के लिए आदर्श"
+            ],
+            "images": [
+                "../assets/solar/Mono Perc Solar Panel (1).png",
+                "../assets/solar/Mono Perc Solar Panel (2).png",
+                "../assets/solar/Mono Perc Solar Panel (3).png",
+                "../assets/solar/Mono Perc Solar Panel (4).png"
             ]
         },
         {
-            id: 102,
-            nameEn: "On-Grid Solar Inverter",
-            nameHi: "ऑन-ग्रिड सोलर इन्वर्टर",
-            shortEn: "Pure Sine Wave | MPPT Tech",
-            shortHi: "प्योर साइन वेव | MPPT टेक",
-            fullEn: "Connect your solar system directly to the grid. Export excess power and reduce bills.",
-            fullHi: "अपने सोलर सिस्टम को सीधे ग्रिड से जोड़ें। अतिरिक्त बिजली निर्यात करें और बिल कम करें।",
-            featuresEn: ["Dual MPPT Trackers", "Remote Monitoring", "High Surge Rating", "Zero Maintenance"],
-            featuresHi: ["डुअल MPPT ट्रैकर्स", "रिमोट मॉनिटरिंग", "हाई सर्ज रेटिंग", "जीरो मेंटेनेंस"],
-            images: [
-                "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=800",
-                "https://images.unsplash.com/photo-1548337138-e87d889cc369?w=800",
-                "https://images.unsplash.com/photo-1592833159057-6fdc2a5dc02f?w=800",
-                "https://images.unsplash.com/photo-1605980413988-9ff24c537935?w=800"
+            "id": 102,
+            "nameEn": "Smart On-Grid Solar Inverter (High Efficiency)",
+            "nameHi": "स्मार्ट ऑन-ग्रिड सोलर इन्वर्टर (उच्च दक्षता)",
+            "shortEn": "Dual MPPT | Net Metering Ready | Remote Wi-Fi Monitoring",
+            "shortHi": "डुअल MPPT | नेट मीटरिंग रेडी | रिमोट वाई-फाई मॉनिटरिंग",
+            "fullEn": "Our high-performance On-Grid Solar Inverters are designed to synchronize perfectly with the utility grid, allowing you to export surplus power and drastically reduce electricity bills. Featuring advanced Dual MPPT (Maximum Power Point Tracking) technology, these inverters extract maximum energy from solar panels even in fluctuating weather. With a transformerless design for higher efficiency and built-in Wi-Fi for real-time remote monitoring via smartphone, they offer a maintenance-free experience. These inverters are fully compatible with Net Metering policies under the PM-Surya Ghar Yojana and other government solar subsidies.",
+            "fullHi": "हमारे उच्च-प्रदर्शन वाले ऑन-ग्रिड सोलर इन्वर्टर बिजली ग्रिड के साथ पूरी तरह से तालमेल बिठाने के लिए डिज़ाइन किए गए हैं, जिससे आप अतिरिक्त बिजली निर्यात कर सकते हैं और बिजली के बिलों में भारी कमी ला सकते हैं। उन्नत डुअल MPPT (मैक्सिमम पावर पॉइंट ट्रैकिंग) तकनीक के साथ, ये इन्वर्टर उतार-चढ़ाव वाले मौसम में भी सोलर पैनल से अधिकतम ऊर्जा निकालते हैं। उच्च दक्षता के लिए ट्रांसफार्मर रहित डिज़ाइन और स्मार्टफोन के माध्यम से रीयल-टाइम रिमोट मॉनिटरिंग के लिए बिल्ट-इन वाई-फाई के साथ, ये मेंटेनेंस-फ्री अनुभव प्रदान करते हैं। ये इन्वर्टर पीएम-सूर्य घर योजना और अन्य सरकारी सौर सब्सिडी के तहत नेट मीटरिंग नीतियों के साथ पूरी तरह से अनुकूल हैं।",
+            "featuresEn": [
+                "Advanced Dual MPPT Tracking for Maximum Power Extraction",
+                "Net Metering Compatible: Export Excess Energy to the Grid",
+                "Built-in Wi-Fi & GPRS for Real-time App-based Monitoring",
+                "Transformerless Design with Peak Efficiency up to 98.5%",
+                "IP65 Rated Weatherproof Housing for Outdoor Installation",
+                "Comprehensive Protection: Overvoltage, Short-circuit & Anti-Islanding",
+                "Wide Input Voltage Range for Longer Working Hours",
+                "10-Year Extended Warranty Support with Pan-India Service"
+            ],
+            "featuresHi": [
+                "अधिकतम बिजली उत्पादन के लिए उन्नत डुअल MPPT ट्रैकिंग",
+                "नेट मीटरिंग अनुकूल: ग्रिड को अतिरिक्त ऊर्जा निर्यात करें",
+                "रीयल-टाइम ऐप-आधारित निगरानी के लिए बिल्ट-इन वाई-फाई और GPRS",
+                "98.5% तक की उच्चतम दक्षता के साथ ट्रांसफार्मर रहित डिजाइन",
+                "आउटडोर स्थापना के लिए IP65 रेटेड वेदरप्रूफ हाउसिंग",
+                "व्यापक सुरक्षा: ओवरवोल्टेज, शॉर्ट-सर्किट और एंटी-आइसलैंडिंग",
+                "लंबे समय तक काम करने के लिए वाइड इनपुट वोल्टेज रेंज",
+                "पैन-इंडिया सर्विस के साथ 10 साल की एक्सटेंडेड वारंटी सपोर्ट"
+            ],
+            "images": [
+                "../assets/solar/On-Grid Solar Inverter (1).png",
+                "../assets/solar/On-Grid Solar Inverter (2).png",
+                "../assets/solar/On-Grid Solar Inverter (3).png",
+                "../assets/solar/On-Grid Solar Inverter (4).png"
             ]
         },
         {
-            id: 103,
-            nameEn: "Lithium Ferro Phosphate (LFP) Battery",
-            nameHi: "लिथियम फेरो फॉस्फेट बैटरी",
-            shortEn: "48V 100Ah | Long Cycle Life",
-            shortHi: "48V 100Ah | लंबी साइकिल लाइफ",
-            fullEn: "Modern energy storage solution. Faster charging and longer life compared to lead-acid batteries.",
-            fullHi: "आधुनिक ऊर्जा भंडारण समाधान। लेड-एसिड बैटरी की तुलना में तेज़ चार्जिंग और लंबी लाइफ।",
-            featuresEn: ["6000+ Cycles", "BMS Protection", "Lightweight Design", "Fast Charging"],
-            featuresHi: ["6000+ साइकिल", "BMS सुरक्षा", "हल्का डिजाइन", "फास्ट चार्जिंग"],
-            images: [
-                "https://images.unsplash.com/photo-1566353003205-09689694b297?w=800",
-                "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800",
-                "https://images.unsplash.com/photo-1611331481116-3ba008ce9629?w=800",
-                "https://images.unsplash.com/photo-1569163139394-04663f707f5a?w=800"
+            "id": 103,
+            "nameEn": "Polycrystalline Solar Panel (High Durability)",
+            "nameHi": "पॉलीक्रिस्टलाइन सोलर पैनल (उच्च स्थायित्व)",
+            "shortEn": "Cost-Effective | DCR Compliant | Subsidy Approved",
+            "shortHi": "किफायती | DCR अनुपालन | सब्सिडी स्वीकृत",
+            "fullEn": "Our Polycrystalline solar panels are the most reliable and cost-effective solution for residential solar installations. These panels are 'DCR Compliant' (Domestic Content Requirement), making them 100% eligible for government subsidies under PM-Surya Ghar Yojana. Built with high-strength tempered glass and a corrosion-resistant aluminum frame, they offer stable power output even in hot Indian climates for over 25 years.",
+            "fullHi": "हमारे पॉलीक्रिस्टलाइन सोलर पैनल आवासीय सोलर इंस्टॉलेशन के लिए सबसे विश्वसनीय और किफायती समाधान हैं। ये पैनल 'DCR अनुपालन' (स्वदेशी सामग्री आवश्यकता) वाले हैं, जो इन्हें पीएम-सूर्य घर योजना के तहत सरकारी सब्सिडी के लिए 100% पात्र बनाते हैं। उच्च शक्ति वाले टेम्पर्ड ग्लास और जंग-रोधी एल्यूमीनियम फ्रेम के साथ निर्मित, ये 25 से अधिक वर्षों तक स्थिर बिजली उत्पादन प्रदान करते हैं।",
+            "featuresEn": [
+                "100% DCR Compliant for Government Subsidy Eligibility",
+                "Cost-Effective Solution for Large Scale Installations",
+                "High-Strength Tempered Glass with Anti-Reflective Coating",
+                "Excellent Performance in High-Temperature Regions",
+                "5 Busbar Cell Technology for Better Current Collection",
+                "IP67 Rated Junction Box for Dust & Water Protection",
+                "25-Year Linear Power Warranty Support",
+                "Certified by MNRE & BIS Standards"
+            ],
+            "featuresHi": [
+                "सरकारी सब्सिडी पात्रता के लिए 100% DCR अनुपालन",
+                "बड़े पैमाने पर इंस्टॉलेशन के लिए किफायती समाधान",
+                "एंटी-रिफ्लेक्टिव कोटिंग के साथ उच्च शक्ति वाला टेम्पर्ड ग्लास",
+                "उच्च तापमान वाले क्षेत्रों में उत्कृष्ट प्रदर्शन",
+                "बेहतर करंट कलेक्शन के लिए 5 बसबार सेल तकनीक",
+                "धूल और पानी से सुरक्षा के लिए IP67 रेटेड जंक्शन बॉक्स",
+                "25 साल की लीनियर पावर वारंटी सपोर्ट",
+                "MNRE और BIS मानकों द्वारा प्रमाणित"
+            ],
+            "images": [
+                "../assets/solar/Polycrystalline Solar Panel (1).png",
+                "../assets/solar/Polycrystalline Solar Panel (2).png",
+                "../assets/solar/Polycrystalline Solar Panel (3).png",
+                "../assets/solar/Polycrystalline Solar Panel (4).png"
             ]
         },
         {
-            id: 104,
-            nameEn: "Solar Water Pump",
-            nameHi: "सोलर वाटर पंप",
-            shortEn: "3HP Submersible | BLDC Motor",
-            shortHi: "3HP सबमर्सिबल | BLDC मोटर",
-            fullEn: "Reliable irrigation solution for farmers. Works without grid electricity.",
-            fullHi: "किसानों के लिए विश्वसनीय सिंचाई समाधान। बिना ग्रिड बिजली के काम करता है।",
-            featuresEn: ["High Flow Rate", "Dry Run Protection", "Low Maintenance", "High Durability"],
-            featuresHi: ["हाई फ्लो रेट", "ड्राई रन प्रोटेक्शन", "कम रखरखाव", "उच्च स्थायित्व"],
-            images: [
-                "https://images.unsplash.com/photo-1473976339452-9543887224f8?w=800",
-                "https://images.unsplash.com/photo-1495107333211-e122444ee258?w=800",
-                "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800",
-                "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800"
+            "id": 104,
+            "nameEn": "Half-Cut Mono PERC Solar Module",
+            "nameHi": "हाफ-कट मोनो पर्क सोलर मॉड्यूल",
+            "shortEn": "Low-Light Performance | 550W+ Capacity | Shadow Resistant",
+            "shortHi": "कम रोशनी में बेहतर प्रदर्शन | 550W+ क्षमता | छाया प्रतिरोधी",
+            "fullEn": "The Half-Cut technology divides solar cells into two halves, which significantly reduces internal power loss and increases efficiency. These Mono PERC modules are designed to perform exceptionally well even when partially shaded by trees or nearby buildings. With a power rating of 550W and above, they require less roof space compared to traditional panels, making them perfect for urban homes under the PM-Surya Ghar scheme.",
+            "fullHi": "हाफ-कट तकनीक सोलर सेल को दो हिस्सों में विभाजित करती है, जो आंतरिक बिजली के नुकसान को काफी कम करती है और दक्षता बढ़ाती है। ये मोनो पर्क मॉड्यूल तब भी असाधारण रूप से अच्छा प्रदर्शन करने के लिए डिज़ाइन किए गए हैं जब पेड़ या पास की इमारतों से आंशिक छाया पड़ती है। 550W और उससे अधिक की पावर रेटिंग के साथ, उन्हें पारंपरिक पैनलों की तुलना में कम छत की जगह की आवश्यकता होती है।",
+            "featuresEn": [
+                "144 Half-Cut Cell Design for Higher Efficiency",
+                "Significant Reduction in Power Loss due to Shading",
+                "Lower Operating Temperature for Better Performance",
+                "High Module Efficiency up to 21.8%",
+                "Mechanical Load Resistance up to 5400 Pa",
+                "Modern Aesthetic Black Frame Options Available",
+                "Eligible for Residential & Commercial Subsidies",
+                "Longer Life with Low Degradation Rates"
+            ],
+            "featuresHi": [
+                "उच्च दक्षता के लिए 144 हाफ-कट सेल डिजाइन",
+                "छाया के कारण बिजली के नुकसान में भारी कमी",
+                "बेहतर प्रदर्शन के लिए कम ऑपरेटिंग तापमान",
+                "21.8% तक की उच्च मॉड्यूल दक्षता",
+                "5400 Pa तक यांत्रिक भार प्रतिरोध",
+                "आधुनिक ब्लैक फ्रेम विकल्प उपलब्ध",
+                "आवासीय और वाणिज्यिक सब्सिडी के लिए पात्र",
+                "कम गिरावट दर के साथ लंबी लाइफ"
+            ],
+            "images": [
+                "../assets/solar/Half-Cut Mono PERC Solar (1).png",
+                "../assets/solar/Half-Cut Mono PERC Solar (2).png",
+                "../assets/solar/Half-Cut Mono PERC Solar (3).png",
+                "../assets/solar/Half-Cut Mono PERC Solar (4).png"
             ]
         },
         {
-            id: 105,
-            nameEn: "Solar Street Light",
-            nameHi: "सोलर स्ट्रीट लाइट",
-            shortEn: "All-in-One LED | Motion Sensor",
-            shortHi: "ऑल-इन-वन एलईडी | मोशन सेंसर",
-            fullEn: "Automatic lighting for roads and campuses. Fully solar integrated with battery and panel.",
-            fullHi: "सड़कों और परिसरों के लिए स्वचालित प्रकाश व्यवस्था। बैटरी और पैनल के साथ पूर्णतः सोलर इंटीग्रेटेड।",
-            featuresEn: ["Auto On/Off", "Motion Sensor", "IP65 Waterproof", "High Brightness"],
-            featuresHi: ["ऑटो ऑन/ऑफ", "मोशन सेंसर", "IP65 वाटरप्रूफ", "उच्च चमक"],
-            images: [
-                "https://images.unsplash.com/photo-1471342317424-4b1070621379?w=800",
-                "https://images.unsplash.com/photo-1520690216127-63a5893d115b?w=800",
-                "https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?w=800",
-                "https://images.unsplash.com/photo-1471958680802-1345a694ba6d?w=800"
+            "id": 105,
+            "nameEn": "Solar Water Pump (High Performance Submersible)",
+            "nameHi": "सोलर वाटर पंप (उच्च प्रदर्शन सबमर्सिबल)",
+            "shortEn": "3HP to 10HP Range | BLDC Technology | PM-KUSUM Approved",
+            "shortHi": "3HP से 10HP रेंज | BLDC तकनीक | पीएम-कुसुम स्वीकृत",
+            "fullEn": "Our Solar Water Pumping systems are the ultimate irrigation solution for modern farming and industrial water management. Equipped with high-efficiency BLDC (Brushless DC) motors and advanced MPPT controllers, these pumps deliver a significantly higher water flow even in low sunlight conditions. Designed with corrosion-resistant Stainless Steel (SS 304), they ensure zero electricity or diesel costs for over 25 years. These systems are fully eligible for up to 60% government subsidy under the PM-KUSUM scheme, making them highly affordable for farmers and large-scale agricultural projects.",
+            "fullHi": "हमारे सोलर वाटर पंपिंग सिस्टम आधुनिक खेती और औद्योगिक जल प्रबंधन के लिए अंतिम सिंचाई समाधान हैं। उच्च दक्षता वाली BLDC (ब्रशलेस डीसी) मोटर और उन्नत MPPT कंट्रोलर से लैस, ये पंप कम धूप में भी काफी अधिक जल प्रवाह प्रदान करते हैं। संक्षारण प्रतिरोधी स्टेनलेस स्टील (SS 304) के साथ निर्मित, ये 25 से अधिक वर्षों तक शून्य बिजली या डीजल लागत सुनिश्चित करते हैं। ये सिस्टम पीएम-कुसुम योजना के तहत 60% तक की सरकारी सब्सिडी के लिए पूरी तरह से पात्र हैं, जो इन्हें किसानों और बड़े पैमाने की कृषि परियोजनाओं के लिए अत्यधिक किफायती बनाता है।",
+            "featuresEn": [
+                "Advanced BLDC Motor Technology for 30% Higher Water Output",
+                "SS 304 Grade Stainless Steel Body for Anti-Rust Durability",
+                "MPPT Solar Controller for Peak Efficiency in Low Light",
+                "Dry-Run & Over-Voltage Protection for Motor Safety",
+                "Works without Batteries: Direct Connection to Solar Panels",
+                "Eligible for 60% Govt Subsidy under PM-KUSUM Yojana",
+                "Zero Maintenance Cost & Easy DIY Installation",
+                "Highly Effective for Drip & Sprinkler Irrigation Systems"
+            ],
+            "featuresHi": [
+                "30% अधिक जल उत्पादन के लिए उन्नत BLDC मोटर तकनीक",
+                "जंग-रोधी स्थायित्व के लिए SS 304 ग्रेड स्टेनलेस स्टील बॉडी",
+                "कम रोशनी में उच्चतम दक्षता के लिए MPPT सोलर कंट्रोलर",
+                "मोटर सुरक्षा के लिए ड्राई-रन और ओवर-वोल्टेज प्रोटेक्शन",
+                "बिना बैटरी के काम करता है: सोलर पैनल से सीधा जुड़ाव",
+                "पीएम-कुसुम योजना के तहत 60% सरकारी सब्सिडी के लिए पात्र",
+                "शून्य रखरखाव लागत और आसान इंस्टॉलेशन",
+                "ड्रिप और स्प्रिंकलर सिंचाई प्रणालियों के लिए अत्यधिक प्रभावी"
+            ],
+            "images": [
+                "../assets/solar/Solar Water Pump (1).png",
+                "../assets/solar/Solar Water Pump (2).png",
+                "../assets/solar/Solar Water Pump (3).png",
+                "../assets/solar/Solar Water Pump (4).png"
             ]
         },
         {
-            id: 106,
-            nameEn: "Hybrid Solar Inverter",
-            nameHi: "हाइब्रिड सोलर इन्वर्टर",
-            shortEn: "Grid + Battery Backup",
-            shortHi: "ग्रिड + बैटरी बैकअप",
-            fullEn: "Best of both worlds. Works with grid and stores power for night use.",
-            fullHi: "ग्रिड के साथ काम करता है और रात में उपयोग के लिए बिजली स्टोर करता है।",
-            featuresEn: ["Smart Load Management", "LCD Display", "Pure Sine Wave", "Solar Priority Mode"],
-            featuresHi: ["स्मार्ट लोड प्रबंधन", "एलसीडी डिस्प्ले", "प्योर साइन वेव", "सोलर प्रायोरिटी मोड"],
-            images: [
-                "https://images.unsplash.com/photo-1569000971932-6f3630f59267?w=800",
-                "https://images.unsplash.com/photo-1595183300806-039c9f7a9ca9?w=800",
-                "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=800",
-                "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=800"
+            "id": 113,
+            "nameEn": "Bi-Directional Solar Net Meter",
+            "nameHi": "बाय-डायरेक्शनल सोलर नेट मीटर",
+            "shortEn": "Smart Grid Tracking | Govt Approved | Digital Display",
+            "shortHi": "स्मार्ट ग्रिड ट्रैकिंग | सरकारी स्वीकृत | डिजिटल डिस्प्ले",
+            "fullEn": "A Bi-Directional Net Meter is the backbone of any On-Grid solar system. It records both the electricity consumed from the grid and the excess solar power exported back to the utility company. This device is mandatory for availing subsidies under the PM-Surya Ghar Yojana, as it allows users to reduce their bills by adjusting the exported units against their consumption.",
+            "fullHi": "बाय-डायरेक्शनल नेट मीटर किसी भी ऑन-ग्रिड सोलर सिस्टम की रीढ़ है। यह ग्रिड से खपत की गई बिजली और ग्रिड को वापस निर्यात की गई अतिरिक्त सौर ऊर्जा दोनों को रिकॉर्ड करता है। यह डिवाइस पीएम-सूर्य घर योजना के तहत सब्सिडी प्राप्त करने के लिए अनिवार्य है, क्योंकि यह उपयोगकर्ताओं को उनके द्वारा निर्यात की गई यूनिट्स के आधार पर बिल कम करने की अनुमति देता है।",
+            "featuresEn": [
+                "Bi-Directional Measurement for Export & Import Tracking",
+                "MNRE & State Electricity Board (DISCOM) Approved",
+                "High Accuracy Class 1.0 Digital Measurement",
+                "Anti-Tamper Features for Secure Energy Recording",
+                "Real-time LCD Display for Voltage & Current Stats",
+                "RS485 Communication Port for Remote Data Reading",
+                "Compact Design with Easy Integration into Existing Mains",
+                "Compulsory Component for Net Metering Subsidies"
+            ],
+            "featuresHi": [
+                "निर्यात और आयात ट्रैकिंग के लिए दो तरफा माप",
+                "MNRE और राज्य विद्युत बोर्ड (DISCOM) द्वारा स्वीकृत",
+                "उच्च सटीकता क्लास 1.0 डिजिटल माप",
+                "सुरक्षित ऊर्जा रिकॉर्डिंग के लिए एंटी-टैम्पर विशेषताएं",
+                "वोल्टेज और करंट आंकड़ों के लिए रीयल-टाइम एलसीडी डिस्प्ले",
+                "रिमोट डेटा रीडिंग के लिए RS485 कम्युनिकेशन पोर्ट",
+                "मौजूदा मेन्स में आसान एकीकरण के साथ कॉम्पैक्ट डिजाइन",
+                "नेट मीटरिंग सब्सिडी के लिए अनिवार्य घटक"
+            ],
+            "images": [
+                "../assets/solar/Solar Net Meter (1).png",
+                "../assets/solar/Solar Net Meter (2).png",
+                "../assets/solar/Solar Net Meter (3).png",
+                "../assets/solar/Solar Net Meter (4).png"
             ]
         },
         {
-            id: 107,
-            nameEn: "Solar Structure (Mounting)",
-            nameHi: "सोलर स्ट्रक्चर (माउंटिंग)",
-            shortEn: "Hot Dip Galvanized | Wind Resistant",
-            shortHi: "हॉट डिप गैल्वेनाइज्ड | विंड रेजिस्टेंट",
-            fullEn: "Strong mounting solution for solar panels. Designed for high wind speed and 25 years life.",
-            fullHi: "सोलर पैनलों के लिए मजबूत माउंटिंग समाधान। तेज़ हवा की गति और 25 साल की लाइफ के लिए डिज़ाइन।",
-            featuresEn: ["Rust Proof", "Pre-Fabricated", "Adjustable Angle", "Universal Fit"],
-            featuresHi: ["जंग प्रूफ", "प्री-फैब्रिकेटेड", "एडजस्टेबल एंगल", "यूनिवर्सल फिट"],
-            images: [
-                "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e2?w=800",
-                "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800",
-                "https://images.unsplash.com/photo-1508514177221-18d14273d822?w=800",
-                "https://images.unsplash.com/photo-1559302995-f09fb992160d?w=800"
+            "id": 114,
+            "nameEn": "Solar ACDB & DCDB Distribution Boxes",
+            "nameHi": "सोलर ACDB और DCDB डिस्ट्रीब्यूशन बॉक्स",
+            "shortEn": "Surge Protection (SPD) | Fuse & MCB Safety",
+            "shortHi": "सर्ज प्रोटेक्शन (SPD) | फ्यूज और MCB सुरक्षा",
+            "fullEn": "Protection boxes are essential for the longevity of your solar investment. The DCDB (DC Distribution Box) protects the inverter from surges coming from the panels, while the ACDB (AC Distribution Box) sits between the inverter and the home load. They come equipped with high-quality SPDs (Surge Protection Devices) and MCBs to prevent fire or damage during short circuits or lightning strikes.",
+            "fullHi": "प्रोटेक्शन बॉक्स आपके सोलर निवेश की लंबी उम्र के लिए आवश्यक हैं। DCDB पैनल से आने वाले उतार-चढ़ाव से इन्वर्टर की रक्षा करता है, जबकि ACDB इन्वर्टर और घर के लोड के बीच बैठता है। ये शॉर्ट सर्किट या बिजली गिरने के दौरान आग या क्षति को रोकने के लिए उच्च गुणवत्ता वाले SPD और MCB से लैस होते हैं।",
+            "featuresEn": [
+                "High-Quality Surge Protection Devices (SPD) Type 2",
+                "DC/AC MCBs for Manual & Automatic Disconnection",
+                "IP65 Rated Dustproof & Waterproof Enclosure",
+                "Transparent Front Cover for Easy Monitoring",
+                "Pre-Wired for Quick and Neat Installation",
+                "Protects Inverter from Lightning & High Voltage",
+                "Compliant with International Safety Standards",
+                "Essential for Government Safety Inspections"
+            ],
+            "featuresHi": [
+                "उच्च गुणवत्ता वाले सर्ज प्रोटेक्शन डिवाइस (SPD) टाइप 2",
+                "मैनुअल और स्वचालित डिस्कनेक्शन के लिए DC/AC MCBs",
+                "IP65 रेटेड डस्टप्रूफ और वाटरप्रूफ एनक्लोजर",
+                "आसान निगरानी के लिए पारदर्शी फ्रंट कवर",
+                "त्वरित और साफ इंस्टॉलेशन के लिए प्री-वायर्ड",
+                "इन्वर्टर को बिजली और हाई वोल्टेज से बचाता है",
+                "अंतरराष्ट्रीय सुरक्षा मानकों के अनुरूप",
+                "सरकारी सुरक्षा निरीक्षण के लिए अनिवार्य"
+            ],
+            "images": [
+                "../assets/solar/Solar ACDB & DCDB (1).png",
+                "../assets/solar/Solar ACDB & DCDB (2).png",
+                "../assets/solar/Solar ACDB & DCDB (3).png",
+                "../assets/solar/Solar ACDB & DCDB (4).png"
             ]
         },
         {
-            id: 108,
-            nameEn: "DC Combiner Box",
-            nameHi: "डीसी कंबाइनर बॉक्स",
-            shortEn: "Protection for PV Array",
-            shortHi: "पीवी ऐरे के लिए सुरक्षा",
-            fullEn: "Protects your solar system from surges and short circuits. Essential for system safety.",
-            fullHi: "आपके सोलर सिस्टम को सर्ज और शॉर्ट सर्किट से बचाता है। सिस्टम सुरक्षा के लिए आवश्यक।",
-            featuresEn: ["SPD Protection", "DC MCB Included", "IP66 Enclosure", "Cable Management"],
-            featuresHi: ["SPD सुरक्षा", "DC MCB शामिल", "IP66 एनक्लोजर", "केबल प्रबंधन"],
-            images: [
-                "https://images.unsplash.com/photo-1558444479-c86e10556181?w=800",
-                "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800",
-                "https://images.unsplash.com/photo-1569335468143-bc0393282f9d?w=800",
-                "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800"
+            "id": 115,
+            "nameEn": "Earthing Kit & Lightning Arrester (LA)",
+            "nameHi": "अर्थिंग किट और लाइटनिंग अरेस्टर (LA)",
+            "shortEn": "Lightning Protection | Chemical Earthing | Rust Proof",
+            "shortHi": "बिजली सुरक्षा | केमिकल अर्थिंग | जंग मुक्त",
+            "fullEn": "Safety is paramount in solar installations. Our Earthing Kits and Lightning Arresters ensure that any accidental high voltage or lightning strike is safely diverted to the ground. Using high-conductivity copper-bonded rods and chemical earthing powder, we provide a low-resistance path for fault currents, protecting both your solar equipment and your family.",
+            "fullHi": "सोलर इंस्टॉलेशन में सुरक्षा सर्वोपरि है। हमारी अर्थिंग किट और लाइटनिंग अरेस्टर यह सुनिश्चित करते हैं कि कोई भी आकस्मिक हाई वोल्टेज या बिजली का झटका सुरक्षित रूप से जमीन में चला जाए। उच्च-चालकता वाले कॉपर-बॉन्डेड रॉड्स और केमिकल अर्थिंग पाउडर का उपयोग करके, हम आपके सोलर उपकरण और आपके परिवार दोनों की रक्षा करते हैं।",
+            "featuresEn": [
+                "High-Grade Lightning Arrester with 100 Meter Protection Radius",
+                "Copper Bonded Steel Rods for Superior Conductivity",
+                "BFC (Back Fill Compound) for Low Ground Resistance",
+                "Maintenance-Free Chemical Earthing Solution",
+                "Weatherproof Connectors for Outdoor Durability",
+                "Prevents Electrical Shocks & Inverter Damage",
+                "Three-Point Earthing System (AC, DC, and LA)",
+                "Mandatory for Subsidy & Electrical Inspections"
+            ],
+            "featuresHi": [
+                "100 मीटर सुरक्षा त्रिज्या के साथ हाई-ग्रेड लाइटनिंग अरेस्टर",
+                "बेहतर चालकता के लिए कॉपर बॉन्डेड स्टील रॉड्स",
+                "कम जमीनी प्रतिरोध के लिए BFC (बैक फिल कंपाउंड)",
+                "मेंटेनेंस-फ्री केमिकल अर्थिंग समाधान",
+                "आउटडोर स्थायित्व के लिए वेदरप्रूफ कनेक्टर",
+                "बिजली के झटके और इन्वर्टर की क्षति को रोकता है",
+                "थ्री-पॉइंट अर्थिंग सिस्टम (AC, DC और LA)",
+                "सब्सिडी और विद्युत निरीक्षण के लिए अनिवार्य"
+            ],
+            "images": [
+                "../assets/solar/Earthing Kit & Lightning Arrester (1).png",
+                "../assets/solar/Earthing Kit & Lightning Arrester (2).png",
+                "../assets/solar/Earthing Kit & Lightning Arrester (3).png",
+                "../assets/solar/Earthing Kit & Lightning Arrester (4).png"
             ]
         },
         {
-            id: 109,
-            nameEn: "Bifacial Solar Panel",
-            nameHi: "बाइफेशियल सोलर पैनल",
-            shortEn: "Double Sided Power Generation",
-            shortHi: "दो तरफा बिजली उत्पादन",
-            fullEn: "Generates power from both sides. Extra 10-20% output from ground reflection.",
-            fullHi: "दोनों तरफ से बिजली पैदा करता है। जमीनी परावर्तन से अतिरिक्त 10-20% आउटपुट।",
-            featuresEn: ["Higher ROI", "Glass-on-Glass Tech", "Enhanced Durability", "Modern Aesthetic"],
-            featuresHi: ["उच्च ROI", "ग्लास-ऑन-ग्लास टेक", "बेहतर स्थायित्व", "आधुनिक डिजाइन"],
-            images: [
-                "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800",
-                "https://images.unsplash.com/photo-1509391366360-fe5bb584852a?w=800",
-                "https://images.unsplash.com/photo-1508514177221-18d14273d822?w=800",
-                "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e2?w=800"
+            "id": 117,
+            "nameEn": "UV-Protected Solar DC Cables & MC4 Connectors",
+            "nameHi": "यूवी-प्रोटेक्टेड सोलर डीसी केबल और MC4 कनेक्टर",
+            "shortEn": "Tinned Copper | Weather Proof | Low Power Loss",
+            "shortHi": "टिन्ड कॉपर | वेदर प्रूफ | कम बिजली का नुकसान",
+            "fullEn": "Standard wires can degrade quickly under the sun, leading to power loss or fire hazards. Our specialized Solar DC Cables are made of multi-strand tinned copper with cross-linked (XLPO) insulation to withstand extreme heat and UV radiation for 25+ years. Paired with IP68 waterproof MC4 connectors, they ensure a secure, spark-free connection between your panels and inverter.",
+            "fullHi": "मानक तार सूरज की रोशनी में जल्दी खराब हो सकते हैं। हमारे विशेष सोलर डीसी केबल 25+ वर्षों तक अत्यधिक गर्मी और यूवी विकिरण का सामना करने के लिए बने हैं। IP68 वाटरप्रूफ MC4 कनेक्टर्स के साथ मिलकर, वे आपके पैनल और इन्वर्टर के बीच एक सुरक्षित कनेक्शन सुनिश्चित करते हैं।",
+            "featuresEn": [
+                "Electrolytic Tinned Copper for Maximum Conductivity",
+                "UV & Ozone Resistant Insulation for Outdoor Use",
+                "Flame Retardant Property for Fire Safety",
+                "Operating Life of Over 25 Years",
+                "IP68 Rated Waterproof MC4 Connectors",
+                "Minimal Voltage Drop for Higher Energy Yield",
+                "Flexible & Easy to Install in Conduits",
+                "Available in 4sq mm, 6sq mm, and 10sq mm Sizes"
+            ],
+            "featuresHi": [
+                "अधिकतम चालकता के लिए इलेक्ट्रोलाइटिक टिन्ड कॉपर",
+                "आउटडोर उपयोग के लिए यूवी और ओजोन प्रतिरोधी इन्सुलेशन",
+                "अग्नि सुरक्षा के लिए फ्लेम रिटार्डेंट प्रॉपर्टी",
+                "25 वर्ष से अधिक का ऑपरेटिंग जीवन",
+                "IP68 रेटेड वाटरप्रूफ MC4 कनेक्टर",
+                "उच्च ऊर्जा उत्पादन के लिए न्यूनतम वोल्टेज ड्रॉप",
+                "नलिकाओं (Conduits) में स्थापित करने में आसान",
+                "4sq mm, 6sq mm और 10sq mm साइज में उपलब्ध"
+            ],
+            "images": [
+                "../assets/solar/UV-Protected Solar DC Cables (1).png",
+                "../assets/solar/UV-Protected Solar DC Cables (2).png",
+                "../assets/solar/UV-Protected Solar DC Cables (3).png",
+                "../assets/solar/UV-Protected Solar DC Cables (4).png"
             ]
         },
         {
-            id: 110,
-            nameEn: "Solar Water Heater",
-            nameHi: "सोलर वाटर हीटर",
-            shortEn: "Vacuum Tube Tech | Hot Water 24/7",
-            shortHi: "वैक्यूम ट्यूब टेक | 24/7 गर्म पानी",
-            fullEn: "Zero cost hot water for homes and hotels. Uses sunlight to heat water effectively.",
-            fullHi: "घरों और होटलों के लिए जीरो कॉस्ट गर्म पानी। प्रभावी ढंग से पानी गर्म करने के लिए सूरज की रोशनी का उपयोग करता है।",
-            featuresEn: ["Insulated Tank", "Easy Installation", "Save Electricity", "Long Life"],
-            featuresHi: ["इन्सुलेटेड टैंक", "आसान इंस्टॉलेशन", "बिजली बचाएं", "लंबी लाइफ"],
-            images: [
-                "https://images.unsplash.com/photo-1605980413988-9ff24c537935?w=800",
-                "https://images.unsplash.com/photo-1611331481116-3ba008ce9629?w=800",
-                "https://images.unsplash.com/photo-1569163139394-04663f707f5a?w=800",
-                "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800"
+            "id": 116,
+            "nameEn": "Solar Smart Wi-Fi Data Logger",
+            "nameHi": "सोलर स्मार्ट वाई-फाई डेटा लॉगर",
+            "shortEn": "Real-time Monitoring | Mobile App Access | Daily Reports",
+            "shortHi": "रीयल-टाइम मॉनिटरिंग | मोबाइल ऐप एक्सेस | दैनिक रिपोर्ट",
+            "fullEn": "Stay connected to your power plant with our Smart Wi-Fi Data Logger. It plugs directly into your solar inverter and uploads production data to the cloud every few minutes. Through a dedicated mobile app, you can track daily energy generation, savings, and system health. It also alerts you instantly via email or notification if any fault occurs in the system.",
+            "fullHi": "हमारे स्मार्ट वाई-फाई डेटा लॉगर के साथ अपने पावर प्लांट से जुड़े रहें। यह सीधे आपके सोलर इन्वर्टर में प्लग हो जाता है और हर कुछ मिनटों में क्लाउड पर डेटा अपलोड करता है। एक समर्पित मोबाइल ऐप के माध्यम से, आप दैनिक ऊर्जा उत्पादन, बचत और सिस्टम के स्वास्थ्य को ट्रैक कर सकते हैं।",
+            "featuresEn": [
+                "Plug-and-Play Installation via RS485/USB Port",
+                "Real-time Data Syncing with Global Cloud Servers",
+                "User-Friendly Mobile App (Android/iOS) & Web Portal",
+                "Historical Data Storage for Performance Analysis",
+                "Instant Fault Alarms & Diagnostic Notifications",
+                "Supports Multiple Inverters in a Single Account",
+                "No External Power Supply Needed",
+                "Secure Data Encryption for Privacy"
+            ],
+            "featuresHi": [
+                "RS485/USB पोर्ट के माध्यम से प्लग-एंड-प्ले इंस्टॉलेशन",
+                "ग्लोबल क्लाउड सर्वर के साथ रीयल-टाइम डेटा सिंकिंग",
+                "यूजर-फ्रेंडली मोबाइल ऐप और वेब पोर्टल",
+                "प्रदर्शन विश्लेषण के लिए ऐतिहासिक डेटा स्टोरेज",
+                "तत्काल फॉल्ट अलार्म और सूचनाएं",
+                "एक ही खाते में कई इनवर्टर का सपोर्ट",
+                "किसी बाहरी बिजली आपूर्ति की आवश्यकता नहीं",
+                "गोपनीयता के लिए सुरक्षित डेटा एन्क्रिप्शन"
+            ],
+            "images": [
+                "../assets/solar/Solar Smart Wi-Fi Data Logge (1).png",
+                "../assets/solar/Solar Smart Wi-Fi Data Logge (2).png",
+                "../assets/solar/Solar Smart Wi-Fi Data Logge (3).png",
+                "../assets/solar/Solar Smart Wi-Fi Data Logge (4).png"
             ]
         }
+
     ]
 };

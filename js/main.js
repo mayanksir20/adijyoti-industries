@@ -76,61 +76,73 @@ function applyLanguage(lang) {
 }
 
 
-// Updated Active menu item logic
 function handleActiveLinks() {
-    // 1. Get current path and clean it (Remove .html and trailing slashes)
+    // 1. Current URL nikalna aur use saaf karna
     const rawPath = window.location.pathname;
-    let currentPath = rawPath === "/" ? "index.html" : rawPath.split("/").pop();
     
-    // Hosting Fix: Agar URL mein extension nahi hai (. nahi hai), toh .html add karo check karne ke liye
-    if (currentPath !== "" && !currentPath.includes(".")) {
+    // Agar URL '/' hai toh 'index.html', warna path se extension aur slashes hatayein
+    let currentPath = rawPath === "/" || rawPath === "" ? "index.html" : rawPath.split("/").pop();
+    
+    // NETLIFY FIX: Agar URL bina extension ke hai (jaise '/products'), toh '.html' add karein
+    if (currentPath && !currentPath.includes(".")) {
         currentPath += ".html";
     }
 
-    // --- 1. Desktop Handle ---
-    // Main Links (Home, Products, Contact)
+    // 2. Desktop Links Handle
     document.querySelectorAll('.nav-link').forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
+        // Link ka href nikal kar clean karein (jaise './products.html' -> 'products.html')
+        const linkHref = link.getAttribute('href').replace("./", "");
+        if (linkHref === currentPath) {
             link.classList.add('text-[#1d70d1]');
+        } else {
+            link.classList.remove('text-[#1d70d1]');
         }
     });
 
-    // Services Parent Logic
+    // 3. Services Dropdown Handle
     const servicesParent = document.getElementById('servicesParent');
     document.querySelectorAll('.nav-dropdown-item').forEach(item => {
-        if (item.getAttribute('href') === currentPath) {
-            const textElement = item.querySelector('.text-white');
-            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
+        const itemHref = item.getAttribute('href').replace("./", "");
+        if (itemHref === currentPath) {
+            const textElement = item.querySelector('.text-white') || item;
+            if (textElement.classList.contains('text-white')) {
+                textElement.classList.replace('text-white', 'text-[#1d70d1]');
+            } else {
+                textElement.classList.add('text-[#1d70d1]');
+            }
             if (servicesParent) servicesParent.classList.add('text-[#1d70d1]');
         }
     });
 
-    // About Us Parent Logic (FIXED)
+    // 4. About Us Dropdown Handle
     const aboutParent = document.getElementById('aboutParent');
     document.querySelectorAll('.about-dropdown-item').forEach(item => {
-        if (item.getAttribute('href') === currentPath) {
-            const textElement = item.querySelector('.text-white');
-            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
+        const itemHref = item.getAttribute('href').replace("./", "");
+        if (itemHref === currentPath) {
+            const textElement = item.querySelector('.text-white') || item;
+            if (textElement.classList.contains('text-white')) {
+                textElement.classList.replace('text-white', 'text-[#1d70d1]');
+            } else {
+                textElement.classList.add('text-[#1d70d1]');
+            }
             if (aboutParent) aboutParent.classList.add('text-[#1d70d1]');
         }
     });
 
-    // --- 2. Mobile Handle (FIXED) ---
+    // 5. Mobile Sidebar Handle
     const mobileSidebar = document.getElementById('mobileSidebar');
     if (mobileSidebar) {
-        const allMobileLinks = mobileSidebar.querySelectorAll('a');
-        allMobileLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                // Highlighting the link itself
+        mobileSidebar.querySelectorAll('a').forEach(link => {
+            const linkHref = link.getAttribute('href').replace("./", "");
+            if (linkHref === currentPath) {
                 link.classList.add('text-[#1d70d1]');
-
-                // If link is inside About Submenu
-                if (link.closest('#mobileAboutSub')) {
+                
+                // Keep sub-menu open
+                const parentSub = link.closest('#mobileAboutSub');
+                if (parentSub) {
                     const mobileAboutBtn = document.getElementById('mobileAboutBtn');
-                    const mobileAboutSub = document.getElementById('mobileAboutSub');
-
                     if (mobileAboutBtn) mobileAboutBtn.classList.add('text-[#1d70d1]');
-                    if (mobileAboutSub) mobileAboutSub.classList.remove('hidden'); // Keeping it open
+                    parentSub.classList.remove('hidden');
                 }
             }
         });

@@ -76,126 +76,61 @@ function applyLanguage(lang) {
 }
 
 
-
-// // Active menu item logic
-// function handleActiveLinks() {
-//     const currentPath = window.location.pathname.split("/").pop() || "index.html";
-
-//     // --- 1. Desktop Handle ---
-//     // Main Links (Home, Products, Contact)
-//     document.querySelectorAll('.nav-link').forEach(link => {
-//         if (link.getAttribute('href') === currentPath) {
-//             link.classList.add('text-[#1d70d1]');
-//         }
-//     });
-
-//     // Services Parent Logic
-//     const servicesParent = document.getElementById('servicesParent');
-//     document.querySelectorAll('.nav-dropdown-item').forEach(item => {
-//         if (item.getAttribute('href') === currentPath) {
-//             const textElement = item.querySelector('.text-white');
-//             if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
-//             if (servicesParent) servicesParent.classList.add('text-[#1d70d1]');
-//         }
-//     });
-
-//     // About Us Parent Logic (FIXED)
-//     const aboutParent = document.getElementById('aboutParent');
-//     document.querySelectorAll('.about-dropdown-item').forEach(item => {
-//         if (item.getAttribute('href') === currentPath) {
-//             const textElement = item.querySelector('.text-white');
-//             if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
-//             if (aboutParent) aboutParent.classList.add('text-[#1d70d1]');
-//         }
-//     });
-
-//     // --- 2. Mobile Handle (FIXED) ---
-//     const mobileSidebar = document.getElementById('mobileSidebar');
-//     if (mobileSidebar) {
-//         const allMobileLinks = mobileSidebar.querySelectorAll('a');
-//         allMobileLinks.forEach(link => {
-//             if (link.getAttribute('href') === currentPath) {
-//                 // Highlighting the link itself
-//                 link.classList.add('text-[#1d70d1]');
-
-//                 // If link is inside About Submenu
-//                 if (link.closest('#mobileAboutSub')) {
-//                     const mobileAboutBtn = document.getElementById('mobileAboutBtn');
-//                     const mobileAboutSub = document.getElementById('mobileAboutSub');
-
-//                     if (mobileAboutBtn) mobileAboutBtn.classList.add('text-[#1d70d1]');
-//                     if (mobileAboutSub) mobileAboutSub.classList.remove('hidden'); // Keeping it open
-//                 }
-//             }
-//         });
-//     }
-// }
-
-// window.addEventListener('DOMContentLoaded', handleActiveLinks);
-
-
+// Updated Active menu item logic
 function handleActiveLinks() {
-    // Current path ko saaf karein (slash aur extension hatayein)
+    // 1. Get current path and clean it (Remove .html and trailing slashes)
     const rawPath = window.location.pathname;
-    const currentPath = rawPath === "/" ? "index.html" : rawPath.split("/").pop().replace(".html", "");
-
-    function isMatch(linkHref) {
-        if (!linkHref) return false;
-        // Link href se bhi .html hatakar compare karein
-        const cleanHref = linkHref.replace(".html", "").replace("./", "");
-        return cleanHref === currentPath || (currentPath === "index" && cleanHref === "");
+    let currentPath = rawPath === "/" ? "index.html" : rawPath.split("/").pop();
+    
+    // Hosting Fix: Agar URL mein extension nahi hai (. nahi hai), toh .html add karo check karne ke liye
+    if (currentPath !== "" && !currentPath.includes(".")) {
+        currentPath += ".html";
     }
 
     // --- 1. Desktop Handle ---
+    // Main Links (Home, Products, Contact)
     document.querySelectorAll('.nav-link').forEach(link => {
-        if (isMatch(link.getAttribute('href'))) {
+        if (link.getAttribute('href') === currentPath) {
             link.classList.add('text-[#1d70d1]');
-        } else {
-            link.classList.remove('text-[#1d70d1]'); // Reset existing
         }
     });
 
     // Services Parent Logic
     const servicesParent = document.getElementById('servicesParent');
     document.querySelectorAll('.nav-dropdown-item').forEach(item => {
-        if (isMatch(item.getAttribute('href'))) {
-            const textElement = item.querySelector('.text-white') || item;
-            if (textElement.classList.contains('text-white')) {
-                textElement.classList.replace('text-white', 'text-[#1d70d1]');
-            } else {
-                textElement.classList.add('text-[#1d70d1]');
-            }
+        if (item.getAttribute('href') === currentPath) {
+            const textElement = item.querySelector('.text-white');
+            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
             if (servicesParent) servicesParent.classList.add('text-[#1d70d1]');
         }
     });
 
-    // About Us Parent Logic
+    // About Us Parent Logic (FIXED)
     const aboutParent = document.getElementById('aboutParent');
     document.querySelectorAll('.about-dropdown-item').forEach(item => {
-        if (isMatch(item.getAttribute('href'))) {
-            const textElement = item.querySelector('.text-white') || item;
-            if (textElement.classList.contains('text-white')) {
-                textElement.classList.replace('text-white', 'text-[#1d70d1]');
-            } else {
-                textElement.classList.add('text-[#1d70d1]');
-            }
+        if (item.getAttribute('href') === currentPath) {
+            const textElement = item.querySelector('.text-white');
+            if (textElement) textElement.classList.replace('text-white', 'text-[#1d70d1]');
             if (aboutParent) aboutParent.classList.add('text-[#1d70d1]');
         }
     });
 
-    // --- 2. Mobile Handle ---
+    // --- 2. Mobile Handle (FIXED) ---
     const mobileSidebar = document.getElementById('mobileSidebar');
     if (mobileSidebar) {
         const allMobileLinks = mobileSidebar.querySelectorAll('a');
         allMobileLinks.forEach(link => {
-            if (isMatch(link.getAttribute('href'))) {
+            if (link.getAttribute('href') === currentPath) {
+                // Highlighting the link itself
                 link.classList.add('text-[#1d70d1]');
 
+                // If link is inside About Submenu
                 if (link.closest('#mobileAboutSub')) {
                     const mobileAboutBtn = document.getElementById('mobileAboutBtn');
                     const mobileAboutSub = document.getElementById('mobileAboutSub');
+
                     if (mobileAboutBtn) mobileAboutBtn.classList.add('text-[#1d70d1]');
-                    if (mobileAboutSub) mobileAboutSub.classList.remove('hidden');
+                    if (mobileAboutSub) mobileAboutSub.classList.remove('hidden'); // Keeping it open
                 }
             }
         });

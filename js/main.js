@@ -79,10 +79,10 @@ function applyLanguage(lang) {
 function handleActiveLinks() {
     // 1. Current URL nikalna aur use saaf karna
     const rawPath = window.location.pathname;
-    
+
     // Agar URL '/' hai toh 'index.html', warna path se extension aur slashes hatayein
     let currentPath = rawPath === "/" || rawPath === "" ? "index.html" : rawPath.split("/").pop();
-    
+
     // NETLIFY FIX: Agar URL bina extension ke hai (jaise '/products'), toh '.html' add karein
     if (currentPath && !currentPath.includes(".")) {
         currentPath += ".html";
@@ -136,7 +136,7 @@ function handleActiveLinks() {
             const linkHref = link.getAttribute('href').replace("./", "");
             if (linkHref === currentPath) {
                 link.classList.add('text-[#1d70d1]');
-                
+
                 // Keep sub-menu open
                 const parentSub = link.closest('#mobileAboutSub');
                 if (parentSub) {
@@ -208,7 +208,7 @@ function searchInBento(query) {
     }
 
     // 2. Apne purane 'locationData' array se filter karein
-    const matches = locationData.filter(loc => 
+    const matches = locationData.filter(loc =>
         loc.district.toLowerCase().includes(term)
     );
 
@@ -226,7 +226,7 @@ function searchInBento(query) {
                 </div>
             </div>
         `).join('');
-        
+
         // Lucide icons ko naye elements ke liye refresh karein
         lucide.createIcons();
     } else {
@@ -237,11 +237,98 @@ function searchInBento(query) {
 }
 
 // 4. Click Outside Logic: Jab kahin aur click ho toh list band ho jaye
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     const searchInput = document.getElementById('standaloneSearch');
     const resultsDiv = document.getElementById('bentoResults');
-    
+
     if (searchInput && !searchInput.contains(event.target)) {
         resultsDiv.classList.add('hidden');
     }
 });
+
+
+
+// Auto Update Copyright Year
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+
+
+/// Bank Logos JSON
+const bankLogos = [
+    { id: 1, name: 'SBI', url: '../assets/banks/bank (1).png' },
+    { id: 2, name: 'Punjab National Bank', url: '../assets/banks/bank (2).png' },
+    { id: 3, name: 'Bank of Baroda (Guyana)', url: '../assets/banks/bank (3).png' },
+    { id: 4, name: 'ICICI Bank', url: '../assets/banks/bank (4).png' },
+    { id: 5, name: 'Bank of Baroda', url: '../assets/banks/bank (5).png' },
+    { id: 6, name: 'Canara Bank', url: '../assets/banks/bank (6).png' },
+    { id: 7, name: 'Union Bank of India', url: '../assets/banks/bank (7).png' },
+    { id: 8, name: 'Indian Bank', url: '../assets/banks/bank (8).png' },
+    { id: 9, name: 'Bank of India', url: '../assets/banks/bank (9).png' },
+    { id: 10, name: 'Indian Overseas Bank', url: '../assets/banks/bank (10).png' },
+    { id: 11, name: 'HDFC Bank', url: '../assets/banks/bank (11).png' },
+    { id: 12, name: 'DCB Bank', url: '../assets/banks/bank (12).png' },
+    { id: 13, name: 'IndusInd Bank', url: '../assets/banks/bank (13).png' },
+    { id: 14, name: 'Yes Bank', url: '../assets/banks/bank (14).png' },
+    { id: 15, name: 'IDFC FIRST Bank', url: '../assets/banks/bank (15).png' },
+    { id: 16, name: 'Bandhan Bank', url: '../assets/banks/bank (16).png' },
+    { id: 17, name: 'Axis Bank', url: '../assets/banks/bank (17).png' },
+    { id: 18, name: 'IDBI Bank', url: '../assets/banks/bank (18).png' },
+    { id: 19, name: 'Kotak Mahindra Bank', url: '../assets/banks/bank (19).png' },
+    { id: 20, name: 'Central Bank of India', url: '../assets/banks/bank (20).png' }
+];
+
+function setupBankSlider() {
+    const mainTrack = document.getElementById('bank-slider');
+    const duplicateTrack = document.getElementById('bank-slider-duplicate');
+
+    if (!mainTrack || !duplicateTrack) return;
+
+    // Map through JSON to create HTML strings
+    const logoHTML = bankLogos.map(bank => `
+        <div class="bank-card">
+            <img src="${bank.url}" alt="${bank.name}" title="${bank.name}" loading="lazy">
+        </div>
+    `).join('');
+
+    // Inject into both tracks for seamless scrolling
+    mainTrack.innerHTML = logoHTML;
+    duplicateTrack.innerHTML = logoHTML;
+}
+
+// Run the setup once DOM is ready
+document.addEventListener('DOMContentLoaded', setupBankSlider);
+
+
+
+// viwe all bank logo in modal logic
+function openBankModal() {
+    const modal = document.getElementById('bankModal');
+    const backdrop = document.getElementById('modalBackdrop');
+    const box = document.getElementById('modalBox');
+    const grid = document.getElementById('modalBankGrid');
+
+    // Grid content generate karein
+    grid.innerHTML = bankLogos.map(bank => `
+        <div class="modal-bank-card group">
+            <img src="${bank.url}" alt="${bank.name}" title="${bank.name}">
+        </div>
+    `).join('');
+
+    // Modal dikhayein
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Scroll band
+}
+
+function closeBankModal() {
+    const modal = document.getElementById('bankModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Scroll shuru
+}
+
+// Click outside to close
+window.onclick = function (event) {
+    const modal = document.getElementById('bankModal');
+    if (event.target == document.getElementById('modalBackdrop')) {
+        closeBankModal();
+    }
+}

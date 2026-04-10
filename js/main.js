@@ -332,3 +332,63 @@ window.onclick = function (event) {
         closeBankModal();
     }
 }
+
+
+// --- Sticky Actions Logic ---
+
+// 1. Scroll to Top Function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// 2. Control 'Back to Top' visibility on scroll
+
+// Smooth Scroll to Top
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Control Visibility
+window.addEventListener('scroll', () => {
+    const topBtn = document.getElementById('backToTopBtn');
+    if (window.scrollY > 400) {
+        topBtn.classList.remove('opacity-0', 'scale-90', 'translate-y-10', 'pointer-events-none');
+        topBtn.classList.add('opacity-100', 'scale-100', 'translate-y-0', 'pointer-events-auto');
+    } else {
+        topBtn.classList.add('opacity-0', 'scale-90', 'translate-y-10', 'pointer-events-none');
+        topBtn.classList.remove('opacity-100', 'scale-100', 'translate-y-0', 'pointer-events-auto');
+    }
+});
+
+
+
+// bank box samll
+function setupMiniBankGrid() {
+    const miniGrid = document.getElementById('miniBankGrid');
+    const trustCircles = document.getElementById('trustCircles');
+    if (!miniGrid || !trustCircles) return;
+
+    // 1. Grid mein 8 Colorful Logos dikhane ke liye
+    // Hover karne par grayscale(100) yaani black & white honge
+    const miniLogos = bankLogos.slice(0, 8).map(bank => `
+        <div class="bg-slate-50 rounded-lg p-1.5 flex items-center justify-center h-11 border border-transparent hover:border-slate-200 transition-all group/item">
+            <img src="${bank.url}" alt="${bank.name}" 
+                 class="max-w-full max-h-full object-contain filter grayscale-0 transition-all duration-300 group-hover/item:grayscale">
+        </div>
+    `).join('');
+
+    // 2. Neeche 3 chote circles ke liye (Logo indices 8, 9, 10 use kar rahe hain)
+    const circles = bankLogos.slice(8, 11).map(bank => `
+        <div class="w-6 h-6 rounded-full border-2 border-white overflow-hidden bg-white shadow-sm">
+            <img src="${bank.url}" alt="bank" class="w-full h-full object-contain p-0.5">
+        </div>
+    `).join('');
+
+    miniGrid.innerHTML = miniLogos;
+    trustCircles.innerHTML = circles;
+}
+
+document.addEventListener('DOMContentLoaded', setupMiniBankGrid);

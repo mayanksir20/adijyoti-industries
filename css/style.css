@@ -4,7 +4,7 @@
   --secondary-gray: #e7e7e7; /* Light Backgrounds / Borders */
   --text-dark: #333333; /* 3rd Color for readability */
   --white: #ffffff;
-   --text-muted: #666666; /* 3rd Color for readability */
+  --text-muted: #666666; /* 3rd Color for readability */
 }
 
 body {
@@ -226,11 +226,14 @@ body {
   font-size: 0.7rem;
 }
 
-
 /* Animation for Infinite Loop */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .animate-marquee {
@@ -284,52 +287,71 @@ body {
   }
 }
 
-
-
 /* Custom Scrollbar for Modal */
 .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 10px;
+  background: #cbd5e1;
+  border-radius: 10px;
 }
 
 /* Modal Open States */
 #bankModal.active {
-    display: flex;
+  display: flex;
 }
 #bankModal.active #modalBackdrop {
-    opacity: 1;
+  opacity: 1;
 }
 #bankModal.active #modalBox {
-    opacity: 1;
-    transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* Logo Card in Grid */
 .modal-bank-card {
-    background: #f8fafc;
-    border: 1px border-slate-100;
-    border-radius: 1.5rem;
-    padding: 20px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+  background: #f8fafc;
+  border: 1px border-slate-100;
+  border-radius: 1.5rem;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 .modal-bank-card:hover {
-    background: white;
-    border-color: #3b82f6;
-    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
-    transform: translateY(-5px);
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+  transform: translateY(-5px);
 }
 .modal-bank-card img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+<style>
+/* Dropdown ke andar ke options ki styling (Limited support but makes it cleaner) */
+.custom-select option {
+  padding: 15px;
+  background-color: white;
+  color: #1e293b; /* slate-800 */
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* Hover effect on select */
+.custom-select:hover {
+  background-color: #f8fafc; /* slate-100 */
+  border-color: #e2e8f0;
+}
+
+/* Jab focus ho tab border color change */
+.custom-select:focus {
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
 }
